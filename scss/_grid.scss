@@ -1,0 +1,214 @@
+@import "colors";
+
+$grid-columns-desktop: 20;
+$grid-columns-tablet: 20;
+$grid-columns-mobile: 12;
+$container-width-desktop: 1440px;
+$container-width-tablet: 768px;
+$container-width-mobile: 390px;
+$margin-desktop: 40px;
+$margin-tablet: 24px;
+$margin-mobile: 24px;
+$gutter: 8px;
+
+body {
+  margin: 0;
+  position: relative;
+  margin: 0;
+  height: 100vh;
+
+  @media (max-width: 1440px) {
+    background: linear-gradient(
+        to right,
+        transparent 40px,
+        $blue-main-30 40px,
+        $blue-main-30 41px,
+        transparent 40px,
+        transparent calc((40px + (100% - $margin-desktop * 2 + $gutter) / 4)),
+        $blue-main-30 calc((40px + (100% - $margin-desktop * 2 + $gutter) / 4)),
+        $blue-main-30
+          calc((40px + (100% - $margin-desktop * 2 + $gutter) / 4) + 1px),
+        transparent calc((40px + (100% - $margin-desktop * 2 + $gutter) / 4)),
+        transparent
+          calc((40px + ((100% - $margin-desktop * 2 + $gutter) / 4) * 2)),
+        $blue-main-30
+          calc((40px + ((100% - $margin-desktop * 2 + $gutter) / 4) * 2)),
+        $blue-main-30
+          calc((40px + ((100% - $margin-desktop * 2 + $gutter) / 4) * 2) + 1px),
+        transparent
+          calc((40px + ((100% - $margin-desktop * 2 + $gutter) / 4) * 2)),
+        transparent
+          calc((40px + ((100% - $margin-desktop * 2 + $gutter) / 4) * 3)),
+        $blue-main-30
+          calc((40px + ((100% - $margin-desktop * 2 + $gutter) / 4) * 3)),
+        $blue-main-30
+          calc((40px + ((100% - $margin-desktop * 2 + $gutter) / 4) * 3) + 1px),
+        transparent
+          calc((40px + ((100% - $margin-desktop * 2 + $gutter) / 4) * 3))
+      ),
+      linear-gradient(
+        to left,
+        transparent 40px,
+        $blue-main-30 40px,
+        $blue-main-30 41px,
+        transparent 41px
+      );
+  }
+
+  @media (max-width: 768px) {
+    background: linear-gradient(
+        to right,
+        transparent 24px,
+        $blue-main-30 24px,
+        $blue-main-30 25px,
+        transparent 24px,
+        transparent calc((24px + (100% - $margin-tablet * 2 + $gutter) / 4)),
+        $blue-main-30 calc((24px + (100% - $margin-tablet * 2 + $gutter) / 4)),
+        $blue-main-30
+          calc((24px + (100% - $margin-tablet * 2 + $gutter) / 4) + 1px),
+        transparent calc((24px + (100% - $margin-tablet * 2 + $gutter) / 4)),
+        transparent
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 4) * 2)),
+        $blue-main-30
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 4) * 2)),
+        $blue-main-30
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 4) * 2) + 1px),
+        transparent
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 4) * 2)),
+        transparent
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 4) * 3)),
+        $blue-main-30
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 4) * 3)),
+        $blue-main-30
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 4) * 3) + 1px),
+        transparent
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 4) * 3))
+      ),
+      linear-gradient(
+        to left,
+        transparent 24px,
+        $blue-main-30 24px,
+        $blue-main-30 25px,
+        transparent 25px
+      );
+  }
+
+  @media (max-width: 390px) {
+    background: linear-gradient(
+        to right,
+        transparent 24px,
+        $blue-main-30 24px,
+        $blue-main-30 25px,
+        transparent 24px,
+        transparent calc((24px + (100% - $margin-tablet * 2 + $gutter) / 3)),
+        $blue-main-30 calc((24px + (100% - $margin-tablet * 2 + $gutter) / 3)),
+        $blue-main-30
+          calc((24px + (100% - $margin-tablet * 2 + $gutter) / 3) + 1px),
+        transparent calc((24px + (100% - $margin-tablet * 2 + $gutter) / 4)),
+        transparent
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 3) * 2)),
+        $blue-main-30
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 3) * 2)),
+        $blue-main-30
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 3) * 2) + 1px),
+        transparent
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 3) * 2)),
+        transparent
+          calc((24px + ((100% - $margin-tablet * 2 + $gutter) / 3) * 3))
+      ),
+      linear-gradient(
+        to left,
+        transparent 24px,
+        $blue-main-30 24px,
+        $blue-main-30 25px,
+        transparent 25px
+      );
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: $margin-desktop;
+  padding-right: $margin-desktop;
+  display: grid;
+  gap: $gutter;
+
+  @media (max-width: 1440px) {
+    max-width: $container-width-desktop;
+  }
+
+  @media (max-width: 768px) {
+    max-width: $container-width-tablet;
+    padding-left: $margin-tablet;
+    padding-right: $margin-tablet;
+  }
+
+  @media (max-width: 390px) {
+    max-width: $container-width-mobile;
+    padding-left: $margin-mobile;
+    padding-right: $margin-mobile;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat($grid-columns-desktop, 1fr);
+  gap: $gutter;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat($grid-columns-tablet, 1fr);
+  }
+
+  @media (max-width: 390px) {
+    grid-template-columns: repeat($grid-columns-mobile, 1fr);
+  }
+}
+
+// Добавляем классы для контроля видимости строк
+.row-lg,
+.row-md,
+.row-sm {
+  display: none;
+}
+
+.row-lg {
+  @media (min-width: 769px) {
+    display: grid;
+  }
+}
+
+.row-md {
+  @media (min-width: 391px) and (max-width: 768px) {
+    display: grid;
+  }
+}
+
+.row-sm {
+  @media (max-width: 390px) {
+    display: grid;
+  }
+}
+
+@for $i from 1 through 20 {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+@media (max-width: 768px) {
+  @for $i from 1 through 20 {
+    .col-md-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      grid-column: span $i;
+    }
+  }
+}

@@ -1,0 +1,237 @@
+// typography.scss
+
+// Шрифты
+$font-family-book: "SuisseIntl", sans-serif;
+$font-family-regular: "SuisseIntl", sans-serif;
+$font-family-medium: "SuisseIntl", sans-serif;
+
+// Размеры шрифтов (desktop)
+$font-size-h1-desktop: min(
+  5.56vw,
+  80px
+); // 80px / 1440px * 100vw = 5.56vw, но не больше 80px
+$font-size-h2-desktop: min(
+  3.61vw,
+  52px
+); // 52px / 1440px * 100vw = 3.61vw, но не больше 52px
+$font-size-h3-desktop: min(
+  2.22vw,
+  32px
+); // 32px / 1440px * 100vw = 2.22vw, но не больше 32px
+$font-size-h4-desktop: min(
+  1.67vw,
+  24px
+); // 24px / 1440px * 100vw = 1.67vw, но не больше 24px
+$font-size-body-long-desktop: min(
+  1.25vw,
+  18px
+); // 18px / 1440px * 100vw = 1.25vw, но не больше 18px
+$font-size-body-short-desktop: min(
+  1.25vw,
+  18px
+); // 18px / 1440px * 100vw = 1.25vw, но не больше 18px
+$font-size-link-desktop: min(
+  1.11vw,
+  16px
+); // 16px / 1440px * 100vw = 1.11vw, но не больше 16px
+$font-size-body-small-desktop: min(
+  0.97vw,
+  14px
+); // 14px / 1440px * 100vw = 0.97vw, но не больше 14px
+$font-size-explanation-text-m-desktop: min(
+  0.83vw,
+  12px
+); // 12px / 1440px * 100vw = 0.83vw, но не больше 12px
+$font-size-explanation-text-s-desktop: min(
+  0.56vw,
+  8px
+); // 8px / 1440px * 100vw = 0.56vw, но не больше 8px
+
+// Размеры шрифтов (mobile+tablet)
+$font-size-h1-tablet: min(
+  5.21vw,
+  40px
+); // 40px / 768px * 100vw = 5.21vw, но не больше 40px
+$font-size-h1-mobile: min(
+  9.23vw,
+  36px
+); // 36px / 390px * 100vw = 9.23vw, но не больше 36px
+$font-size-h2-tablet: min(
+  4.17vw,
+  32px
+); // 32px / 768px * 100vw = 4.17vw, но не больше 32px
+$font-size-h3-tablet: min(
+  2.6vw,
+  20px
+); // 20px / 768px * 100vw = 2.60vw, но не больше 20px
+$font-size-h4-tablet: min(
+  2.34vw,
+  18px
+); // 18px / 768px * 100vw = 2.34vw, но не больше 18px
+$font-size-body-long-tablet: min(
+  1.95vw,
+  15px
+); // 15px / 768px * 100vw = 1.95vw, но не больше 15px
+$font-size-body-short-tablet: min(
+  2.08vw,
+  16px
+); // 16px / 768px * 100vw = 2.08vw, но не больше 16px
+$font-size-link-tablet: min(
+  1.82vw,
+  14px
+); // 14px / 768px * 100vw = 1.82vw, но не больше 14px
+$font-size-body-small-tablet: min(
+  1.56vw,
+  12px
+); // 12px / 768px * 100vw = 1.56vw, но не больше 12px
+
+// Межстрочный интервал (line-height)
+$line-height-h1-desktop: 95%;
+$line-height-h2-desktop: 100%;
+$line-height-h3-desktop: 120%;
+$line-height-h4-desktop: 120%;
+$line-height-body-long-desktop: 140%;
+$line-height-body-short-desktop: 120%;
+$line-height-link-desktop: 120%;
+$line-height-body-small-desktop: 120%;
+$line-height-explanation-text-m-desktop: 120%;
+$line-height-explanation-text-s-desktop: 170%;
+
+$line-height-h1-tablet: 95%;
+$line-height-h2-tablet: 110%;
+$line-height-h3-tablet: 110%;
+$line-height-h4-tablet: 120%;
+$line-height-body-long-tablet: 140%;
+$line-height-body-short-tablet: 120%;
+$line-height-link-tablet: 120%;
+$line-height-body-small-tablet: 140%;
+
+// Межстрочный интервал (line-height)
+$line-height-h1-desktop: 95%;
+$line-height-h2-desktop: 100%;
+$line-height-h3-desktop: 120%;
+$line-height-h4-desktop: 120%;
+$line-height-body-long-desktop: 140%;
+$line-height-body-short-desktop: 120%;
+$line-height-link-desktop: 120%;
+$line-height-body-small-desktop: 120%;
+$line-height-explanation-text-m-desktop: 120%;
+$line-height-explanation-text-s-desktop: 170%;
+
+$line-height-h1-tablet: 95%;
+$line-height-h2-tablet: 110%;
+$line-height-h3-tablet: 110%;
+$line-height-h4-tablet: 120%;
+$line-height-body-long-tablet: 140%;
+$line-height-body-short-tablet: 120%;
+$line-height-link-tablet: 120%;
+$line-height-body-small-tablet: 140%;
+
+// typography.scss (продолжение)
+
+h1 {
+  font-family: $font-family-book;
+  font-size: $font-size-h1-desktop;
+  line-height: $line-height-h1-desktop;
+
+  @media (max-width: $container-width-tablet) {
+    font-size: $font-size-h1-tablet;
+    line-height: $line-height-h1-tablet;
+  }
+
+  @media (max-width: $container-width-mobile) {
+    font-size: $font-size-h1-mobile;
+    line-height: $line-height-h1-tablet; // Используем tablet line-height для мобильных
+  }
+}
+
+h2 {
+  font-family: $font-family-regular;
+  font-size: $font-size-h2-desktop;
+  line-height: $line-height-h2-desktop;
+
+  @media (max-width: $container-width-tablet) {
+    font-size: $font-size-h2-tablet;
+    line-height: $line-height-h2-tablet;
+  }
+}
+
+h3 {
+  font-family: $font-family-regular;
+  font-size: $font-size-h3-desktop;
+  line-height: $line-height-h3-desktop;
+
+  @media (max-width: $container-width-tablet) {
+    font-size: $font-size-h3-tablet;
+    line-height: $line-height-h3-tablet;
+  }
+}
+
+h4 {
+  font-family: $font-family-regular;
+  font-size: $font-size-h4-desktop;
+  line-height: $line-height-h4-desktop;
+
+  @media (max-width: $container-width-tablet) {
+    font-size: $font-size-h4-tablet;
+    line-height: $line-height-h4-tablet;
+  }
+}
+
+.body-long {
+  font-family: $font-family-regular;
+  font-size: $font-size-body-long-desktop;
+  line-height: $line-height-body-long-desktop;
+
+  @media (max-width: $container-width-tablet) {
+    font-size: $font-size-body-long-tablet;
+    line-height: $line-height-body-long-tablet;
+  }
+}
+
+.body-short {
+  font-family: $font-family-regular;
+  font-size: $font-size-body-short-desktop;
+  line-height: $line-height-body-short-desktop;
+
+  @media (max-width: $container-width-tablet) {
+    font-size: $font-size-body-short-tablet;
+    line-height: $line-height-body-short-tablet;
+  }
+}
+
+a,
+button {
+  // link
+  font-family: $font-family-medium;
+  font-size: $font-size-link-desktop;
+  line-height: $line-height-link-desktop;
+
+  @media (max-width: $container-width-tablet) {
+    font-size: $font-size-link-tablet;
+    line-height: $line-height-link-tablet;
+  }
+}
+
+.body-small {
+  font-family: $font-family-regular;
+  font-size: $font-size-body-small-desktop;
+  line-height: $line-height-body-small-desktop;
+
+  @media (max-width: $container-width-tablet) {
+    font-size: $font-size-body-small-tablet;
+    line-height: $line-height-body-small-tablet;
+  }
+}
+
+.explanation-text-m {
+  font-family: $font-family-regular;
+  font-size: $font-size-explanation-text-m-desktop;
+  line-height: $line-height-explanation-text-m-desktop;
+}
+
+.explanation-text-s {
+  font-family: $font-family-regular;
+  font-size: $font-size-explanation-text-s-desktop;
+  line-height: $line-height-explanation-text-s-desktop;
+}

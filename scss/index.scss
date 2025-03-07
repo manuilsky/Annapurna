@@ -1,0 +1,31 @@
+@import "grid";
+@import "header/header";
+@import "fonts";
+@import "typography";
+@import "colors";
+@import "buttons";
+
+// @import "navigation";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "SuisseIntl", sans-serif;
+
+  background-color: rgb(20, 19, 36);
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}

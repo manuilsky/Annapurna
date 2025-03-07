@@ -1,0 +1,25 @@
+// _fonts.scss
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntlTrial-Regular.otf") format("opentype"),
+    url("../fonts/SuisseIntlTrial-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntlTrial-Medium.otf") format("opentype"),
+    url("../fonts/SuisseIntlTrial-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SuisseIntl";
+  src: url("../fonts/SuisseIntlTrial-Book.otf") format("opentype"),
+    url("../fonts/SuisseIntlTrial-Book.ttf") format("truetype");
+  font-weight: 450;
+  font-style: normal;
+}
