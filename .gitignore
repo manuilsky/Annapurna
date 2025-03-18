@@ -1,11 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-
-/fonts
 package.json
 package-lock.json
 
 # compiled output
-/dist
 /tmp
 /out-tsc
 

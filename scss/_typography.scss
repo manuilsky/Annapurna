@@ -59,9 +59,9 @@ $font-size-h4-tablet: min(
   18px
 ); // 18px / 768px * 100vw = 2.34vw, но не больше 18px
 $font-size-body-long-tablet: min(
-  1.953125vw,
-  15px
-); // 15px / 768px * 100vw = 1.95vw, но не больше 15px
+  2.08333333333vw,
+  16px
+); // 16px / 768px * 100vw = 1.95vw, но не больше 15px
 $font-size-body-short-tablet: min(
   2.08333333333vw,
   16px
@@ -79,7 +79,7 @@ $font-size-h1-mobile: min(9.23076923077vw, 36px);
 $font-size-h2-mobile: min(8.20512820513vw, 32px);
 $font-size-h3-mobile: min(5.12820512821vw, 20px);
 $font-size-h4-mobile: min(4.61538461538vw, 18px);
-$font-size-body-long-mobile: min(3.84615384615vw, 15px);
+$font-size-body-long-mobile: min(4.10256410256vw, 16px);
 $font-size-body-short-mobile: min(4.10256410256vw, 16px);
 $font-size-link-mobile: min(3.58974358974vw, 14px);
 $font-size-body-small-mobile: min(3.07692307692vw, 12px);

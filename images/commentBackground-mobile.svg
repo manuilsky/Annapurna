@@ -1,0 +1,32 @@
+<svg width="390.000000" height="839.000000" viewBox="0 0 390 839" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_3856_dd" x="-60.985352" y="592.328125" width="870.827148" height="589.187500" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="66.6667" result="effect_layerBlur_1"/>
+		</filter>
+		<filter id="filter_1_3857_dd" x="153.228516" y="-409.255859" width="560.199219" height="822.042969" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="66.6667" result="effect_layerBlur_1"/>
+		</filter>
+		<clipPath id="clip1_3855">
+			<rect id="iPhone SE - 19" rx="0.000000" width="389.000000" height="838.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip1_3855)">
+		<g filter="url(#filter_1_3856_dd)">
+			<ellipse id="Ellipse 217" rx="57.178276" ry="247.166199" transform="matrix(0.31334 0.949641 0.949641 -0.31334 374.428 886.922)" fill="#3179FF" fill-opacity="0.500000"/>
+		</g>
+		<g filter="url(#filter_1_3857_dd)">
+			<ellipse id="Ellipse 215" rx="51.039967" ry="219.856323" transform="matrix(-0.957436 0.288646 -0.288646 -0.957436 433.328 1.76562)" fill="#3179FF" fill-opacity="0.500000"/>
+		</g>
+		<rect id="Rectangle 240654885" rx="4.000000" width="22.000006" height="31.999996" transform="matrix(-1 1.74846e-07 1.74846e-07 1 352 144)" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654886" rx="4.000000" width="36.000004" height="30.999994" transform="matrix(-1 1.74846e-07 1.74846e-07 1 366 210)" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654861" rx="4.000000" width="47.000008" height="33.999992" transform="matrix(-1 1.74846e-07 1.74846e-07 1 330 176)" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654865" rx="4.000000" width="26.000006" height="31.999996" transform="matrix(-1 1.74846e-07 1.74846e-07 1 283 144)" fill="#316CED" fill-opacity="1.000000"/>
+	</g>
+</svg>

@@ -24,7 +24,9 @@ class SharePriceTable {
             ${this.generateRows(entry)}
             <tr class="body-short">
               <td>-</td>
-              <td>${entry.annual_percentage ?? "-"}</td>
+              <td>${
+                entry.annual_percentage ? `${entry.annual_percentage}%` : "-"
+              }</td>
             </tr>
         `;
     return table;
@@ -73,10 +75,19 @@ class SharePriceTable {
   scrollTable(step) {
     const maxScrollLeft =
       this.container.scrollWidth - this.container.clientWidth;
+
     const targetScroll = this.container.scrollLeft + step;
     this.container.scrollTo({
       left: Math.min(Math.max(targetScroll, 0), maxScrollLeft),
       behavior: "smooth",
+    });
+
+    console.log({
+      maxScrollLeft,
+      scrollWidth: this.container.scrollWidth,
+      clientWidth: this.container.clientWidth,
+      step,
+      screenLeft: this.container.scrollLeft,
     });
   }
 }
@@ -201,22 +212,55 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  const scrollableContainer = document.querySelector(".scrollable-container");
-  const sharePriceTable = new SharePriceTable(data, scrollableContainer);
-  sharePriceTable.renderTables();
+  let sharePriceTable;
 
-  const step = scrollableContainer.querySelector("table").offsetWidth;
+  function initializeTable() {
+    const scrollableContainer = document.querySelector(".scrollable-container");
 
-  document
-    .querySelector(".next-year")
-    .addEventListener("click", () => sharePriceTable.scrollTable(step));
-  document
-    .querySelector(".next-year")
-    .addEventListener("touch", () => sharePriceTable.scrollTable(step));
-  document
-    .querySelector(".prev-year")
-    .addEventListener("click", () => sharePriceTable.scrollTable(-step));
-  document
-    .querySelector(".prev-year")
-    .addEventListener("touch", () => sharePriceTable.scrollTable(-step));
+    if (sharePriceTable) {
+      scrollableContainer.innerHTML = "";
+    }
+    sharePriceTable = new SharePriceTable(data, scrollableContainer);
+    sharePriceTable.renderTables();
+
+    const gap = parseInt(
+      window.getComputedStyle(scrollableContainer, null).gap,
+    );
+    const step =
+      Math.ceil(scrollableContainer.querySelector("table").offsetWidth) + gap;
+
+    console.log({ gap });
+
+    document
+      .querySelector(".next-year")
+      .removeEventListener("click", () => sharePriceTable.scrollTable(step));
+    document
+      .querySelector(".next-year")
+      .removeEventListener("touch", () => sharePriceTable.scrollTable(step));
+    document
+      .querySelector(".prev-year")
+      .removeEventListener("click", () => sharePriceTable.scrollTable(-step));
+    document
+      .querySelector(".prev-year")
+      .removeEventListener("touch", () => sharePriceTable.scrollTable(-step));
+
+    document
+      .querySelector(".next-year")
+      .addEventListener("click", () => sharePriceTable.scrollTable(step));
+    document
+      .querySelector(".next-year")
+      .addEventListener("touch", () => sharePriceTable.scrollTable(step));
+    document
+      .querySelector(".prev-year")
+      .addEventListener("click", () => sharePriceTable.scrollTable(-step));
+    document
+      .querySelector(".prev-year")
+      .addEventListener("touch", () => sharePriceTable.scrollTable(-step));
+  }
+
+  initializeTable();
+
+  window.addEventListener("resize", () => {
+    initializeTable();
+  });
 });
