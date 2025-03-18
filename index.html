@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css"
+    />
+    <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="tooltips.js"></script>
+    <script src="mobilemenu.js"></script>
+    <script src="sharePriceTable.js"></script>
+    <script src="coloredContentFondTable.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Desktop Navigation -->
+        <div class="row row-lg decks-header">
+          <div class="col-3">
+            <div class="header-logo-wrapper">
+              <img
+                src="images\Logotype Annapurna.svg"
+                alt="Logo"
+                width="225"
+                height="28"
+              />
+            </div>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-11">
+            <ul class="navigation">
+              <li>
+                <a href="index.html"
+                  ><p class="navigation-mark"></p>
+                  <span>УК Восхождение</span></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="navigation-mark"></p>
+                  <span>Аннапурна</span></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="navigation-mark"></p>
+                  <span>Связаться</span></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="navigation-mark"></p>
+                  <span>Раскрытие информации</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+            <button class="header-button">Личный кабинет</button>
+          </div>
+        </div>
+
+        <!-- Tablet and Mobile Navigation -->
+        <div class="row row-md row-sm tablet-navigation">
+          <div class="col-20 col-md-20 col-sm-12">
+            <div class="navigation">
+              <div class="visible-tablet-navigation">
+                <div class="header-logo-wrapper">
+                  <img
+                    src="images\Logotype Annapurna.svg"
+                    alt="Logo"
+                    width="170"
+                    height="22"
+                  />
+                </div>
+                <div class="header-menu-icon trigger">
+                  <img
+                    src="images\Icons Mobile + Tablet Menu.svg"
+                    alt="Menu"
+                    width="24"
+                    height="24"
+                  />
+                </div>
+              </div>
+              <div class="menu-dropdown">
+                <ul>
+                  <li><a class="h4" href="index.html">УК «Восхождение»</a></li>
+                  <li><a class="h4" href="index.html">Аннапурна</a></li>
+                  <li><a class="h4" href="index.html">Связаться</a></li>
+                  <li>
+                    <a class="h4" href="index.html">Раскрытие информации</a>
+                  </li>
+                  <li><a class="h4" href="index.html">Личный кабинет</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Babber-1 HeaderBanner-->
+        <div class="row header-banner">
+          <div class="col-9 col-sm-12 header-banner-col">
+            <div class="header-banner-right">
+              <div class="header-banner-text-container">
+                <h1>Фонд «Аннапурна»</h1>
+                <div class="body-long header-banner-text">
+                  ИПИФК «Аннапурна» — динамичное решение для роста инвестиций от
+                  УК «Восхождение». Фонд с акцентом на агрессивные стратегиии
+                  гибкое управление активами для квалифицированных инвесторов.
+                  Инвестиции охватывают широкий спектр финансовых инструментов,
+                  направленных на достижение высоких результатов.
+                </div>
+              </div>
+              <button class="button">Купить паи</button>
+            </div>
+          </div>
+          <div class="col-1"></div>
+
+          <div class="col-10 col-sm-12">
+            <div class="row">
+              <div
+                class="col-10 col-md-20 col-sm-12 info-container"
+                id="info-1"
+              >
+                <div class="info-question-wrapper">
+                  <p class="info-container-title body-short">
+                    Прирост стоимости пая
+                  </p>
+                  <p id="firstInfoTooltip">
+                    <img src="images\question-mark.svg" alt="Question" />
+                  </p>
+                </div>
+                <h3 class="info-container-content">155,47%</h3>
+              </div>
+              <div
+                class="col-10 col-md-20 col-sm-12 info-container"
+                id="info-2"
+              >
+                <div class="info-question-wrapper">
+                  <p class="info-container-title body-short">
+                    Доходность, в % годовых
+                  </p>
+                  <p id="secondInfoTooltip">
+                    <img src="images\question-mark.svg" alt="Question" />
+                  </p>
+                </div>
+                <h3 class="info-container-content">41,46%</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-10 col-md-20 col-sm-12 info-container"
+                id="info-3"
+              >
+                <p class="info-container-title body-short">Стоимость пая</p>
+                <h3 class="info-container-content">$ 255,47</h3>
+              </div>
+              <div
+                class="col-10 col-md-20 col-sm-12 info-container"
+                id="info-4"
+              >
+                <p class="info-container-title body-short">
+                  Стоимость чистых активов
+                </p>
+                <h3 class="info-container-content">> $ 6,4 млн</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-20 col-md-20 col-sm-12 info-container"
+                id="info-5"
+              >
+                <p class="info-container-date-title body-short">
+                  Дата обновления
+                </p>
+                <p class="info-container-date body-short">31.01.2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Banner-2-->
+    <section class="banner-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-md-15 col-sm-12">
+            <h2>Инвестиционная стратегия</h2>
+          </div>
+          <div class="col-0 col-md-5"></div>
+          <div class="col-10 col-md-15 col-sm-12">
+            <div class="body-short">
+              Агрессивное управление и инвестиции во весь спектр ликвидных
+              биржевых инструментов. Возможность привлечения заемных средств,
+              использование как «длинных», так и «коротких» позиций.
+            </div>
+          </div>
+          <div class="col-0 col-md-5"></div>
+        </div>
+      </div>
+    </section>
+
+    <!--Dynamics-of-share-price-->
+    <section class="dynamic-share-price">
+      <div class="container">
+        <div class="row">
+          <div class="col-20">
+            <h2>Показатели Фонда</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-20">
+            <div class="table-wrapper">
+              <h4>Динамика стоимости пая</h4>
+              <div class="table-container">
+                <div class="table-slider-btns">
+                  <button class="arrow prev-year">&nbsp;</button>
+                  <button class="arrow next-year">&nbsp;</button>
+                </div>
+                <table class="fixed-column">
+                  <tr>
+                    <th>&nbsp;</th>
+                  </tr>
+                  <tr>
+                    <td>Месяц</td>
+                  </tr>
+                  <tr>
+                    <td>Январь</td>
+                  </tr>
+                  <tr>
+                    <td>Февраль</td>
+                  </tr>
+                  <tr>
+                    <td>Март</td>
+                  </tr>
+                  <tr>
+                    <td>Апрель</td>
+                  </tr>
+                  <tr>
+                    <td>Май</td>
+                  </tr>
+                  <tr>
+                    <td>Июнь</td>
+                  </tr>
+                  <tr>
+                    <td>Июль</td>
+                  </tr>
+                  <tr>
+                    <td>Август</td>
+                  </tr>
+                  <tr>
+                    <td>Сентябрь</td>
+                  </tr>
+                  <tr>
+                    <td>Октябрь</td>
+                  </tr>
+                  <tr>
+                    <td>Ноябрь</td>
+                  </tr>
+                  <tr>
+                    <td>Декабрь</td>
+                  </tr>
+                  <tr class="body-short">
+                    <td>За год</td>
+                  </tr>
+                </table>
+                <div class="scrollable-container">
+                  <!-- Динамическая генерация таблиц -->
+                  <!-- mock-данные находятся в sharePriceTable.js -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Comment-UK-->
+    <section class="commentUK">
+      <div class="container">
+        <div class="row">
+          <div class="col-20 col-md-20 col-sm-12 comment-button">
+            <div class="comment-button-wrapper">
+              <div class="comment-button-icon"></div>
+              <div class="body-short comment-button-text">Комментарий УК</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-20 col-md-20 col-sm-12 comment-content-wrapper">
+            <div class="comment-name">
+              <h4 class="name">Сергей Кузнецов</h4>
+              <p class="job-title body-short">Управляющий Фондом</p>
+            </div>
+            <div class="comment-text body-long">
+              Основным событием октября стало повышение Банком России ключевой
+              ставки сразу на 2% до 21% годовых с одновременной жесткой
+              риторикой по поводу будущей ДКП. В преддверии этого события
+              управляющие Фонда закрыли длинную позицию по ОФЗ. Решение Банка
+              России привело к снижению всех инструментов финансового рынка —
+              акций, облигаций, еврооблигаций и производных на них. Даже
+              низковолатильные флоатеры снизились на расширении кредитных
+              спредов к ключевой ставке, а рубль, несмотря на повышение ставки,
+              наоборот ослаб к иностранным валютам. Все эти факторы привели к
+              отрицательной переоценке активов Фонда и снижению стоимости пая на
+              6,22% за октябрь 2024 года.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Table-Fond-->
+    <section class="fond">
+      <div class="container">
+        <div class="row">
+          <div class="col-20 col-md-20 col-sm-12 fond-button">
+            <div class="fond-button-wrapper">
+              <div class="fond-button-icon"></div>
+              <div class="body-short fond-button-text">О фонде</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-20 col-md-20 col-sm-12 fond-title">
+            <h2>Структура фонда</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-20 col-md-20 col-sm-12 fond-table">
+            <div class="row-wrapper body-short">
+              <div class="general-title">Открытые позиции Фонда</div>
+              <div class="general-title usd">USD</div>
+              <div class="general-title percent">% от СЧА</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-1">
+              <div class="row-title subtitle">Облигации</div>
+              <div class="usd-value subtitle">2 770 090</div>
+              <div class="percent-value subtitle">36%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-2">
+              <div class="row-title subtitle">РЖД 1P-28R</div>
+              <div class="usd-value subtitle">873 735</div>
+              <div class="percent-value subtitle">11%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-3">
+              <div class="row-title subtitle">ВЭБР-40</div>
+              <div class="usd-value subtitle">447 119</div>
+              <div class="percent-value subtitle">6%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-4">
+              <div class="row-title subtitle">Газпн3P12R</div>
+              <div class="usd-value subtitle">1 449 236</div>
+              <div class="percent-value subtitle">19%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-5">
+              <div class="row-title subtitle">
+                Акции, фьючерсы на акции и индексы акций
+              </div>
+              <div class="usd-value subtitle">2 770 090</div>
+              <div class="percent-value subtitle">60%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-6">
+              <div class="row-title subtitle">MIX-12.24</div>
+              <div class="usd-value subtitle">4 682 501</div>
+              <div class="percent-value subtitle">60%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-7">
+              <div class="row-title subtitle">Сбербанк</div>
+              <div class="usd-value subtitle">22</div>
+              <div class="percent-value subtitle">0%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-8">
+              <div class="row-title subtitle">Открытые валютные позиции</div>
+              <div class="usd-value subtitle">-5 697 021</div>
+              <div class="percent-value subtitle">-73%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-9">
+              <div class="row-title subtitle">RUB</div>
+              <div class="usd-value subtitle">2 105 766</div>
+              <div class="percent-value subtitle">27%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-10">
+              <div class="row-title subtitle">USD</div>
+              <div class="usd-value subtitle">4 247 784</div>
+              <div class="percent-value subtitle">54%</div>
+            </div>
+            <div class="row-wrapper body-small" id="row-11">
+              <div class="row-title subtitle">CYN</div>
+              <div class="usd-value subtitle">1 449 236</div>
+              <div class="percent-value subtitle">19%</div>
+            </div>
+            <div class="row-wrapper body-short" id="fond-footer">
+              <div class="footer-title">Дата обновления</div>
+              <div class="footer-title"></div>
+              <div class="footer-title date">31.01.2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Table-additional-information-->
+    <section class="additional-information">
+      <div class="container">
+        <div class="row">
+          <div class="col-20 col-md-20 col-sm-12 additional-information-title">
+            <h2>Дополнительная информация</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-20 col-md-20 col-sm-12 additional-information-table">
+            <div class="column body-small">
+              <div class="row-wrapper">
+                <div class="cell column-first">Тип фонда</div>
+                <div class="cell column-second">Интервальный</div>
+              </div>
+              <div class="row-wrapper">
+                <div class="cell light column-first">Интервал приобретения</div>
+                <div class="cell light column-second">
+                  Еженедельно с понедельника по пятницу
+                </div>
+              </div>
+              <div class="row-wrapper">
+                <div class="cell column-first">ISIN</div>
+                <div class="cell column-second">RU000A0JX0J2</div>
+              </div>
+              <div class="row-wrapper">
+                <div class="cell light column-first">
+                  Паи фонда допущены к торгам
+                </div>
+                <div class="cell light column-second">ПАО Мосбиржа</div>
+              </div>
+
+              <div class="row-wrapper">
+                <div class="cell column-first">
+                  Минимальная сумма инвестиций
+                </div>
+                <div class="cell column-second">6 млн. рублей</div>
+              </div>
+
+              <div class="row-wrapper">
+                <div class="cell light column-first">Дата старта</div>
+                <div class="cell light column-second">17.02.2022</div>
+              </div>
+              <div class="row-wrapper">
+                <div class="cell column-first">Управляющая компания</div>
+                <div class="cell column-second">УК «Восхождение»</div>
+              </div>
+              <div class="row-wrapper">
+                <div class="cell light column-first">Вознаграждение УК</div>
+                <div class="cell light column-second">
+                  2% от среднегодовой СЧА
+                </div>
+              </div>
+              <div class="row-wrapper">
+                <div class="cell column-first">Вознаграждение УК за успех</div>
+                <div class="cell column-second">
+                  20% дохода от Доверительного управления
+                </div>
+              </div>
+              <div class="row-wrapper">
+                <div class="cell light column-first">
+                  Вознаграждение специализированного депозитария и др.
+                </div>
+                <div class="cell light column-second">
+                  не более 0,4% от среднегодовой СЧА
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Banner-4-->
+    <section class="banner-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 col-sm-12 banner-4-wrapper">
+            <h2>Доверьте свои активы<br />Восхождению</h2>
+            <p class="body-short">
+              Получите консультацию с нашим специалистом<br />
+              и ответы на интересущие вопросы.
+            </p>
+
+            <button class="button">Связаться</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Q&A-->
+    <section class="questions">
+      <div class="container">
+        <div class="row">
+          <div class="col-20 col-md-20 col-sm-12 questions-title">
+            <h2>Q&A</h2>
+          </div>
+
+          <div class="col-20 col-md-20 col-sm-12">
+            <div class="accordion-container">
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger body-short">
+                    <div>Что такое паевой инвестиционный фонд (ПИФ)?</div>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <div class="ac-text body-long">
+                    ПИФ — это форма коллективного инвестирования, где деньги
+                    множества инвесторов (пайщиков) объединяются для
+                    приобретения различных активов, таких как акции, облигации,
+                    недвижимость и другие. Управляет этими активами
+                    профессиональная управляющая компания. ПИФ не является
+                    юридическим лицом, а представляет собой имущественный
+                    комплекс.
+                  </div>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger body-short">
+                    <div>Что такое пай ПИФ?</div>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <p class="ac-text body-long">
+                    Пай — это ценная бумага, удостоверяющая право собственности
+                    на долю в имуществе ПИФа. Покупая пай, вы становитесь
+                    совладельцем части активов ПИФ.
+                  </p>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger body-short">
+                    <div>Какие бывают ПИФ?</div>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <div class="ac-text body-long">
+                    ПИФ классифицируют по различным критериям.
+                    <br /><br />
+                    По типам:
+                    <br /><br />
+                    <ul class="disc">
+                      <li>
+                        Открытые ПИФы (ОПИФ): паи могут быть свободно выданы и
+                        погашены в любой рабочий день.
+                      </li>
+                      <li>
+                        Интервальные ПИФы (ИПИФ): паи могут быть выданы и
+                        погашены только в определенные периоды времени
+                        (интервалы). Интервалы определены правилами ДУ ПИФ.
+                      </li>
+                      <li>
+                        Закрытые ПИФы (ЗПИФ): паи могут быть выданы и погашены в
+                        указанные в Правилах доверительного управления случаях.
+                      </li>
+                    </ul>
+                    <br />
+                    ООО УК «Восхождение» осуществляет доверительное управление
+                    только ЗПИФ и ИПИФ.
+                    <br /><br />
+                    По категориям:
+                    <br /><br />
+                    ПИФ, правилами доверительного управления которых
+                    предусмотрено, что их инвестиционные паи предназначены
+                    только для
+                    <a href="index.html"> квалифицированных инвесторов</a>,
+                    относятся к одной из следующих категорий: <br /><br />
+                    <ul class="disc">
+                      <li>фонд финансовых инструментов</li>
+                      <li>фонд недвижимости</li>
+                      <li>комбинированный фонд</li>
+                    </ul>
+                    <br />
+                    ООО УК «Восхождение» осуществляет доверительное управление
+                    только комбинированными ПИФ для
+                    <a href="index.html">квалифицированных инвесторов</a>
+                    с максимально широкой инвестиционной декларацией.
+                  </div>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger body-short">
+                    <div>Как работает ПИФ?</div>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <div class="ac-text body-long">
+                    Участники рынка:
+                    <br /><br />
+                    <ul class="disc">
+                      <li>
+                        Участники рынка: Инвесторы (пайщики): физические и
+                        юридические лица, вкладывающие свои средства в
+                        коллективные инвестиционные инструменты с целью
+                        получения прибыли.
+                      </li>
+                      <li>
+                        Управляющие компании (УК): компании, осуществляющие
+                        профессиональное управление активами коллективных
+                        инвестиционных фондов. Они принимают инвестиционные
+                        решения, покупают и продают активы, ведут учет и
+                        отчетность фонда.
+                      </li>
+                      <li>
+                        Специализированные депозитарии: организации,
+                        осуществляющие учет прав на активы, принадлежащие фонду,
+                        а также контроль за соблюдением законодательства и
+                        инвестиционной декларации фонда.
+                      </li>
+                      <li>
+                        Регистраторы: организации, ведущие реестр владельцев
+                        паев, а также осуществляющие учет операций с паями.
+                      </li>
+                      <li>
+                        Брокеры: компании, предоставляющие доступ к торговым
+                        площадкам и осуществляющие сделки по покупке и продаже
+                        паев для своих клиентов, если паи обращаются на бирже.
+                      </li>
+                      <li>
+                        Аудиторы: независимые организации, осуществляющие аудит
+                        финансовой отчетности фонда и подтверждающие ее
+                        достоверность (если предусмотрено ПДУ).
+                      </li>
+                      <li>
+                        Оценщики: организации, предоставляющие услуги по оценке
+                        стоимости имущества фонда (если предусмотрено ПДУ).
+                      </li>
+                      <li>
+                        Саморегулируемые организации (СРО): Некоммерческие
+                        организации, объединяющие профессиональных участников
+                        рынка и контролирующие соблюдение ими установленных
+                        стандартов и правил.
+                      </li>
+                      <li>
+                        Государственный регулятор: Центральный банк РФ (Банк
+                        России), осуществляющий надзор и контроль за
+                        деятельностью участников рынка коллективных инвестиций,
+                        а также устанавливающий нормативные требования.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger body-short">
+                    <div>Как купить паи ПИФ?</div>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <div class="ac-text body-long">
+                    <ol class="decimal">
+                      <li>
+                        Напрямую обратившись в нашу Управляющую Компанию по
+                        телефону <a href="index.html">+7-495-131-83-29</a> или
+                        написав нам в <a href="index.html">Telegram</a>, а также
+                        через <a href="index.html">Личный кабинет</a>.
+                      </li>
+                      <li>
+                        Обратившись к вашему брокеру для подачи заявки через
+                        НРД.
+                      </li>
+                      <li>
+                        Паи Фонда торгуются на фондовой секции Мосбиржи. Можно
+                        найти по ISIN коду ценной бумаги RU000A105R70 или по
+                        наименованию ИПИФ «Аннапурна» в приложении брокера или
+                        торговом терминале.
+                      </li>
+                    </ol>
+                    <br />
+                    По всем вопросам пишите нам в
+                    <a href="index.html">Telegram</a>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger body-short">
+                    <div>Как погасить или продать паи ПИФ?</div>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <div class="ac-text body-long">
+                    Подать заявку на погашение паев ИПИФ «Аннапурна» можно в
+                    управляющую компанию или обратившись к вашему брокеру для
+                    подачи заявки через НРД.
+                    <br /><br />
+                    Если паи учитываются в НРД и ваш брокер дает доступ к
+                    торговым операциям с ними, вы можете продать паи на бирже,
+                    найдя их по наименованию ИПИФ «Аннапурна» или ISIN коду
+                    ценной бумаги RU000A105R70 в приложении брокера или торговом
+                    терминале.
+                  </div>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger body-short">
+                    <div>Как узнать стоимость пая?</div>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <div class="ac-text body-long">
+                    Стоимость пая ИПИФ «Аннапурна» (СЧА — стоимость чистых
+                    активов на пай) рассчитывается каждый рабочий день и
+                    публикуется на сайте управляющих компаний и в
+                    <a href="index.html">Личном кабинете</a>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="ac">
+                <h2 class="ac-header">
+                  <button type="button" class="ac-trigger body-short">
+                    <div>Правовое регулирование ПИФ?</div>
+                  </button>
+                </h2>
+                <div class="ac-panel">
+                  <div class="ac-text body-long">
+                    <ul class="disc">
+                      <li>
+                        Федеральный закон от 29.11.2001 № 156-ФЗ "Об
+                        инвестиционных фондах": Основной закон, регулирующий
+                        деятельность управляющей компании.
+                      </li>
+                      <br />
+                      <li>
+                        Нормативные акты Банка России: регулируют порядок
+                        создания, функционирования и ликвидации ПИФ, требования
+                        к управляющим компаниям, специализированным депозитариям
+                        и другим участникам рынка.
+                      </li>
+                      <br />
+                      <li>
+                        Иные законы и подзаконные акты: регулируют различные
+                        аспекты деятельности рынка, включая налогообложение,
+                        защиту прав инвесторов и противодействие легализации
+                        доходов, полученных преступным путем.
+                      </li>
+                      <br />
+                      <li>
+                        Правила доверительного управления ПИФ: договор
+                        доверительного управления паевым инвестиционным фондом,
+                        определяются управляющей компанией в стандартных формах
+                        и могут быть приняты учредителем доверительного
+                        управления только путем присоединения к указанному
+                        договору в целом.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer-navigation">
+          <div class="col-5 col-md-10 col-sm-12" id="footer-logo">
+            <img src="images\Logotype Annapurna.svg" alt="Logo" />
+          </div>
+          <div class="col-5 col-md-10 col-sm-12" id="footer-menu-1">
+            <ul>
+              <li>
+                <a class="body-short" href="index.html">УК «Восхождение»</a>
+              </li>
+              <li><a class="body-short" href="index.html">Аннапурна</a></li>
+              <li><a class="body-short" href="index.html">Связаться</a></li>
+              <li>
+                <a class="body-short" href="index.html">Раскрытие информации</a>
+              </li>
+              <li>
+                <a class="body-short" href="index.html">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-5 col-md-10 col-sm-12" id="footer-menu-2">
+            <div class="body-short">Полное наименование</div>
+            <div class="body-small">
+              Общество с ограниченной ответственностью Управляющая Компания
+              «Восхождение»
+            </div>
+
+            <div class="body-short">Краткое наименование</div>
+            <div class="body-small">ООО УК «Восхождение»</div>
+
+            <div class="body-short">ОГРН</div>
+            <div class="body-small">5167746349843</div>
+
+            <div class="body-short">ИНН/КПП</div>
+            <div class="body-small">9705081245/770101001</div>
+          </div>
+          <div class="col-5 col-md-10 col-sm-12" id="footer-menu-3">
+            <div>
+              <div class="body-short">Генеральный директор</div>
+              <div class="body-small">Кузнецов Сергей Александрович</div>
+              <div class="body-short">Адрес местонахождения/почтовый адрес</div>
+              <div class="body-small">
+                101000, г. Москва, вн.тер.г. муниципальный округ Басманный, б-р
+                Чистопрудный, д. 17, стр. 1, помещение 1/1
+              </div>
+            </div>
+
+            <div class="links">
+              <a class="body-short" href="tel:+74951318329">
+                +7 (495) 131-83-29
+              </a>
+              <a class="body-short" href="mailto:info@uk-voshozhdenie.ru">
+                info@uk-voshozhdenie.ru
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row footer-content">
+          <div class="col-20 body-long">
+            ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ УПРАВЛЯЮЩАЯ КОМПАНИЯ
+            «ВОСХОЖДЕНИЕ» (ОСУЩЕСТВЛЯЕТ ДЕЯТЕЛЬНОСТЬ НА ОСНОВАНИИ ЛИЦЕНЗИИ НА
+            ОСУЩЕСТВЛЕНИЕ ДЕЯТЕЛЬНОСТИ ПО УПРАВЛЕНИЮ ИНВЕСТИЦИОННЫМИ ФОНДАМИ,
+            ПАЕВЫМИ ИНВЕСТИЦИОННЫМИ ФОНДАМИ И НЕГОСУДАРСТВЕННЫМИ ПЕНСИОННЫМИ
+            ФОНДАМИ № 21 000 1 01017, ВЫДАНА БАНКОМ РОССИИ 15.05.2018, ЛИЦЕНЗИИ
+            НА ОСУЩЕСТВЛЕНИЕ ДЕЯТЕЛЬНОСТИ ПО УПРАВЛЕНИЮ ЦЕННЫМИ БУМАГАМИ № 045
+            14235 001000, ВЫДАНА БАНКОМ РОССИИ 09.09.2024. УПРАВЛЯЮЩАЯ КОМПАНИЯ
+            СОВМЕЩАЕТ ДЕЯТЕЛЬНОСТЬ ПО ДОВЕРИТЕЛЬНОМУ УПРАВЛЕНИЮ ИНВЕСТИЦИОННЫМИ
+            ФОНДАМИ, ПАЕВЫМИ ИНВЕСТИЦИОННЫМИ ФОНДАМИ И НЕГОСУДАРСТВЕННЫМИ
+            ПЕНСИОННЫМИ ФОНДАМИ С ДЕЯТЕЛЬНОСТЬЮ ПО УПРАВЛЕНИЮ ЦЕННЫМИ БУМАГАМИ.
+            <br /><br />
+            Прием заявок на приобретение и погашение инвестиционных паев
+            осуществляется в офисе ООО УК «Восхождение» по адресу: 101000, г.
+            Москва, вн.тер.г. муниципальный округ Басманный, б-р Чистопрудный,
+            д. 17, стр. 1, помещ. 1/1 Получить подробную информацию о
+            деятельности управляющей компании, о паевом инвестиционном фонде, о
+            работе пункта приема заявок на приобретение и погашение
+            инвестиционных паев, ознакомиться с правилами доверительного
+            управления паевым инвестиционным фондом и иными документами,
+            предусмотренными Федеральным законом от 29.11.2001 №156-ФЗ «Об
+            инвестиционных фондах» и нормативными актами в сфере финансовых
+            рынков, можно по адресу: 101000, г. Москва, вн.тер.г. муниципальный
+            округ Басманный, б-р Чистопрудный, д. 17, стр. 1, помещ. 1/1, или по
+            телефону +7 (495) 131 83 29, в сети Интернет на сайте Управляющей
+            компании по адресу:
+            <a class="body-long">https://www.uk-voshozhdenie.ru</a>.
+            <br /><br />
+            СТОИМОСТЬ ИНВЕСТИЦИОННЫХ ПАЕВ МОЖЕТ УВЕЛИЧИВАТЬСЯ И УМЕНЬШАТЬСЯ.
+            РЕЗУЛЬТАТЫ ИНВЕСТИРОВАНИЯ В ПРОШЛОМ НЕ ОПРЕДЕЛЯЮТ ДОХОДЫ В БУДУЩЕМ.
+            ГОСУДАРСТВО НЕ ГАРАНТИРУЕТ ДОХОДНОСТЬ ИНВЕСТИЦИЙ В ИНВЕСТИЦИОННЫЕ
+            ФОНДЫ. ПРЕЖДЕ ЧЕМ ПРИОБРЕСТИ ИНВЕСТИЦИОННЫЙ ПАЙ, СЛЕДУЕТ ВНИМАТЕЛЬНО
+            ОЗНАКОМИТЬСЯ С ПРАВИЛАМИ ДОВЕРИТЕЛЬНОГО УПРАВЛЕНИЯ ПАЕВЫМ
+            ИНВЕСТИЦИОННЫМ ФОНДОМ.
+            <br /><br />
+            Интервальный паевой инвестиционный комбинированный фонд «Аннапурна»
+            (Правила фонда № 4826-СД от 02.02.2022)
+            <br /><br />
+            Содержание сайта https://uk-voshozhdenie.ru и любых страниц сайта
+            («Сайт») предназначено исключительно для информационных целей. Сайт
+            не рассматривается и не должен рассматриваться как предложение ООО
+            УК «Восхождение» о покупке или продаже каких- либо финансовых
+            инструментов или оказание услуг какому-либо лицу. Информация на
+            Сайте не может рассматриваться в качестве рекомендации к
+            инвестированию средств, а также гарантий или обещаний в будущем
+            доходности вложений.
+            <br /><br />
+            Никакие положения информации или материалов, представленных на
+            Сайте, не являются и не должны рассматриваться как индивидуальные
+            инвестиционные рекомендации и/или намерение ООО УК «Восхождение»
+            предоставить услуги инвестиционного советника. Финансовые
+            инструменты, упоминаемые в информационных материалах Сайта,
+            предназначены исключительно для квалифицированных инвесторов. ООО УК
+            «Восхождение» не несёт ответственности за финансовые или иные
+            последствия, которые могут возникнуть в результате принятия Вами
+            решений в отношении финансовых инструментов, продуктов и услуг,
+            представленных в информационных материалах.
+            <br /><br />
+            Прежде чем воспользоваться какой-либо услугой или приобретением
+            финансового инструмента, необходимо самостоятельно оценить
+            экономические риски и выгоды от услуги и/или продукта, налоговые,
+            юридические, бухгалтерские последствия заключения сделки при
+            пользовании конкретной услугой, или перед приобретением конкретного
+            финансового инструмента или инвестиционного продукта.
+            <br /><br />
+            Ни прошлый опыт, ни финансовый успех других лиц не гарантирует и не
+            определяет получение таких же результатов в будущем. Стоимость или
+            доход от любых инвестиций, упомянутых на Сайте, могут изменяться
+            и/или испытывать воздействие изменений рыночной конъюнктуры, в том
+            числе процентных ставок.
+            <br /><br />
+            Все цифровые и расчетные данные на Сайте приведены без каких-либо
+            обязательств и исключительно в качестве примера финансовых
+            параметров.
+            <br /><br />
+            ООО УК «Восхождение» не несет ответственности за какие-либо убытки
+            (прямые или косвенные), включая реальный ущерб и упущенную выгоду,
+            возникшие в связи с использованием информации на Сайте.
+            <br /><br />
+            Настоящий Сайт не предоставляет и не предназначен для оказания
+            консультационных услуг по правовым, бухгалтерским, инвестиционным
+            или налоговым вопросам.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      new Accordion(".accordion-container");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@import "colors";
+
+.questions {
+  padding-top: 112px;
+  padding-bottom: 96px;
+  @media (max-width: $container-width-tablet) {
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+
+  @media (max-width: $container-width-mobile) {
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+
+  .questions-title {
+    color: $light-grey;
+    margin-bottom: 56px;
+    @media (max-width: $container-width-tablet) {
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 48px;
+    }
+  }
+}

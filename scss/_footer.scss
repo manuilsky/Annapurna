@@ -1,0 +1,144 @@
+footer {
+  a {
+    color: $light-blue;
+  }
+
+  .footer-navigation {
+    padding: 112px 0 104px 0;
+  }
+
+  #footer-logo {
+    order: 1;
+
+    img {
+      width: 185.5px;
+      height: 28px;
+    }
+  }
+
+  #footer-menu-1 {
+    order: 2;
+
+    li {
+      margin: 8px 0;
+      a {
+        color: $light-grey;
+      }
+    }
+  }
+
+  #footer-menu-2 {
+    order: 3;
+
+    color: $light-grey;
+
+    .body-short {
+      margin-bottom: 8px;
+    }
+
+    .body-small:not(:last-child) {
+      margin-bottom: 24px;
+    }
+
+    .body-small {
+      opacity: 70%;
+    }
+  }
+
+  #footer-menu-3 {
+    order: 4;
+
+    color: $light-grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .body-short {
+      margin-bottom: 8px;
+    }
+
+    .body-small:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    .body-small {
+      opacity: 70%;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      a {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .footer-content {
+    color: $light-grey;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $container-width-tablet) and (min-width: $container-width-mobile) {
+    .footer-navigation {
+      padding: 64px 0 24px 0;
+    }
+
+    #footer-logo {
+      img {
+        max-width: 107px;
+        width: 100%;
+      }
+    }
+
+    #footer-menu-1 {
+      order: 3;
+
+      margin-top: -239px;
+    }
+
+    #footer-menu-2 {
+      order: 2;
+    }
+
+    #footer-menu-3 {
+      .links {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  @media (max-width: $container-width-mobile) {
+    .footer-navigation {
+      padding: 64px 0 56px 0;
+    }
+
+    #footer-logo {
+      img {
+        max-width: 139px;
+        width: 100%;
+      }
+    }
+
+    #footer-logo {
+      margin-bottom: 35px;
+    }
+
+    #footer-menu-1 {
+      margin-bottom: 40px;
+    }
+
+    #footer-menu-3 {
+      .links {
+        margin-top: 24px;
+      }
+    }
+
+    .footer-content {
+      padding-top: 32px;
+      padding-bottom: 64px;
+    }
+  }
+}

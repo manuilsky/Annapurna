@@ -1,0 +1,115 @@
+@import "../colors";
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8;
+  padding: 16px 40px 16px 40px;
+
+  border: 1px solid $blue-main;
+  border-radius: 8px;
+
+  backdrop-filter: blur(10px);
+  background: $bg-20;
+  @media (max-width: $container-width-tablet) {
+    padding: 16px;
+    // max-height: 56px;
+  }
+
+  li {
+    margin-right: 10px;
+
+    color: $light-grey;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    a {
+      position: relative;
+      color: $light-grey;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      span {
+        margin: 0px 8px;
+      }
+      .navigation-mark {
+        position: absolute;
+        left: -16px;
+        opacity: 0;
+      }
+      &:focus {
+        .navigation-mark {
+          opacity: 1;
+          width: 16px;
+          height: 16px;
+          border-radius: 4px;
+          background-color: $light-grey;
+
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.tablet-navigation {
+  z-index: 99999;
+  position: sticky;
+  // max-height: 56px;
+  top: 24px;
+  .header-menu-icon {
+    cursor: pointer;
+  }
+
+  .navigation {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    transition: margin-top 0.2s linear;
+    max-height: 56px;
+    &.active {
+      max-height: 334px;
+    }
+  }
+
+  .visible-tablet-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navigation.active > * + * {
+    margin-top: 10px;
+  }
+
+  .trigger {
+    cursor: pointer;
+  }
+
+  .menu-dropdown {
+    max-height: 0px;
+    overflow: hidden;
+    width: 100%;
+    ul {
+      margin-top: 54px;
+    }
+
+    li {
+      margin: 24px 0;
+      a:focus {
+        color: $light-blue;
+      }
+    }
+    transition: max-height 0.2s linear, margin-top 0.2s linear;
+  }
+
+  .navigation.active .menu-dropdown {
+    max-height: 318px;
+  }
+}

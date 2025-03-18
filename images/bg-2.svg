@@ -1,0 +1,27 @@
+<svg width="1440.000000" height="400.000000" viewBox="0 0 1440 400" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_2584_dd" x="304.979980" y="20.202148" width="2382.088135" height="1505.761719" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feGaussianBlur stdDeviation="166.566" result="effect_layerBlur_1"/>
+		</filter>
+		<clipPath id="clip1_2575">
+			<rect id="bg" rx="0.000000" width="1439.000000" height="399.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip1_2575)">
+		<rect id="Rectangle 1" x="375.000000" y="272.000000" rx="2.000000" width="12.000000" height="12.000000" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654885" rx="8.000000" width="92.370964" height="79.509178" transform="matrix(-1 0 0 1 1182.73 336.523)" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654862" rx="8.000000" width="112.248260" height="79.509178" transform="matrix(-1 0 0 1 1459.84 336.523)" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654886" rx="8.000000" width="164.864639" height="78.339920" transform="matrix(-1 0 0 1 1347.59 258.188)" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654864" rx="8.000000" width="60.647038" height="59.755165" transform="matrix(-4.37114e-08 1 1 4.37114e-08 1347.87 197.891)" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654861" rx="8.000000" width="39.754589" height="35.077579" transform="matrix(-1 0 0 1 1089.76 302)" fill="#316CED" fill-opacity="1.000000"/>
+		<rect id="Rectangle 240654887" rx="8.000000" width="39.754589" height="35.077579" transform="matrix(-1 0 0 1 1447.76 163)" fill="#316CED" fill-opacity="1.000000"/>
+		<g filter="url(#filter_1_2584_dd)">
+			<ellipse id="Ellipse 214" rx="223.753876" ry="701.388672" transform="matrix(0.178085 0.984015 0.984015 -0.178085 1496.02 773.083)" fill="#316CED" fill-opacity="1.000000"/>
+		</g>
+	</g>
+</svg>

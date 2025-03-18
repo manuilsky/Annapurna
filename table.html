@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css"
+    />
+    <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="tooltips.js"></script>
+    <script src="mobilemenu.js"></script>
+    <title>Динамика стоимости пая</title>
+    <style>
+      .table-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .wrapper {
+        padding: 24px 8px 24px 8px;
+        box-sizing: border-box;
+        border: 1px solid rgb(49, 108, 237);
+        border-radius: 8px;
+        backdrop-filter: blur(30px);
+        background: rgba(27, 60, 132, 0.2);
+      }
+
+      th,
+      td {
+        height: 56px;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        height: 77px;
+      }
+
+      .fixed-column {
+        position: sticky;
+        left: 0;
+        background-color: rgba(27, 60, 132, 0.2);
+        z-index: 2;
+        width: 120px;
+        box-sizing: border-box;
+      }
+
+      .scrollable-container {
+        overflow-x: auto;
+        display: flex;
+        width: 100%;
+      }
+
+      .scrollable-container table {
+        flex: 1;
+      }
+
+      @media (max-width: 1440px) {
+        .scrollable-container {
+          overflow-x: hidden;
+          display: flex;
+          max-width: 1222px; /* 3 col */
+          /* 402 px one col */
+          width: 100%;
+        }
+
+        .scrollable-container table {
+          min-width: calc(100% / 3);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .scrollable-container {
+          max-width: 574px; /* 2 col */
+          /* 283 px one col */
+        }
+
+        .scrollable-container table {
+          min-width: calc(100% / 2);
+        }
+      }
+
+      @media (max-width: 391px) {
+        .scrollable-container {
+          max-width: 254px;
+          /* 254 px one col */
+        }
+
+        .scrollable-container table {
+          min-width: calc(100% / 1);
+        }
+      }
+
+      .arrow {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        padding: 8px;
+      }
+
+      .arrow:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-20">
+          <div class="wrapper">
+            <div class="table-container">
+              <button class="arrow prev-year">&lt;</button>
+              <table>
+                <th class="fixed-column">&nbsp;</th>
+                <tr>
+                  <td class="fixed-column">Месяц</td>
+                </tr>
+                <tr>
+                  <td class="fixed-column">Январь</td>
+                </tr>
+                <tr>
+                  <td class="fixed-column">Февраль</td>
+                </tr>
+                <tr>
+                  <td class="fixed-column">Март</td>
+                </tr>
+                <tr>
+                  <td class="fixed-column">Апрель</td>
+                </tr>
+              </table>
+              <div class="scrollable-container">
+                <table>
+                  <th>2022</th>
+                  <tr>
+                    <td>Стоимость пая, USD</td>
+                    <td>М/М</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </table>
+                <table>
+                  <th>2023</th>
+                  <tr>
+                    <td>Стоимость пая, USD</td>
+                    <td>М/М</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </table>
+                <table>
+                  <th>2024</th>
+                  <tr>
+                    <td>Стоимость пая, USD</td>
+                    <td>М/М</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </table>
+                <table>
+                  <th>2025</th>
+                  <tr>
+                    <td>Стоимость пая, USD</td>
+                    <td>М/М</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="arrow next-year">&gt;</button>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  const prevBtn =
+                    document.body.querySelector(".arrow.prev-year");
+                  const nextBtn =
+                    document.body.querySelector(".arrow.next-year");
+                  const scrollableContainer = document.body.querySelector(
+                    ".scrollable-container",
+                  );
+                  const step =
+                    scrollableContainer.querySelector("table").clientWidth;
+
+                  nextBtn.addEventListener("click", () => {
+                    const maxScrollLeft =
+                      scrollableContainer.scrollWidth -
+                      scrollableContainer.clientWidth;
+                    if (
+                      scrollableContainer.scrollLeft + step <=
+                      maxScrollLeft
+                    ) {
+                      scrollableContainer.scrollTo({
+                        left: scrollableContainer.scrollLeft + step,
+                        behavior: "smooth",
+                      });
+                    }
+                  });
+
+                  prevBtn.addEventListener("click", () => {
+                    console.log({
+                      scrollLeft: scrollableContainer.scrollLeft,
+                      step,
+                      if: scrollableContainer.scrollLeft - step,
+                    });
+                    if (scrollableContainer.scrollLeft - step >= 0) {
+                      scrollableContainer.scrollTo({
+                        left: scrollableContainer.scrollLeft - step,
+                        behavior: "smooth",
+                      });
+                    } else {
+                      scrollableContainer.scrollTo({
+                        left: 0,
+                        behavior: "smooth",
+                      });
+                    }
+                  });
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

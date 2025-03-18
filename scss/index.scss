@@ -4,8 +4,15 @@
 @import "typography";
 @import "colors";
 @import "buttons";
-
-// @import "navigation";
+@import "footer";
+@import "banner-2";
+@import "banner-4";
+@import "questions";
+@import "accordion";
+@import "additionalTable";
+@import "dynamicSharePrice";
+@import "fondTable";
+@import "commentUK";
 
 * {
   box-sizing: border-box;
@@ -16,6 +23,7 @@ body {
   padding: 0;
 
   font-family: "SuisseIntl", sans-serif;
+  color: $light-grey;
 
   background-color: rgb(20, 19, 36);
   z-index: 0;
@@ -23,9 +31,19 @@ body {
 
 a {
   text-decoration: none;
+  color: $light-blue;
 }
 
 a:hover,
 button:hover {
   cursor: pointer;
+}
+
+ul.disc {
+  list-style: disc;
+  padding-left: 14px;
+}
+
+ol.decimal {
+  list-style: decimal inside;
 }

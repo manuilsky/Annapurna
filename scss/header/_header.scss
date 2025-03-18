@@ -1,0 +1,208 @@
+@import "navigation";
+@import "colors";
+
+.header {
+  position: relative;
+  background: no-repeat right top/cover url("../../images/header.png"),
+    linear-gradient(
+      119.25deg,
+      rgba(20, 19, 36, 0) 32.866%,
+      rgba(20, 19, 36, 0.75) 64.453%,
+      rgba(20, 19, 36, 0.9) 73.606%,
+      rgb(20, 19, 36) 80.197%
+    );
+  height: 885px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  @media (max-width: $container-width-tablet) {
+    background: no-repeat right top/cover url("../../images/header-tablet.png"),
+      linear-gradient(
+        119.25deg,
+        rgba(20, 19, 36, 0) 32.866%,
+        rgba(20, 19, 36, 0.75) 64.453%,
+        rgba(20, 19, 36, 0.9) 73.606%,
+        rgb(20, 19, 36) 80.197%
+      );
+
+    height: 768px;
+  }
+
+  @media (max-width: $container-width-mobile) {
+    background: no-repeat right top/cover url("../../images/header-mobile.png"),
+      linear-gradient(
+        119.25deg,
+        rgba(20, 19, 36, 0) 32.866%,
+        rgba(20, 19, 36, 0.75) 64.453%,
+        rgba(20, 19, 36, 0.9) 73.606%,
+        rgb(20, 19, 36) 80.197%
+      );
+
+    height: 1241px;
+  }
+
+  .decks-header {
+    z-index: 99999;
+    position: sticky;
+    top: 24px;
+
+    button.header-button {
+      display: block;
+      padding: 16px 24px 16px 24px;
+      border: 1px solid $light-blue;
+      border-radius: 8px;
+      margin-left: auto;
+      margin-right: 0;
+
+      background: transparent;
+      color: $light-blue;
+    }
+  }
+
+  .header-banner {
+    margin-top: calc(256px + 24px);
+    color: white;
+    align-items: end;
+
+    @media (max-width: $container-width-tablet) {
+      margin-top: calc(112px + 56px);
+    }
+
+    @media (max-width: $container-width-mobile) {
+      margin-top: calc(64px + 56px);
+    }
+
+    .header-banner-col {
+      height: 100%;
+    }
+
+    .header-banner-right {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+
+      @media (max-width: $container-width-tablet) {
+        justify-content: space-between;
+      }
+
+      .button {
+        @media (max-width: $container-width-mobile) {
+          margin-bottom: 47px;
+        }
+      }
+    }
+
+    h1 {
+      background: $gradient-blue-grey;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      margin-bottom: 30px;
+      padding: 10px;
+    }
+
+    .header-banner-text {
+      color: $light-grey;
+      margin-bottom: 80px;
+
+      @media (max-width: $container-width-mobile) {
+        margin-bottom: 64px;
+      }
+    }
+  }
+  .header-logo-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .info {
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 136px;
+    }
+  }
+
+  .info-container {
+    height: 130px;
+    border: 1px solid rgb(49, 108, 237);
+    border-radius: 6px;
+    /* blur 60 */
+    backdrop-filter: blur(60px);
+    /* Secondary/bg 60% */
+    background: rgba(15, 21, 42, 0.6);
+    padding: 32px;
+
+    @media (max-width: $container-width-tablet) {
+      height: 105px;
+    }
+
+    .info-container-title {
+      color: $light-blue;
+      margin-bottom: 8px;
+    }
+    .info-container-content {
+      letter-spacing: -2%;
+      color: $light-grey;
+    }
+    .info-container-date-title {
+      color: $light-blue;
+    }
+    .info-container-date {
+      color: $light-grey;
+    }
+    .info-question-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      img {
+        margin-bottom: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+  #info-5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 86px;
+
+    @media (max-width: $container-width-tablet) {
+      height: 67px;
+    }
+  }
+
+  .custom-tooltip {
+    white-space: nowrap;
+    width: fit-content;
+  }
+}
+
+.tippy-box {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+.tippy-arrow {
+  display: none;
+}
+
+.tippy-content {
+  background-color: $light-grey;
+  border: 1px solid $blue-main;
+  border-radius: 8px 0px 8px 8px;
+  padding: 8px;
+
+  color: $blue-main;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  z-index: 1000;
+  @media (max-width: $container-width-mobile) {
+    max-width: 221px;
+  }
+}

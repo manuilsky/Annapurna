@@ -1,0 +1,44 @@
+// Primary Colors
+$light-grey: #efefef;
+$light-blue: #6faaff;
+$blue-main: #316ced;
+$dark-blue: #1a50c5;
+$blue-black: #141324;
+$green-table: #40ffb2;
+$red-table: #ff2e5b;
+
+// Secondary Colors
+$light-blue-30: rgba(111, 170, 255, 0.3); // #AFAAFF с прозрачностью 30%
+$light-blue-50: rgba(111, 170, 255, 0.5); // #AFAAFF с прозрачностью 50%
+$light-grey-70: rgba(239, 239, 239, 0.7);
+$bg-15: rgba(27, 60, 132, 0.15); // #1B3C64 с прозрачностью 15%
+$bg-20: rgba(27, 60, 132, 0.2); // #183C64 с прозрачностью 20%
+$bg-30: rgba(27, 60, 132, 0.3); // #183C64 с прозрачностью 30%
+$bg-60: rgba(15, 21, 42, 0.6); // #0F152A с прозрачностью 60%
+
+$blue-main-30: #316ced4d;
+
+// Gradients (предположительные значения, так как градиенты не могут быть представлены одной переменной)
+$gradient-blue: linear-gradient(
+  0deg,
+  rgb(49, 108, 237),
+  rgba(49, 108, 237, 0) 100%
+); // Предположительное начало градиента
+
+$gradient-blue-grey: linear-gradient(
+  154.57deg,
+  rgb(49, 108, 237) -40.88%,
+  rgb(239, 239, 239) 98.636%
+); // Предположительное начало градиента
+
+$gradient-white-blue-start: linear-gradient(
+  154.57deg,
+  rgb(48, 107, 237) -40.88%,
+  rgb(255, 255, 255) 98.636%
+); // Предположительное начало градиента
+
+$gradient-blue-black-start: linear-gradient(
+  180deg,
+  rgba(20, 19, 36, 0),
+  rgb(20, 19, 36) 100%
+); // Предположительное начало градиента

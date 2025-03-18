@@ -1,0 +1,125 @@
+.fond {
+  padding: 96px 0;
+
+  @media (max-width: $container-width-tablet) {
+    padding: 80px 0 40px 0;
+  }
+
+  @media (max-width: $container-width-mobile) {
+    padding: 80px 0 64px 0;
+  }
+
+  .fond-button-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px 16px 32px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 48px;
+    background: rgba(23, 29, 52, 0.6);
+    max-width: 160px;
+    .fond-button-icon {
+      border-radius: 2px;
+      margin-right: 8px;
+      background: $blue-main;
+      width: 12px;
+      height: 12px;
+    }
+
+    @media (max-width: $container-width-tablet) {
+      padding: 8px 24px 8px 24px;
+      max-width: 118px;
+      margin-bottom: 24px;
+      .fond-button-text {
+        font-size: 12px !important;
+      }
+    }
+
+    @media (max-width: $container-width-mobile) {
+      .fond-button-text {
+        font-size: 12px !important;
+      }
+    }
+  }
+  .fond-title {
+    margin-bottom: 48px;
+    @media (max-width: $container-width-tablet) {
+      margin-bottom: 32px;
+    }
+  }
+  .fond-table {
+    padding: 24px 8px 24px 8px;
+    backdrop-filter: blur(30px);
+    border-radius: 8px;
+    border: 1px solid $blue-main;
+    background: $bg-20;
+
+    .row-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 8px;
+    }
+
+    @media (max-width: $container-width-tablet) {
+      padding: 24px 8px 32px 8px;
+    }
+    .general-title {
+      padding: 16px;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      border-bottom: 1px solid $light-blue-50;
+      @media (max-width: $container-width-tablet) {
+        font-size: 12px;
+      }
+    }
+  }
+  #row-1,
+  #row-5,
+  #row-8 {
+    .subtitle {
+      padding: 16px;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      background: $bg-30;
+      border-bottom: 1px solid $light-blue-50;
+    }
+  }
+  #row-2,
+  #row-3,
+  #row-4,
+  #row-6,
+  #row-7,
+  #row-9,
+  #row-10,
+  #row-11 {
+    .subtitle {
+      padding: 16px;
+      background: $bg-15;
+      opacity: 0.7;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      border-bottom: 1px solid $light-blue-50;
+    }
+  }
+  #fond-footer {
+    .footer-title {
+      padding: 16px;
+      display: flex;
+      flex: 1;
+      opacity: 0.7;
+      align-items: center;
+      @media (max-width: $container-width-tablet) {
+        font-size: 12px;
+      }
+      &.date {
+        justify-content: end;
+      }
+    }
+  }
+}
