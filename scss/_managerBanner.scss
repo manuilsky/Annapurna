@@ -1,0 +1,143 @@
+.manager-banner {
+  padding-top: 80px;
+  padding-bottom: 112px;
+  background: no-repeat left bottom / cover
+      url(../../images/manager-decs-background.svg),
+    no-repeat right top / cover url(../../images/manager-fog-background.svg);
+
+  @media (max-width: $container-width-tablet) {
+    padding-top: 48px;
+    padding-bottom: 80px;
+    background: no-repeat right bottom / cover
+      url(../../images/manager-tablet-background.svg);
+  }
+  @media (max-width: $container-width-mobile) {
+    padding-top: 64px;
+    padding-bottom: 80px;
+    background: no-repeat right bottom / cover
+      url(../../images/manager-mobile-background.svg);
+  }
+
+  .manager-button-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px 16px 32px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 56px;
+    background: rgba(23, 29, 52, 0.6);
+    max-width: 284px;
+    @media (max-width: $container-width-tablet) {
+      padding: 8px 24px 8px 24px;
+      .manager-button-text {
+        font: 12px $font-family-regular !important;
+      }
+
+      max-width: 197px;
+      margin-bottom: 56px;
+    }
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 32px;
+      .manager-button-text {
+        font: 12px $font-family-regular !important;
+      }
+    }
+
+    .manager-button-icon {
+      border-radius: 2px;
+      margin-right: 8px;
+      background: $blue-main;
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .manager-photo {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    border-radius: 8px;
+
+    img {
+      border: 1px solid $blue-main;
+      border-radius: 8px;
+      backdrop-filter: blur(8.52px);
+      width: 100%;
+      height: auto;
+      display: block;
+      position: relative;
+      z-index: 0;
+    }
+  }
+
+  .manager-photo::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 137%;
+    height: 100%;
+    border-radius: 8px;
+    z-index: 1;
+    top: 46%;
+    left: -50%;
+    -webkit-transform: rotate(53.44deg);
+    transform: rotate(35.44deg);
+    background: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#316ced),
+      to(rgba(49, 108, 237, 0))
+    );
+    background: linear-gradient(0deg, #316ced, rgba(49, 108, 237, 0) 100%);
+    pointer-events: none;
+  }
+  .manager-name {
+    @media (max-width: $container-width-tablet) {
+      max-width: 85%;
+    }
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 64px;
+      max-width: 100%;
+    }
+  }
+
+  .manager-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .manager-photo-wrapper {
+    margin-bottom: 80px;
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 64px;
+    }
+  }
+  .manager-content-icon {
+    max-width: 32px;
+    max-height: 32px;
+    margin-bottom: 24px;
+    @media (max-width: $container-width-mobile) {
+      max-width: 24px;
+      max-height: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  .manager-text {
+    max-width: 264px;
+  }
+  .manager-content-wrapper.wrapper-1,
+  .manager-content-wrapper.wrapper-2 {
+    margin-bottom: 64px;
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 48px;
+    }
+  }
+  .manager-content-wrapper.wrapper-3 {
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 48px;
+    }
+  }
+}
