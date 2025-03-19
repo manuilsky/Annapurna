@@ -1,6 +1,32 @@
 @import "navigation";
 @import "colors";
 
+.decks-header {
+  z-index: 99999;
+  position: sticky;
+  top: 24px;
+
+  button.header-button {
+    display: block;
+    padding: 16px 24px 16px 24px;
+    border: 1px solid $light-blue;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 0;
+
+    background: transparent;
+    color: $light-blue;
+  }
+
+  .header-logo-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
 .header {
   position: relative;
   background: no-repeat right top/cover url("../../images/header.png"),
@@ -12,6 +38,7 @@
       rgb(20, 19, 36) 80.197%
     );
   height: 885px;
+  margin-top: -67px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   @media (max-width: $container-width-tablet) {
@@ -38,24 +65,6 @@
       );
 
     height: 1241px;
-  }
-
-  .decks-header {
-    z-index: 99999;
-    position: sticky;
-    top: 24px;
-
-    button.header-button {
-      display: block;
-      padding: 16px 24px 16px 24px;
-      border: 1px solid $light-blue;
-      border-radius: 8px;
-      margin-left: auto;
-      margin-right: 0;
-
-      background: transparent;
-      color: $light-blue;
-    }
   }
 
   .header-banner {
@@ -110,13 +119,6 @@
         margin-bottom: 64px;
       }
     }
-  }
-  .header-logo-wrapper {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    height: 100%;
   }
 
   .info {
