@@ -3,7 +3,7 @@
   padding-bottom: 112px;
   background: no-repeat left bottom / cover
       url(../../images/manager-decs-background.svg),
-    no-repeat right top / cover url(../../images/manager-fog-background.svg);
+    no-repeat right top / 50% url(../../images/manager-fog-background.svg);
 
   @media (max-width: $container-width-tablet) {
     padding-top: 48px;
@@ -96,6 +96,7 @@
     pointer-events: none;
   }
   .manager-name {
+    max-width: 788px;
     @media (max-width: $container-width-tablet) {
       max-width: 85%;
     }
