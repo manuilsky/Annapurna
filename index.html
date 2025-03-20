@@ -16,6 +16,7 @@
     <script src="mobilemenu.js"></script>
     <script src="sharePriceTable.js"></script>
     <script src="coloredContentFondTable.js"></script>
+    <script src="popup.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -91,7 +92,7 @@
             </div>
             <div class="menu-dropdown">
               <ul>
-                <li><a class="h4" href="index.html">УК «Восхождение»</a></li>
+                <li><a class="h4" href="index2.html">УК «Восхождение»</a></li>
                 <li><a class="h4" href="index.html">Аннапурна</a></li>
                 <li><a class="h4" href="index.html">Связаться</a></li>
                 <li>
@@ -1013,6 +1014,39 @@
         </div>
       </div>
     </footer>
+    <!--Popup-confirmation of qualifications-->
+    <div class="overlay hidden" id="popupOverlay">
+      <div class="popup">
+        <div class="header-content-popup">
+          <h3>Подтверждение статуса квалифицированного инвестора</h3>
+          <button class="cross-icon-popup">
+            <img
+              src="images\cross-icon-popup.svg"
+              alt="cross-icon-popup"
+              width="24px"
+              height="24px"
+            />
+          </button>
+        </div>
+
+        <p class="body-long content-middle">
+          <span>Кто такие квалифицированные инвесторы?</span>
+          Отдельная категория инвесторов, обладающих необходимыми знаниями и
+          опытом работы на рынке ценных бумаг, а также финансовыми
+          возможностями, которые позволяют им адекватно оценивать риски и
+          осознанно инвестировать в сложные финансовые инструменты.
+        </p>
+        <div class="content-bottom-wrapper">
+          <p class="body-long content-bottom">
+            Детальные требования к квалифицированным инвесторам определены в
+            Регламенте признания юридических и физических лиц квалифицированными
+            инвесторами.
+          </p>
+          <button class="button button-popup">Подтверждаю</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       new Accordion(".accordion-container");
     </script>

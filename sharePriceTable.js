@@ -73,21 +73,24 @@ class SharePriceTable {
   }
 
   scrollTable(step) {
+    const isMobile = window.innerWidth <= 390;
+    const isTablet = window.innerWidth <= 768;
     const maxScrollLeft =
-      this.container.scrollWidth - this.container.clientWidth;
+      this.container.scrollWidth -
+      this.container.clientWidth -
+      (isMobile ? 6 : isTablet ? 15 : 23);
 
     const targetScroll = this.container.scrollLeft + step;
     this.container.scrollTo({
       left: Math.min(Math.max(targetScroll, 0), maxScrollLeft),
       behavior: "smooth",
     });
+  }
 
-    console.log({
-      maxScrollLeft,
-      scrollWidth: this.container.scrollWidth,
-      clientWidth: this.container.clientWidth,
-      step,
-      screenLeft: this.container.scrollLeft,
+  scrollToBegin() {
+    this.container.scrollTo({
+      left: 0,
+      behavior: "smooth",
     });
   }
 }
@@ -222,6 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     sharePriceTable = new SharePriceTable(data, scrollableContainer);
     sharePriceTable.renderTables();
+    sharePriceTable.scrollToBegin();
 
     const gap = parseInt(
       window.getComputedStyle(scrollableContainer, null).gap,
