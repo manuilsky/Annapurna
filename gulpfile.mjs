@@ -16,7 +16,11 @@ function compileSass() {
   return gulp
     .src(paths.scss)
     .pipe(sourcemaps.init())
-    .pipe(sass().on("error", sass.logError))
+    .pipe(
+      sass({
+        silenceDeprecations: ["import", "global-builtin"],
+      }).on("error", sass.logError),
+    )
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 2 versions"],

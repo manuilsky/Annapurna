@@ -1,20 +1,24 @@
 @import "grid";
-@import "header/header";
+@import "navigation";
 @import "fonts";
 @import "typography";
 @import "colors";
 @import "buttons";
 @import "footer";
-@import "banner-2";
-@import "banner-4";
-@import "questions";
 @import "accordion";
-@import "additionalTable";
-@import "dynamicSharePrice";
-@import "fondTable";
-@import "commentUK";
-@import "managerBanner";
 @import "popupConfirmation";
+
+@import "annapurna/header";
+@import "annapurna/additionalTable";
+@import "annapurna/dynamicSharePrice";
+@import "annapurna/fondTable";
+@import "annapurna/commentUK";
+@import "annapurna/managerBanner";
+@import "annapurna/banner-2";
+@import "annapurna/banner-4";
+@import "annapurna/questions";
+
+@import "voschod/headerBanner";
 
 * {
   box-sizing: border-box;

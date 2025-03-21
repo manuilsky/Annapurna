@@ -1,4 +1,28 @@
-@import "../colors";
+.decks-header {
+  z-index: 99999;
+  position: sticky;
+  top: 24px;
+
+  button.header-button {
+    display: block;
+    padding: 16px 24px 16px 24px;
+    border: 1px solid $light-blue;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: 0;
+
+    background: transparent;
+    color: $light-blue;
+  }
+
+  .header-logo-wrapper {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
 
 .navigation {
   display: flex;

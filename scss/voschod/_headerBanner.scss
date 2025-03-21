@@ -1,0 +1,91 @@
+.voschod {
+  .decks-header {
+    @media (max-width: $container-width-tablet) {
+      top: 18px;
+    }
+
+    @media (max-width: $container-width-mobile) {
+      top: 24px;
+    }
+  }
+
+  header {
+    background: no-repeat right top/cover url("../../images/voschod-ban-1.png"),
+      linear-gradient(
+        119.25deg,
+        rgba(20, 19, 36, 0) 32.866%,
+        rgba(20, 19, 36, 0.75) 64.453%,
+        rgba(20, 19, 36, 0.9) 73.606%,
+        rgb(20, 19, 36) 80.197%
+      );
+    height: 808px;
+    margin-top: -67px;
+    padding-top: 258px;
+
+    @media (max-width: $container-width-tablet) {
+      background: no-repeat right top/cover
+          url("../../images/voschod-ban-1-tablet.png"),
+        linear-gradient(
+          119.25deg,
+          rgba(20, 19, 36, 0) 32.866%,
+          rgba(20, 19, 36, 0.75) 64.453%,
+          rgba(20, 19, 36, 0.9) 73.606%,
+          rgb(20, 19, 36) 80.197%
+        );
+      height: 515px;
+      padding-top: 136px;
+      margin-top: 0;
+    }
+
+    @media (max-width: $container-width-mobile) {
+      background: no-repeat right top/cover
+          url("../../images/voschod-ban-1-mob.png"),
+        linear-gradient(
+          119.25deg,
+          rgba(20, 19, 36, 0) 32.866%,
+          rgba(20, 19, 36, 0.75) 64.453%,
+          rgba(20, 19, 36, 0.9) 73.606%,
+          rgb(20, 19, 36) 80.197%
+        );
+      height: 875px;
+      padding-top: 144px;
+      margin-top: 0;
+    }
+
+    .header-banner-text-container {
+      h1 {
+        max-width: 1086px;
+        background: linear-gradient(
+          154.57deg,
+          rgb(49, 108, 237),
+          rgb(239, 239, 239)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+        margin-bottom: 40px;
+
+        @media (max-width: $container-width-tablet) {
+          max-width: 548px;
+          margin-bottom: 32px;
+        }
+      }
+
+      .header-banner-text {
+        max-width: 499px;
+        margin-bottom: 80px;
+
+        @media (max-width: $container-width-tablet) {
+          max-width: 320px;
+          margin-bottom: 64px;
+        }
+      }
+
+      .button {
+        @media (max-width: $container-width-tablet) {
+        }
+      }
+    }
+  }
+}
