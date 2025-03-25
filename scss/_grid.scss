@@ -3,6 +3,8 @@
 $grid-columns-desktop: 20;
 $grid-columns-tablet: 20;
 $grid-columns-mobile: 12;
+$container-width-desktop-2k: 2560px;
+$container-width-desktop-lg: 1920px;
 $container-width-desktop: 1440px;
 $container-width-tablet: 768px;
 $container-width-mobile: 391px;
@@ -126,6 +128,7 @@ body {
 
 .container {
   width: 100%;
+  max-width: $container-width-desktop-lg;
   margin: 0 auto;
   box-sizing: border-box;
   padding-left: $margin-desktop;

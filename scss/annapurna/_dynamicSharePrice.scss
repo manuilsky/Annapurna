@@ -30,6 +30,10 @@
     backdrop-filter: blur(30px);
     background: $bg-20;
 
+    @media (max-width: $container-width-mobile) {
+      margin: 0px -5px;
+    }
+
     .table-container {
       display: flex;
       border-top: 1px solid $light-blue;
@@ -101,6 +105,10 @@
         @media (max-width: $container-width-mobile) {
           max-width: 80px;
         }
+
+        tr:nth-child(2) td {
+          color: $light-grey;
+        }
       }
 
       .scrollable-container {
@@ -135,6 +143,10 @@
         }
         td:nth-child(2) {
           background-color: $bg-30;
+
+          @media (max-width: $container-width-mobile) {
+            max-width: 109px;
+          }
         }
       }
 
@@ -208,7 +220,7 @@
           }
 
           @media (max-width: $container-width-mobile) {
-            margin-left: 8px;
+            margin-left: 0px;
           }
         }
         .arrow.next-year {
@@ -221,7 +233,7 @@
           }
 
           @media (max-width: $container-width-mobile) {
-            margin-right: 8px;
+            margin-right: 16px;
           }
         }
       }

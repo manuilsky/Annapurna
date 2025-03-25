@@ -1,6 +1,6 @@
 .annapurna {
   .banner-2 {
-    background: no-repeat right top/cover url("../../images/bg-2.svg");
+    background: no-repeat right top/contain url("../../images/bg-2.svg");
     //   height: 400px;
 
     @media (max-width: $container-width-tablet) {

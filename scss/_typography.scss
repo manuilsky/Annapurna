@@ -31,7 +31,7 @@ $font-size-body-short-desktop: min(
   18px
 ); // 18px / 1440px * 100vw = 1.25vw, но не больше 18px
 $font-size-link-desktop: min(
-  1.11vw,
+  1.11111111111vw,
   16px
 ); // 16px / 1440px * 100vw = 1.11vw, но не больше 16px
 $font-size-body-small-desktop: min(
