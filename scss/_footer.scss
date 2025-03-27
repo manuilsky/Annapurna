@@ -13,6 +13,9 @@ footer {
     img {
       width: 185.5px;
       height: 28px;
+      @media (max-width: 925px) {
+        max-width: 150.5px;
+      }
     }
   }
 
@@ -95,8 +98,7 @@ footer {
 
     #footer-menu-1 {
       order: 3;
-
-      margin-top: -239px;
+      transform: translateY(-116%);
     }
 
     #footer-menu-2 {
