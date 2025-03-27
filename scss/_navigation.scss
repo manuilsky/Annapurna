@@ -21,6 +21,17 @@
     display: flex;
     align-items: center;
     height: 100%;
+    img {
+      @media (max-width: 1030px) {
+        width: 200px;
+      }
+      @media (max-width: 935px) {
+        width: 180px;
+      }
+      @media (max-width: 844px) {
+        width: 160px;
+      }
+    }
   }
 }
 
