@@ -48,6 +48,14 @@
 
   backdrop-filter: blur(10px);
   background: $bg-20;
+  @media (max-width: 1050px) {
+    padding: 16px 30px 16px 30px;
+  }
+
+  @media (max-width: 965px) {
+    padding: 16px 20px 16px 20px;
+  }
+
   @media (max-width: $container-width-tablet) {
     padding: 16px;
     // max-height: 56px;
