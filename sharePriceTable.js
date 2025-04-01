@@ -18,8 +18,8 @@ class SharePriceTable {
               <th>${entry.year}</th>
             </tr>
             <tr>
-              <td>Стоимость пая, USD</td>
-              <td>М/М</td>
+              <td class='table-subheader-left'>Стоимость пая, USD</td>
+              <td class='table-subheader-rigth'>М/М</td>
             </tr>
             ${this.generateRows(entry)}
             <tr class="body-short">
