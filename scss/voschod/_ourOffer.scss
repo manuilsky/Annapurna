@@ -1,0 +1,99 @@
+.voschod {
+  .offer {
+    padding: 80px 0 112px 0;
+    background: no-repeat right bottom / cover
+      url(../../images/offer-background.svg);
+
+    @media (max-width: $container-width-tablet) {
+      padding: 64px 0 64px 0;
+    }
+    @media (max-width: $container-width-mobile) {
+      padding: 64px 0 80px 0;
+      background: no-repeat right top / cover
+        url(../../images/offer-mobile-background.svg);
+    }
+
+    .tag-button-wrapper {
+      max-width: 256px;
+      margin-bottom: 56px;
+      @media (max-width: $container-width-tablet) {
+        padding: 8px 24px 8px 24px;
+        max-width: 181px;
+        margin-bottom: 40px;
+        height: 48px;
+      }
+      @media (max-width: $container-width-mobile) {
+        padding: 8px 24px 8px 24px;
+        margin-bottom: 32px;
+        height: 48px;
+      }
+    }
+
+    .offer-title {
+      @media (max-width: $container-width-mobile) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .offer-content-wrapper {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      .offer-content-title {
+        margin-bottom: 24px;
+        @media (max-width: $container-width-mobile) {
+          margin-bottom: 16px;
+        }
+      }
+      .offer-content {
+        margin-bottom: 64px;
+        @media (max-width: $container-width-tablet) {
+          margin-bottom: 40px;
+        }
+      }
+      .second-button {
+        border: 1px solid $light-blue;
+        border-radius: 8px;
+        background-color: transparent;
+        height: 50px;
+        max-width: 250px;
+        padding: 16px 24px 16px 24px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        img {
+          max-width: 6.8px;
+          max-height: 14.5px;
+          @media (min-width: 1440px) {
+            padding-top: 2px;
+            height: 14.5px;
+          }
+        }
+
+        @media (max-width: $container-width-tablet) {
+          height: 48px;
+          max-width: 200px;
+        }
+      }
+    }
+  }
+  .first-offer-block {
+    margin-bottom: 160px;
+
+    .offer-title {
+      br {
+        display: none;
+      }
+    }
+
+    @media (max-width: $container-width-tablet) {
+      margin-bottom: 80px;
+    }
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 64px;
+    }
+  }
+}

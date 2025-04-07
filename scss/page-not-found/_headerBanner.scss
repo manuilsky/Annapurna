@@ -1,16 +1,12 @@
-.voschod {
+.page-not-found {
   .decks-header {
-    @media (max-width: $container-width-tablet) {
-      top: 18px;
-    }
-
     @media (max-width: $container-width-mobile) {
-      top: 24px;
+      top: 16px;
     }
   }
 
   header {
-    background: no-repeat right top/cover url("../../images/voschod-ban-1.png"),
+    background: no-repeat right top/contain url("../../images/404-bg.png"),
       linear-gradient(
         119.25deg,
         rgba(20, 19, 36, 0) 32.866%,
@@ -18,13 +14,12 @@
         rgba(20, 19, 36, 0.9) 73.606%,
         rgb(20, 19, 36) 80.197%
       );
-    height: 808px;
-    margin-top: -67px;
-    padding-top: 258px;
+    height: 674px;
+    margin-top: -60px;
+    padding-top: 186px;
 
-    @media (min-width: $container-width-desktop) {
-      background: no-repeat right top/contain
-          url("../../images/voschod-ban-1.png"),
+    @media (max-width: $container-width-desktop) {
+      background: no-repeat right top/cover url("../../images/404-bg.png"),
         linear-gradient(
           119.25deg,
           rgba(20, 19, 36, 0) 32.866%,
@@ -32,14 +27,11 @@
           rgba(20, 19, 36, 0.9) 73.606%,
           rgb(20, 19, 36) 80.197%
         );
-      height: 808px;
-      margin-top: -67px;
-      padding-top: 258px;
     }
 
     @media (max-width: $container-width-tablet) {
       background: no-repeat right top/cover
-          url("../../images/voschod-ban-1-tablet.png"),
+          url("../../images/404-bg-tablet.png"),
         linear-gradient(
           119.25deg,
           rgba(20, 19, 36, 0) 32.866%,
@@ -47,14 +39,13 @@
           rgba(20, 19, 36, 0.9) 73.606%,
           rgb(20, 19, 36) 80.197%
         );
-      height: 515px;
-      padding-top: 136px;
+      height: 532px;
       margin-top: 0;
+      padding-top: 160px;
     }
 
     @media (max-width: $container-width-mobile) {
-      background: no-repeat right top/cover
-          url("../../images/voschod-ban-1-mob.png"),
+      background: no-repeat right top/cover url("../../images/404-bg-mob.png"),
         linear-gradient(
           119.25deg,
           rgba(20, 19, 36, 0) 32.866%,
@@ -62,12 +53,15 @@
           rgba(20, 19, 36, 0.9) 73.606%,
           rgb(20, 19, 36) 80.197%
         );
-      height: 875px;
-      padding-top: 144px;
+      height: 724px;
       margin-top: 0;
+      padding-top: 136px;
     }
 
     .header-banner-text-container {
+      .tag-button-wrapper {
+        margin-bottom: 56px;
+      }
       h1 {
         max-width: 1086px;
         background: linear-gradient(
@@ -79,27 +73,15 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
 
-        margin-bottom: 40px;
-
-        @media (max-width: $container-width-tablet) {
-          max-width: 548px;
-          margin-bottom: 32px;
-        }
+        margin-bottom: 64px;
       }
+    }
 
-      .header-banner-text {
-        max-width: 499px;
-        margin-bottom: 80px;
+    .button {
+      max-width: 300px;
 
-        @media (max-width: $container-width-tablet) {
-          max-width: 320px;
-          margin-bottom: 64px;
-        }
-      }
-
-      .button {
-        @media (max-width: $container-width-tablet) {
-        }
+      @media (max-width: $container-width-tablet) {
+        max-width: 250px;
       }
     }
   }

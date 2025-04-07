@@ -1,0 +1,107 @@
+.advantages {
+  padding: 112px 0 112px 0;
+
+  background: no-repeat left bottom / contain
+    url(../../images/advantages-background.svg);
+
+  @media (max-width: $container-width-tablet) {
+    padding: 64px 0 64px 0;
+  }
+
+  @media (max-width: $container-width-mobile) {
+    padding: 80px 0 80px 0;
+    background-image: none;
+  }
+
+  .advantages-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+    @media (min-width: 1450px) {
+      gap: 16px;
+    }
+    @media (min-width: 1578px) {
+      gap: 32px;
+    }
+    @media (min-width: 1700px) {
+      gap: 46px;
+    }
+
+    @media (max-width: $container-width-tablet) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $container-width-mobile) {
+      flex-direction: column;
+      background: unset !important;
+    }
+
+    .advantages-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 32px;
+      border: 1px solid $blue-main;
+      border-radius: 8px;
+      backdrop-filter: blur(30px);
+      height: 320px;
+      max-width: 265.6px;
+      background: $bg-20;
+      flex: 1;
+
+      @media (max-width: $container-width-tablet) {
+        padding: 24px 16px 24px 16px;
+        flex: 30%;
+        height: 170px;
+
+        &#item-4 {
+          flex: 28%;
+          height: 148px;
+        }
+        &#item-5 {
+          height: 148px;
+          flex: 62%;
+          max-width: 477px;
+          .advantages-item-content {
+            max-width: 445px;
+          }
+        }
+      }
+      @media (max-width: $container-width-mobile) {
+        padding: 24px;
+        flex: unset !important;
+        height: 126px !important;
+        &#item-1 {
+          height: 148px !important;
+        }
+        &#item-5 {
+          height: 170px !important;
+        }
+
+        .advantages-item-content br {
+          display: none;
+        }
+      }
+
+      &-image {
+        width: 32px;
+        height: 32px;
+
+        @media (max-width: $container-width-tablet) {
+          width: 24px;
+          height: 24px;
+          margin-bottom: 32px;
+        }
+      }
+      &-content {
+        max-width: 201px;
+        @media (max-width: $container-width-mobile) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

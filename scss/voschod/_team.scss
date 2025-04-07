@@ -1,0 +1,104 @@
+.voschod {
+  .team {
+    padding: 80px 0 112px 0;
+
+    @media (max-width: $container-width-mobile) {
+      margin-bottom: 32px;
+      background: no-repeat right top / cover
+        url(../../images/offer-mobile-background.svg);
+    }
+
+    .tag-button-wrapper {
+      max-width: 162px;
+      height: 54px;
+      margin-bottom: 56px;
+
+      @media (max-width: $container-width-tablet) {
+        max-width: 119px;
+        margin-bottom: 40px;
+        height: 48px;
+      }
+    }
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .teammember {
+        flex: 1;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 16px 40px 16px;
+
+        box-sizing: border-box;
+        border: 1px solid $blue-main;
+        border-radius: 8px;
+
+        backdrop-filter: blur(30px);
+        background: $bg-20;
+
+        img {
+          border-radius: 8px;
+          backdrop-filter: blur(8.77px);
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+        }
+
+        .teammember_description {
+          padding: 0 16px;
+
+          h4 {
+            margin-bottom: 8px;
+          }
+
+          .position {
+            color: $light-grey;
+            opacity: 0.7;
+          }
+        }
+      }
+
+      @media (max-width: $container-width-tablet) {
+        .teammember {
+          max-height: 406px;
+          flex-basis: calc(50% - 8px);
+
+          @media (max-width: $container-width-tablet) {
+            img {
+              margin-bottom: 24px;
+            }
+
+            .teammember_description {
+              padding: 0 24px;
+            }
+          }
+        }
+
+        .teammember:nth-child(odd) {
+          flex-basis: calc(50% - 8px);
+        }
+      }
+
+      @media (max-width: $container-width-mobile) {
+        max-width: 283px;
+      }
+    }
+
+    @media (max-width: $container-width-tablet) {
+      &-container {
+        padding-left: 146px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      &-container {
+        padding-left: 0;
+      }
+    }
+  }
+}
