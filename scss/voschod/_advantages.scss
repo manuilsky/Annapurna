@@ -73,12 +73,17 @@
       @media (max-width: $container-width-mobile) {
         padding: 24px;
         flex: unset !important;
+        max-width: none !important;
         height: 126px !important;
         &#item-1 {
           height: 148px !important;
         }
         &#item-5 {
           height: 170px !important;
+        }
+        &#item-4,
+        &#item-5 {
+          flex: 100%;
         }
 
         .advantages-item-content br {

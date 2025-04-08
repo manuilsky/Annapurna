@@ -1,0 +1,50 @@
+.contacts {
+  .contacts-wrapper {
+    margin-top: -76px;
+    padding: 242px 0 80px 0;
+
+    background: no-repeat right bottom / contain
+        url("../../images/contacts-bg-bot.svg"),
+      no-repeat left top / contain url("../../images/contacts-bg-top.svg");
+
+    @media (max-width: $container-width-desktop) {
+      background: no-repeat right bottom / cover
+        url("../../images/contacts-background.svg");
+    }
+
+    @media (max-width: $container-width-tablet) {
+      padding: 146px 0 240px 0;
+      background: no-repeat right bottom / cover
+        url("../../images/contacts-background-tablet.svg");
+    }
+    @media (max-width: $container-width-mobile) {
+      padding: 146px 0 226px 0;
+      background: no-repeat left bottom / cover
+        url("../../images/contacts-background-mobile.svg");
+    }
+    .contacts-title {
+      background: linear-gradient(154.57deg, #316ced 7.12%, #efefef 28.636%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 64px;
+      margin-top: 67px;
+    }
+
+    .subtitle {
+      margin-bottom: 16px;
+      @media (min-width: 769px) {
+        br {
+          display: none;
+        }
+      }
+    }
+    .content {
+      margin-bottom: 40px;
+      max-width: 517px;
+      @media (max-width: $container-width-mobile) {
+        opacity: 70%;
+      }
+    }
+  }
+}
