@@ -64,7 +64,7 @@
         </div>
         <div class="col-1"></div>
         <div class="col-3">
-          <button class="header-button">Личный кабинет</button>
+          <button class="header-button" id="cabinet">Личный кабинет</button>
         </div>
       </div>
 
@@ -98,7 +98,13 @@
                 <li>
                   <a class="h4" href="index3.html">Раскрытие информации</a>
                 </li>
-                <li><a class="h4" href="index.html">Личный кабинет</a></li>
+                <li>
+                  <a
+                    class="h4"
+                    href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                    >Личный кабинет</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -120,7 +126,7 @@
                 инструменты финансовых рынков.
               </div>
             </div>
-            <button class="button">Связаться</button>
+            <button class="button touch">Связаться</button>
           </div>
         </div>
       </div>
@@ -242,7 +248,7 @@
                 риски. Наши принципы: прозрачность и ответственность в работе.
                 Свяжитесь с нами, чтобы узнать подробности.
               </p>
-              <button class="button">Получить консультацию</button>
+              <button class="button touch">Получить консультацию</button>
             </div>
           </div>
         </div>
@@ -309,7 +315,7 @@
               и ответы на интересущие вопросы.
             </p>
 
-            <button class="button">Связаться</button>
+            <button class="button touch">Связаться</button>
           </div>
         </div>
       </div>
@@ -332,7 +338,11 @@
                 <a class="body-short" href="index.html">Раскрытие информации</a>
               </li>
               <li>
-                <a class="body-short" href="index.html">Личный кабинет</a>
+                <a
+                  class="body-short"
+                  href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                  >Личный кабинет</a
+                >
               </li>
             </ul>
           </div>
@@ -401,8 +411,9 @@
             округ Басманный, б-р Чистопрудный, д. 17, стр. 1, помещ. 1/1, или по
             телефону +7 (495) 131 83 29, в сети Интернет на сайте Управляющей
             компании по адресу:
-            <a class="body-long">https://www.uk-voshozhdenie.ru</a>.
-            <br /><br />
+            <a href="https://www.uk-voshozhdenie.ru" class="body-long"
+              >https://www.uk-voshozhdenie.ru</a
+            >. <br /><br />
             СТОИМОСТЬ ИНВЕСТИЦИОННЫХ ПАЕВ МОЖЕТ УВЕЛИЧИВАТЬСЯ И УМЕНЬШАТЬСЯ.
             РЕЗУЛЬТАТЫ ИНВЕСТИРОВАНИЯ В ПРОШЛОМ НЕ ОПРЕДЕЛЯЮТ ДОХОДЫ В БУДУЩЕМ.
             ГОСУДАРСТВО НЕ ГАРАНТИРУЕТ ДОХОДНОСТЬ ИНВЕСТИЦИЙ В ИНВЕСТИЦИОННЫЕ
@@ -461,5 +472,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      cabinet.addEventListener("click", () => {
+        window.location.href = "https://lk.uk-voshozhdenie.ru/users/sign_in";
+      });
+
+      const touch = document.querySelectorAll(".touch");
+      touch.forEach((t) =>
+        t.addEventListener("click", () => {
+          window.location.href = "tel:+74951318329";
+        }),
+      );
+    </script>
   </body>
 </html>

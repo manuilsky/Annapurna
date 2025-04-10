@@ -64,7 +64,7 @@
         </div>
         <div class="col-1"></div>
         <div class="col-3">
-          <button class="header-button">Личный кабинет</button>
+          <button class="header-button" id="cabinet">Личный кабинет</button>
         </div>
       </div>
 
@@ -98,7 +98,13 @@
                 <li>
                   <a class="h4" href="index3.html">Раскрытие информации</a>
                 </li>
-                <li><a class="h4" href="index.html">Личный кабинет</a></li>
+                <li>
+                  <a
+                    class="h4"
+                    href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                    >Личный кабинет</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -121,9 +127,15 @@
             <h4 class="subtitle">Генеральный директор</h4>
             <p class="body-short content">Кузнецов Сергей Александрович</p>
             <h4 class="subtitle">Электронная почта</h4>
-            <p class="body-short content"><a>info@uk-voshozhdenie.ru</a></p>
+            <p class="body-short content">
+              <a href="mailto:info@uk-voshozhdenie.ru"
+                >info@uk-voshozhdenie.ru</a
+              >
+            </p>
             <h4 class="subtitle">Телефон</h4>
-            <p class="body-short content"><a>+7 (495) 131-83-29</a></p>
+            <p class="body-short content">
+              <a href="tel:+74951318329">+7 (495) 131-83-29</a>
+            </p>
           </div>
           <div class="col-10 col-md-10 col-sm-12 contacts-right">
             <h4 class="subtitle">Полное наименование</h4>
@@ -159,7 +171,11 @@
                 <a class="body-short" href="index.html">Раскрытие информации</a>
               </li>
               <li>
-                <a class="body-short" href="index.html">Личный кабинет</a>
+                <a
+                  class="body-short"
+                  href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                  >Личный кабинет</a
+                >
               </li>
             </ul>
           </div>
@@ -228,8 +244,9 @@
             округ Басманный, б-р Чистопрудный, д. 17, стр. 1, помещ. 1/1, или по
             телефону +7 (495) 131 83 29, в сети Интернет на сайте Управляющей
             компании по адресу:
-            <a class="body-long">https://www.uk-voshozhdenie.ru</a>.
-            <br /><br />
+            <a href="https://www.uk-voshozhdenie.ru" class="body-long"
+              >https://www.uk-voshozhdenie.ru</a
+            >. <br /><br />
             СТОИМОСТЬ ИНВЕСТИЦИОННЫХ ПАЕВ МОЖЕТ УВЕЛИЧИВАТЬСЯ И УМЕНЬШАТЬСЯ.
             РЕЗУЛЬТАТЫ ИНВЕСТИРОВАНИЯ В ПРОШЛОМ НЕ ОПРЕДЕЛЯЮТ ДОХОДЫ В БУДУЩЕМ.
             ГОСУДАРСТВО НЕ ГАРАНТИРУЕТ ДОХОДНОСТЬ ИНВЕСТИЦИЙ В ИНВЕСТИЦИОННЫЕ
@@ -288,5 +305,10 @@
         </div>
       </div>
     </footer>
+    <script>
+      cabinet.addEventListener("click", () => {
+        window.location.href = "https://lk.uk-voshozhdenie.ru/users/sign_in";
+      });
+    </script>
   </body>
 </html>
