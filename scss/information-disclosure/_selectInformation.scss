@@ -1,0 +1,174 @@
+.information-disclosure {
+  .select-information {
+    background: no-repeat right top / cover
+        url("../../images/info-disclosure-bg.svg"),
+      linear-gradient(
+        119.25deg,
+        rgba(20, 19, 36, 0) 32.866%,
+        rgba(20, 19, 36, 0.75) 64.453%,
+        rgba(20, 19, 36, 0.9) 73.606%,
+        rgb(20, 19, 36) 80.197%
+      );
+    min-height: 618px;
+    margin-top: -58px;
+
+    @media (max-width: $container-width-tablet) {
+      background: unset;
+    }
+
+    @media (max-width: $container-width-mobile) {
+      background: no-repeat right top / 100%
+        url("../../images/info-disclosure-bg-mob.svg");
+    }
+
+    h1 {
+      margin-top: calc(160px + 58px);
+      background: linear-gradient(154.57deg, #316ced 7.12%, #efefef 28.636%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+      margin-bottom: 80px;
+    }
+
+    .select {
+      .ac {
+        padding: 24px;
+        max-width: 677px;
+        @media (max-width: $container-width-tablet) {
+          max-width: 538px;
+        }
+
+        .ac-trigger div {
+          color: $light-grey;
+          opacity: 0.7;
+          font-weight: 400;
+          font-size: 18px;
+        }
+
+        .ac-trigger::after {
+          background: no-repeat right top / cover
+            url(../../images/arrow-down--grey.svg);
+
+          height: 24px;
+          width: 24px !important;
+        }
+
+        .ac-panel {
+          div {
+            color: $light-grey;
+            opacity: 1;
+            cursor: pointer;
+          }
+        }
+      }
+      .ac.is-active .ac-trigger::after {
+        background: no-repeat right top / cover
+          url(../../images/arrow-up--grey.svg);
+      }
+    }
+
+    .selected-information {
+      margin-top: 80px;
+
+      a {
+        display: flex;
+        align-items: flex-start;
+        font-size: min(0.97vw, 14px);
+        @media (max-width: $container-width-tablet) {
+          font-size: min(1.5625vw, 12px);
+          line-height: 140%;
+        }
+        @media (max-width: $container-width-mobile) {
+          font-size: min(3.0769230769vw, 12px);
+          line-height: 140%;
+        }
+
+        .file-icon {
+          margin-right: 8px;
+          width: 24px;
+          height: 24px;
+
+          @media (max-width: $container-width-tablet) {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .ac {
+        padding: 16px 8px !important;
+      }
+
+      .ac-panel {
+        max-height: 960px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+      }
+
+      .ac-panel::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+      }
+
+      @media (max-width: $container-width-tablet) {
+        margin-top: 64px;
+      }
+      @media (max-width: $container-width-mobile) {
+        margin-top: 40px;
+      }
+
+      .ac .ac-header {
+        padding: 16px;
+      }
+      .ac.is-active .ac-header {
+        border-bottom: 1px solid rgba(111, 170, 255, 0.5);
+        padding-bottom: 40px;
+
+        @media (max-width: $container-width-mobile) {
+          border-bottom: 1px solid rgb(111, 170, 255);
+        }
+      }
+
+      .ac-text:not(:first-child) {
+        border-top: 1px solid rgba(111, 170, 255, 0.5);
+      }
+      .ac-text {
+        max-width: unset;
+        min-height: 120px;
+        padding: 16px !important;
+        gap: 24px;
+        opacity: 1;
+        line-height: 1;
+
+        @media (max-width: 650px) {
+          gap: 12px;
+        }
+        @media (max-width: $container-width-mobile) {
+          gap: 0;
+          padding: 0 !important;
+
+          div {
+            padding: 16px;
+          }
+
+          div:first-child {
+            border-top: 1px solid rgb(111, 170, 255);
+            background: rgba(27, 60, 132, 0.15);
+          }
+
+          div:not(:first-child) {
+            color: $light-grey;
+            opacity: 0.7;
+            border-bottom: 1px solid rgba(111, 170, 255, 0.5);
+          }
+        }
+      }
+      .ac-text:last-child {
+        border-bottom: 1px solid rgba(111, 170, 255, 0.5);
+      }
+    }
+  }
+}

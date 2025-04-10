@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css"
+    />
+    <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="tooltips.js"></script>
+    <script src="mobilemenu.js"></script>
+    <script src="popup.js"></script>
+    <script src="select.js"></script>
+    <title>Аннапурна</title>
+  </head>
+  <body class="information-disclosure">
+    <div class="container decks-header">
+      <!-- Desktop Navigation -->
+      <div class="row row-lg">
+        <div class="col-3">
+          <div class="header-logo-wrapper">
+            <img
+              src="images\LogotypeVoshozhdenie.svg"
+              alt="Logo"
+              width="225"
+              height="28"
+            />
+          </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-11">
+          <ul class="navigation">
+            <li>
+              <a href="index2.html"
+                ><p class="navigation-mark"></p>
+                <span>УК Восхождение</span></a
+              >
+            </li>
+            <li>
+              <a href="index.html"
+                ><p class="navigation-mark"></p>
+                <span>Аннапурна</span></a
+              >
+            </li>
+            <li>
+              <a href="contacts.html"
+                ><p class="navigation-mark"></p>
+                <span>Связаться</span></a
+              >
+            </li>
+            <li>
+              <a href="index3.html"
+                ><p class="navigation-mark"></p>
+                <span>Раскрытие информации</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+          <button class="header-button" id="cabinet">Личный кабинет</button>
+        </div>
+      </div>
+
+      <!-- Tablet and Mobile Navigation -->
+      <div class="row row-md row-sm tablet-navigation">
+        <div class="col-20 col-md-20 col-sm-12">
+          <div class="navigation">
+            <div class="visible-tablet-navigation">
+              <div class="header-logo-wrapper">
+                <img
+                  src="images\LogotypeVoshozhdenie.svg"
+                  alt="Logo"
+                  width="170"
+                  height="22"
+                />
+              </div>
+              <div class="header-menu-icon trigger">
+                <img
+                  src="images\Icons Mobile + Tablet Menu.svg"
+                  alt="Menu"
+                  width="24"
+                  height="24"
+                />
+              </div>
+            </div>
+            <div class="menu-dropdown">
+              <ul>
+                <li><a class="h4" href="index2.html">УК «Восхождение»</a></li>
+                <li><a class="h4" href="index.html">Аннапурна</a></li>
+                <li><a class="h4" href="contacts.html">Связаться</a></li>
+                <li>
+                  <a class="h4" href="index3.html">Раскрытие информации</a>
+                </li>
+                <li>
+                  <a
+                    class="h4"
+                    href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                    >Личный кабинет</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="select-information">
+      <div class="container">
+        <div class="row">
+          <div class="col-20">
+            <div>
+              <h1>Раскрытие<br />информации</h1>
+              <div class="select">
+                <div class="accordion-container">
+                  <div class="ac js-enabled" id="select-info">
+                    <h2 class="ac-header">
+                      <button
+                        type="button"
+                        class="ac-trigger body-short"
+                        id="ac-trigger-select"
+                        role="button"
+                        aria-controls="ac-panel-0"
+                        aria-disabled="false"
+                        aria-expanded="false"
+                      >
+                        <div>Выберите раздел</div>
+                      </button>
+                    </h2>
+                    <div
+                      class="ac-panel"
+                      id="ac-panel-0"
+                      role="region"
+                      aria-labelledby="ac-trigger-0"
+                      style="transition-duration: 500ms; height: 0px"
+                    >
+                      <div class="ac-text body-long">Информация о компании</div>
+                      <div class="ac-text body-long">
+                        Доверительное управление
+                      </div>
+                      <div class="ac-text body-long">ИПИФК «Аннапурна»</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="selected-information">
+                <!-- Динамические аккордионы -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer-navigation">
+          <div class="col-5 col-md-10 col-sm-12" id="footer-logo">
+            <img src="images\LogotypeVoshozhdenie.svg" alt="Logo" />
+          </div>
+          <div class="col-5 col-md-10 col-sm-12" id="footer-menu-1">
+            <ul>
+              <li>
+                <a class="body-short" href="index.html">УК «Восхождение»</a>
+              </li>
+              <li><a class="body-short" href="index.html">Аннапурна</a></li>
+              <li><a class="body-short" href="index.html">Связаться</a></li>
+              <li>
+                <a class="body-short" href="index.html">Раскрытие информации</a>
+              </li>
+              <li>
+                <a
+                  class="body-short"
+                  href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                  >Личный кабинет</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-5 col-md-10 col-sm-12" id="footer-menu-2">
+            <div class="body-short">Полное наименование</div>
+            <div class="body-small">
+              Общество с ограниченной ответственностью Управляющая Компания
+              «Восхождение»
+            </div>
+
+            <div class="body-short">Краткое наименование</div>
+            <div class="body-small">ООО УК «Восхождение»</div>
+
+            <div class="body-short">ОГРН</div>
+            <div class="body-small">5167746349843</div>
+
+            <div class="body-short">ИНН/КПП</div>
+            <div class="body-small">9705081245/770101001</div>
+          </div>
+          <div class="col-5 col-md-10 col-sm-12" id="footer-menu-3">
+            <div>
+              <div class="body-short">Генеральный директор</div>
+              <div class="body-small">Кузнецов Сергей Александрович</div>
+              <div class="body-short">Адрес местонахождения/почтовый адрес</div>
+              <div class="body-small">
+                101000, г. Москва, вн.тер.г. муниципальный округ Басманный, б-р
+                Чистопрудный, д. 17, стр. 1, помещение 1/1
+              </div>
+            </div>
+
+            <div class="links">
+              <a class="body-short" href="tel:+74951318329">
+                +7 (495) 131-83-29
+              </a>
+              <a class="body-short" href="mailto:info@uk-voshozhdenie.ru">
+                info@uk-voshozhdenie.ru
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row footer-content">
+          <div class="col-20 body-long">
+            ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ УПРАВЛЯЮЩАЯ КОМПАНИЯ
+            «ВОСХОЖДЕНИЕ» (ОСУЩЕСТВЛЯЕТ ДЕЯТЕЛЬНОСТЬ НА ОСНОВАНИИ ЛИЦЕНЗИИ НА
+            ОСУЩЕСТВЛЕНИЕ ДЕЯТЕЛЬНОСТИ ПО УПРАВЛЕНИЮ ИНВЕСТИЦИОННЫМИ ФОНДАМИ,
+            ПАЕВЫМИ ИНВЕСТИЦИОННЫМИ ФОНДАМИ И НЕГОСУДАРСТВЕННЫМИ ПЕНСИОННЫМИ
+            ФОНДАМИ № 21 000 1 01017, ВЫДАНА БАНКОМ РОССИИ 15.05.2018, ЛИЦЕНЗИИ
+            НА ОСУЩЕСТВЛЕНИЕ ДЕЯТЕЛЬНОСТИ ПО УПРАВЛЕНИЮ ЦЕННЫМИ БУМАГАМИ № 045
+            14235 001000, ВЫДАНА БАНКОМ РОССИИ 09.09.2024. УПРАВЛЯЮЩАЯ КОМПАНИЯ
+            СОВМЕЩАЕТ ДЕЯТЕЛЬНОСТЬ ПО ДОВЕРИТЕЛЬНОМУ УПРАВЛЕНИЮ ИНВЕСТИЦИОННЫМИ
+            ФОНДАМИ, ПАЕВЫМИ ИНВЕСТИЦИОННЫМИ ФОНДАМИ И НЕГОСУДАРСТВЕННЫМИ
+            ПЕНСИОННЫМИ ФОНДАМИ С ДЕЯТЕЛЬНОСТЬЮ ПО УПРАВЛЕНИЮ ЦЕННЫМИ БУМАГАМИ.
+            <br /><br />
+            Прием заявок на приобретение и погашение инвестиционных паев
+            осуществляется в офисе ООО УК «Восхождение» по адресу: 101000, г.
+            Москва, вн.тер.г. муниципальный округ Басманный, б-р Чистопрудный,
+            д. 17, стр. 1, помещ. 1/1 Получить подробную информацию о
+            деятельности управляющей компании, о паевом инвестиционном фонде, о
+            работе пункта приема заявок на приобретение и погашение
+            инвестиционных паев, ознакомиться с правилами доверительного
+            управления паевым инвестиционным фондом и иными документами,
+            предусмотренными Федеральным законом от 29.11.2001 №156-ФЗ «Об
+            инвестиционных фондах» и нормативными актами в сфере финансовых
+            рынков, можно по адресу: 101000, г. Москва, вн.тер.г. муниципальный
+            округ Басманный, б-р Чистопрудный, д. 17, стр. 1, помещ. 1/1, или по
+            телефону +7 (495) 131 83 29, в сети Интернет на сайте Управляющей
+            компании по адресу:
+            <a href="https://www.uk-voshozhdenie.ru" class="body-long"
+              >https://www.uk-voshozhdenie.ru</a
+            >. <br /><br />
+            СТОИМОСТЬ ИНВЕСТИЦИОННЫХ ПАЕВ МОЖЕТ УВЕЛИЧИВАТЬСЯ И УМЕНЬШАТЬСЯ.
+            РЕЗУЛЬТАТЫ ИНВЕСТИРОВАНИЯ В ПРОШЛОМ НЕ ОПРЕДЕЛЯЮТ ДОХОДЫ В БУДУЩЕМ.
+            ГОСУДАРСТВО НЕ ГАРАНТИРУЕТ ДОХОДНОСТЬ ИНВЕСТИЦИЙ В ИНВЕСТИЦИОННЫЕ
+            ФОНДЫ. ПРЕЖДЕ ЧЕМ ПРИОБРЕСТИ ИНВЕСТИЦИОННЫЙ ПАЙ, СЛЕДУЕТ ВНИМАТЕЛЬНО
+            ОЗНАКОМИТЬСЯ С ПРАВИЛАМИ ДОВЕРИТЕЛЬНОГО УПРАВЛЕНИЯ ПАЕВЫМ
+            ИНВЕСТИЦИОННЫМ ФОНДОМ.
+            <br /><br />
+            Интервальный паевой инвестиционный комбинированный фонд «Аннапурна»
+            (Правила фонда № 4826-СД от 02.02.2022)
+            <br /><br />
+            Содержание сайта https://uk-voshozhdenie.ru и любых страниц сайта
+            («Сайт») предназначено исключительно для информационных целей. Сайт
+            не рассматривается и не должен рассматриваться как предложение ООО
+            УК «Восхождение» о покупке или продаже каких- либо финансовых
+            инструментов или оказание услуг какому-либо лицу. Информация на
+            Сайте не может рассматриваться в качестве рекомендации к
+            инвестированию средств, а также гарантий или обещаний в будущем
+            доходности вложений.
+            <br /><br />
+            Никакие положения информации или материалов, представленных на
+            Сайте, не являются и не должны рассматриваться как индивидуальные
+            инвестиционные рекомендации и/или намерение ООО УК «Восхождение»
+            предоставить услуги инвестиционного советника. Финансовые
+            инструменты, упоминаемые в информационных материалах Сайта,
+            предназначены исключительно для квалифицированных инвесторов. ООО УК
+            «Восхождение» не несёт ответственности за финансовые или иные
+            последствия, которые могут возникнуть в результате принятия Вами
+            решений в отношении финансовых инструментов, продуктов и услуг,
+            представленных в информационных материалах.
+            <br /><br />
+            Прежде чем воспользоваться какой-либо услугой или приобретением
+            финансового инструмента, необходимо самостоятельно оценить
+            экономические риски и выгоды от услуги и/или продукта, налоговые,
+            юридические, бухгалтерские последствия заключения сделки при
+            пользовании конкретной услугой, или перед приобретением конкретного
+            финансового инструмента или инвестиционного продукта.
+            <br /><br />
+            Ни прошлый опыт, ни финансовый успех других лиц не гарантирует и не
+            определяет получение таких же результатов в будущем. Стоимость или
+            доход от любых инвестиций, упомянутых на Сайте, могут изменяться
+            и/или испытывать воздействие изменений рыночной конъюнктуры, в том
+            числе процентных ставок.
+            <br /><br />
+            Все цифровые и расчетные данные на Сайте приведены без каких-либо
+            обязательств и исключительно в качестве примера финансовых
+            параметров.
+            <br /><br />
+            ООО УК «Восхождение» не несет ответственности за какие-либо убытки
+            (прямые или косвенные), включая реальный ущерб и упущенную выгоду,
+            возникшие в связи с использованием информации на Сайте.
+            <br /><br />
+            Настоящий Сайт не предоставляет и не предназначен для оказания
+            консультационных услуг по правовым, бухгалтерским, инвестиционным
+            или налоговым вопросам.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      new Accordion(".select .accordion-container");
+      cabinet.addEventListener("click", () => {
+        window.location.href = "https://lk.uk-voshozhdenie.ru/users/sign_in";
+      });
+    </script>
+  </body>
+</html>
