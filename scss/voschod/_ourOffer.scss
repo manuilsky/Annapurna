@@ -1,5 +1,6 @@
 .voschod {
   .offer {
+    position: relative;
     padding: 80px 0 112px 0;
     background: no-repeat right bottom / cover
       url(../../images/offer-background.svg);
@@ -77,6 +78,32 @@
           height: 48px;
           max-width: 200px;
         }
+      }
+    }
+
+    .blue-pixel {
+      top: 10%;
+      left: 96.9%;
+      @media (max-width: $container-width-tablet) {
+        display: none;
+      }
+      @media (min-width: 1700px) {
+        left: 96.8%;
+      }
+      @media (min-width: 1640px) {
+        left: 97.1%;
+      }
+      @media (min-width: 1700px) {
+        left: 97.3%;
+      }
+      @media (min-width: 1800px) {
+        left: 97.5%;
+      }
+      @media (min-width: 2060px) {
+        left: 97.8%;
+      }
+      @media (min-width: 2400px) {
+        display: none;
       }
     }
   }

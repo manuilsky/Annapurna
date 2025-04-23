@@ -10,6 +10,7 @@
   }
 
   header {
+    position: relative;
     background: no-repeat right top/cover url("../../images/voschod-ban-1.png"),
       linear-gradient(
         119.25deg,
@@ -100,6 +101,21 @@
       .button {
         @media (max-width: $container-width-tablet) {
         }
+      }
+    }
+    .blue-pixel {
+      top: 24%;
+      left: 49.9%;
+      @media (max-width: $container-width-tablet) {
+        top: 60%;
+        left: 50%;
+      }
+      @media (min-width: 391px) and (max-width: 557px) {
+        display: none;
+      }
+      @media (max-width: $container-width-mobile) {
+        top: 68%;
+        left: 35.2%;
       }
     }
   }

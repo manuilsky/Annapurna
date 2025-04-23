@@ -45,6 +45,7 @@
   }
   .fond-title {
     margin-bottom: 48px;
+    position: relative;
     @media (max-width: $container-width-tablet) {
       margin-bottom: 32px;
     }
@@ -111,6 +112,13 @@
       &.date {
         justify-content: end;
       }
+    }
+  }
+  .blue-pixel {
+    top: 40%;
+    left: 99.5%;
+    @media (max-width: $container-width-tablet) {
+      display: none;
     }
   }
 }
