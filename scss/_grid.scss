@@ -18,7 +18,11 @@ body {
   position: relative;
   margin: 0;
   height: 100vh;
+}
 
+body > .grid {
+  max-width: $container-width-desktop-lg;
+  margin: 0 auto;
   background: linear-gradient(
       to right,
       transparent 40px,
