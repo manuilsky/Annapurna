@@ -130,6 +130,7 @@ h1 {
   font-family: $font-family-book;
   font-size: $font-size-h1-desktop;
   line-height: $line-height-h1-desktop;
+  font-weight: 450 !important;
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-h1-tablet;
@@ -146,6 +147,7 @@ h2 {
   font-family: $font-family-regular;
   font-size: $font-size-h2-desktop;
   line-height: $line-height-h2-desktop;
+  font-weight: 400 !important;
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-h2-tablet;
@@ -162,6 +164,7 @@ h3 {
   font-family: $font-family-regular;
   font-size: $font-size-h3-desktop;
   line-height: $line-height-h3-desktop;
+  font-weight: 400 !important;
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-h3-tablet;
@@ -179,6 +182,7 @@ h4,
   font-family: $font-family-regular;
   font-size: $font-size-h4-desktop;
   line-height: $line-height-h4-desktop;
+  font-weight: 400 !important;
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-h4-tablet;
@@ -194,6 +198,7 @@ h4,
 .body-long {
   font: $font-size-body-long-desktop / $line-height-body-long-desktop
     $font-family-regular !important;
+  font-weight: 400 !important;
 
   @media (max-width: $container-width-tablet) {
     font: $font-size-body-long-tablet / $line-height-body-long-tablet
@@ -209,6 +214,7 @@ h4,
 .body-short {
   font: $font-size-body-short-desktop / $line-height-body-short-desktop
     $font-family-regular;
+  font-weight: 400 !important;
 
   @media (max-width: $container-width-tablet) {
     font: $font-size-body-short-tablet / $line-height-body-short-tablet
@@ -242,6 +248,7 @@ button {
   font-family: $font-family-medium;
   font-size: $font-size-link-desktop;
   line-height: $line-height-link-desktop;
+  font-weight: 500 !important;
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-link-tablet;
@@ -259,6 +266,7 @@ tr {
   font-family: $font-family-regular;
   font-size: $font-size-body-small-desktop;
   line-height: $line-height-body-small-desktop;
+  font-weight: 400 !important;
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-body-small-tablet;
@@ -275,10 +283,12 @@ tr {
   font-family: $font-family-regular;
   font-size: $font-size-explanation-text-m-desktop;
   line-height: $line-height-explanation-text-m-desktop;
+  font-weight: 400 !important;
 }
 
 .explanation-text-s {
   font-family: $font-family-regular;
   font-size: $font-size-explanation-text-s-desktop;
   line-height: $line-height-explanation-text-s-desktop;
+  font-weight: 400 !important;
 }
