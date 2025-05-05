@@ -74,6 +74,14 @@ footer {
 
       a {
         margin-bottom: 0;
+        font-size: $font-size-body-small-desktop !important;
+        color: $light-blue !important;
+        @media (max-width: $container-width-tablet) {
+          font-size: $font-size-body-small-tablet !important;
+        }
+        @media (max-width: $container-width-mobile) {
+          font-size: $font-size-body-small-mobile !important;
+        }
       }
     }
   }
