@@ -65,6 +65,7 @@ class SelectComponent {
         triggerButton.setAttribute("aria-expanded", "false");
 
         const triggerText = document.createElement("div");
+        triggerText.className = "body-short";
         triggerText.textContent = subcategory.name;
 
         triggerButton.appendChild(triggerText);
