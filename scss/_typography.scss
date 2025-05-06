@@ -131,15 +131,18 @@ h1 {
   font-size: $font-size-h1-desktop;
   line-height: $line-height-h1-desktop;
   font-weight: 450 !important;
+  letter-spacing: calc($font-size-h1-desktop * -0.02);
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-h1-tablet;
     line-height: $line-height-h1-tablet;
+    letter-spacing: calc($font-size-h1-tablet * -0.02);
   }
 
   @media (max-width: $container-width-mobile) {
     font-size: $font-size-h1-mobile;
     line-height: $line-height-h1-tablet;
+    letter-spacing: calc($font-size-h1-mobile * -0.02);
   }
 }
 
@@ -148,15 +151,18 @@ h2 {
   font-size: $font-size-h2-desktop;
   line-height: $line-height-h2-desktop;
   font-weight: 400 !important;
+  letter-spacing: calc($font-size-h2-desktop * -0.02);
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-h2-tablet;
     line-height: $line-height-h2-tablet;
+    letter-spacing: calc($font-size-h2-tablet * -0.02);
   }
 
   @media (max-width: $container-width-mobile) {
     font-size: $font-size-h2-mobile;
     line-height: $line-height-h2-tablet;
+    letter-spacing: calc($font-size-h2-mobile * -0.02);
   }
 }
 
@@ -165,15 +171,18 @@ h3 {
   font-size: $font-size-h3-desktop;
   line-height: $line-height-h3-desktop;
   font-weight: 400 !important;
+  letter-spacing: calc($font-size-h3-desktop * -0.02);
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-h3-tablet;
     line-height: $line-height-h3-tablet;
+    letter-spacing: calc($font-size-h3-tablet * -0.02);
   }
 
   @media (max-width: $container-width-mobile) {
     font-size: $font-size-h3-mobile;
     line-height: $line-height-h3-tablet;
+    letter-spacing: calc($font-size-h3-mobile * -0.02);
   }
 }
 
@@ -183,15 +192,18 @@ h4,
   font-size: $font-size-h4-desktop;
   line-height: $line-height-h4-desktop;
   font-weight: 400 !important;
+  letter-spacing: calc($font-size-h4-desktop * -0.02);
 
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-h4-tablet;
     line-height: $line-height-h4-tablet;
+    letter-spacing: calc($font-size-h4-tablet * -0.02);
   }
 
   @media (max-width: $container-width-mobile) {
     font-size: $font-size-h4-mobile;
     line-height: $line-height-h4-tablet;
+    letter-spacing: calc($font-size-h4-mobile * -0.02);
   }
 }
 
@@ -203,11 +215,13 @@ h4,
   @media (max-width: $container-width-tablet) {
     font: $font-size-body-long-tablet / $line-height-body-long-tablet
       $font-family-regular !important;
+    letter-spacing: calc($font-size-body-long-tablet * -0.02) !important;
   }
 
   @media (max-width: $container-width-mobile) {
     font: $font-size-body-long-mobile / $line-height-body-long-tablet
       $font-family-regular !important;
+    letter-spacing: calc($font-size-body-long-mobile * -0.02) !important;
   }
 }
 
@@ -219,11 +233,13 @@ h4,
   @media (max-width: $container-width-tablet) {
     font: $font-size-body-short-tablet / $line-height-body-short-tablet
       $font-family-regular;
+    letter-spacing: calc($font-size-body-short-tablet * -0.02) !important;
   }
 
   @media (max-width: $container-width-mobile) {
     font: $font-size-body-short-mobile / $line-height-body-short-tablet
       $font-family-regular;
+    letter-spacing: calc($font-size-body-short-mobile * -0.02) !important;
   }
 }
 
@@ -234,11 +250,13 @@ th {
   @media (max-width: $container-width-tablet) {
     font: $font-size-body-short-tablet / $line-height-body-short-tablet
       $font-family-regular !important;
+    letter-spacing: calc($font-size-body-short-mobile * -0.02) !important;
   }
 
   @media (max-width: $container-width-mobile) {
     font: $font-size-body-short-mobile / $line-height-body-short-tablet
       $font-family-regular !important;
+    letter-spacing: calc($font-size-body-short-mobile * -0.02) !important;
   }
 }
 
@@ -271,11 +289,13 @@ tr {
   @media (max-width: $container-width-tablet) {
     font-size: $font-size-body-small-tablet;
     line-height: $line-height-body-small-tablet;
+    letter-spacing: calc($font-size-body-small-tablet * -0.02);
   }
 
   @media (max-width: $container-width-mobile) {
     font-size: $font-size-body-small-mobile;
     line-height: $line-height-body-small-tablet;
+    letter-spacing: calc($font-size-body-small-mobile * -0.02);
   }
 }
 
