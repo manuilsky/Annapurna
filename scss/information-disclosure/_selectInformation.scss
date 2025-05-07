@@ -6,7 +6,7 @@
         119.25deg,
         rgba(20, 19, 36, 0) 32.866%,
         rgba(20, 19, 36, 0.75) 64.453%,
-        rgba(20, 19, 36, 0.9) 73.606%,
+        rgba(20, 19, 36, 0.5) 84.606%,
         rgb(20, 19, 36) 80.197%
       );
     min-height: 618px;
@@ -98,6 +98,8 @@
 
       .ac {
         padding: 16px 8px !important;
+        backdrop-filter: blur(2px);
+        background-color: rgba(27, 60, 132, 0.15) !important;
       }
 
       .ac-panel {
