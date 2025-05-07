@@ -12,20 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Скрываем попап сразу при загрузке, чтобы он не мигал
-  if (localStorage.getItem("popupConfirmed") === "true") {
-    popupOverlay.classList.add("hidden");
-    return; // Прерываем выполнение дальнейших инструкций
-  }
+  // Показываем попап при каждой загрузке
+  popupOverlay.classList.remove("hidden");
+  toggleBodyScroll(true);
 
-  popupOverlay.classList.remove("hidden"); // Показываем попап, если он не был подтверждён
-  toggleBodyScroll(true); // Блокируем скролл
-
-  // Подтверждение — закрываем попап и сохраняем статус в localStorage
+  // Подтверждение — просто закрываем попап
   confirmButton.addEventListener("click", () => {
     popupOverlay.classList.add("hidden");
-    localStorage.setItem("popupConfirmed", "true");
-    toggleBodyScroll(false); // Разблокируем скролл
+    toggleBodyScroll(false);
   });
 
   // Закрытие по крестику — перенаправление на index2.html
