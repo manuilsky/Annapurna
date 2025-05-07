@@ -7,6 +7,7 @@
   height: 100%;
   background: $bg-60;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +21,7 @@
     border: 1px solid $blue-main;
     background: $light-grey;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     width: 90%;
     max-width: 1086px;
     @media (max-width: $container-width-tablet) {

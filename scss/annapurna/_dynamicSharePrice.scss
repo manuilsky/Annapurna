@@ -28,6 +28,7 @@
     border: 1px solid $blue-main;
     border-radius: 8px;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     background: $bg-20;
 
     @media (max-width: $container-width-mobile) {

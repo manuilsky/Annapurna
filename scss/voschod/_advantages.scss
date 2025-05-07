@@ -47,6 +47,7 @@
       border: 1px solid $blue-main;
       border-radius: 8px;
       backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
       height: 320px;
       max-width: 265.6px;
       background: $bg-20;

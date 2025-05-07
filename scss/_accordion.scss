@@ -5,6 +5,7 @@
   border: 1px solid $blue-main !important;
   background-color: $bg-20 !important;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   border-radius: 6.68px;
 
   @media (max-width: $container-width-tablet) {

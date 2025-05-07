@@ -123,6 +123,7 @@
     border-radius: 6px;
     /* blur 60 */
     backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(60px);
     /* Secondary/bg 60% */
     background: rgba(15, 21, 42, 0.6);
     padding: 32px;
