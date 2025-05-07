@@ -151,6 +151,10 @@
   background-color: transparent;
   box-shadow: none;
   border: none;
+  max-width: unset !important;
+  @media (max-width: 648px) {
+    max-width: 350px !important;
+  }
 }
 .tippy-arrow {
   display: none;
@@ -161,7 +165,7 @@
   border: 1px solid $blue-main;
   border-radius: 8px 0px 8px 8px;
   padding: 8px;
-
+  max-width: 546px;
   color: $blue-main;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left;
