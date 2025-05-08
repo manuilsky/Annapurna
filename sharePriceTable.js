@@ -263,8 +263,4 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   initializeTable();
-
-  window.addEventListener("resize", () => {
-    initializeTable();
-  });
 });
