@@ -81,20 +81,47 @@
         background-clip: text;
 
         margin-bottom: 40px;
+        @media (max-width: 970px) {
+          max-width: 550px;
+        }
 
         @media (max-width: $container-width-tablet) {
           max-width: 548px;
           margin-bottom: 32px;
+        }
+        @media (max-width: 515px) {
+          max-width: 300px;
+        }
+        @media (min-width: 390px) and (max-width: 435px) {
+          max-width: 230px;
+        }
+        @media (max-width: 390px) {
+          max-width: 342px;
         }
       }
 
       .header-banner-text {
         max-width: 499px;
         margin-bottom: 80px;
+        @media (max-width: 970px) {
+          max-width: 320px;
+        }
 
         @media (max-width: $container-width-tablet) {
           max-width: 320px;
           margin-bottom: 64px;
+        }
+        @media (max-width: 595px) {
+          max-width: 206px;
+        }
+        @media (max-width: 495px) {
+          max-width: 160px;
+        }
+        @media (max-width: 434px) {
+          max-width: 120px;
+        }
+        @media (max-width: 390px) {
+          max-width: 342px;
         }
       }
 

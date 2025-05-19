@@ -72,11 +72,11 @@
     .general-title {
       padding: 16px;
       display: flex;
+      align-items: center;
+      border-bottom: 1px solid $light-blue-50;
       @media (max-width: $container-width-mobile) {
         flex: 1;
       }
-      align-items: center;
-      border-bottom: 1px solid $light-blue-50;
       @media (min-width: $container-width-mobile) {
         &.main {
           flex: 2;
@@ -101,12 +101,13 @@
     .subtitle {
       padding: 16px;
       display: flex;
-      @media (max-width: $container-width-mobile) {
-        flex: 1;
-      }
       align-items: center;
       background: $bg-30;
       border-bottom: 1px solid $light-blue-50;
+
+      @media (max-width: $container-width-mobile) {
+        flex: 1;
+      }
     }
     @media (min-width: $container-width-mobile) {
       .row-title {
@@ -124,12 +125,12 @@
       background: $bg-15;
       opacity: 0.7;
       display: flex;
+      align-items: center;
+      border-bottom: 1px solid $light-blue-50;
+
       @media (max-width: $container-width-mobile) {
         flex: 1;
       }
-
-      align-items: center;
-      border-bottom: 1px solid $light-blue-50;
     }
     @media (min-width: $container-width-mobile) {
       .row-title {
