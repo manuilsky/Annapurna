@@ -31,16 +31,16 @@
       padding: 16px 20px 16px 20px;
     }
 
-    @media (max-width: 1050px) {
-      padding: 16px 20px 16px 20px;
+    @media (max-width: 1265px) {
+      padding: 16px 8px 16px 8px;
     }
 
     @media (max-width: 965px) {
-      padding: 16px 16px 16px 16px;
+      padding: 16px 4px 16px 4px;
     }
 
-    @media (max-width: 822px) {
-      padding: 16px 10px 16px 10px;
+    @media (max-width: 840px) {
+      padding: 16px 4px 16px 4px;
     }
   }
 
@@ -51,14 +51,14 @@
     align-items: center;
     height: 100%;
     img {
-      @media (max-width: 1030px) {
-        width: 200px;
+      @media (min-width: 965px) and (max-width: 1265px) {
+        width: 120px;
       }
-      @media (max-width: 935px) {
-        width: 180px;
+      @media (min-width: 840px) and (max-width: 965px) {
+        width: 100px;
       }
-      @media (max-width: 844px) {
-        width: 160px;
+      @media (min-width: 769px) and (max-width: 840px) {
+        width: 90px;
       }
     }
   }
@@ -78,15 +78,15 @@
     -webkit-backdrop-filter: blur(10px);
     background: $bg-20;
   }
-  @media (max-width: 1050px) {
-    padding: 16px 30px 16px 30px;
+  @media (max-width: 1264px) {
+    padding: 16px 10px 16px 10px;
   }
 
-  @media (max-width: 965px) {
-    padding: 16px 20px 16px 20px;
-  }
   @media (max-width: 974px) {
-    padding: 16px 8px 16px 8px;
+    padding: 16px 6px 16px 6px;
+  }
+  @media (max-width: 965px) {
+    padding: 16px 0 16px 0;
   }
 
   @media (max-width: $container-width-tablet) {
