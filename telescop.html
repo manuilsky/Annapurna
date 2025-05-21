@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="dist/css/reset.css" />
+    <link rel="stylesheet" href="dist/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.css"
+    />
+    <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="tooltips.js"></script>
+    <script src="mobilemenu.js"></script>
+    <script src="sharePriceTable.js"></script>
+    <script src="coloredContentFondTable.js"></script>
+    <script src="popup.js"></script>
+    <title>Аннапурна</title>
+  </head>
+  <body class="telescop">
+    <div class="grid">
+      <div class="container decks-header">
+        <!-- Desktop Navigation -->
+        <div class="row row-lg">
+          <div class="col-3">
+            <div class="header-logo-wrapper">
+              <img
+                src="images\LogotypeVoshozhdenie.svg"
+                alt="Logo"
+                width="180"
+                height="28"
+              />
+            </div>
+          </div>
+
+          <div class="col-14">
+            <ul class="navigation">
+              <li>
+                <a href="index2.html"
+                  ><p class="navigation-mark"></p>
+                  <span>УК Восхождение</span></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="navigation-mark"></p>
+                  <span>Аннапурна</span></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  ><p class="navigation-mark"></p>
+                  <span>Телескоп А</span></a
+                >
+              </li>
+              <li>
+                <a href="contacts.html"
+                  ><p class="navigation-mark"></p>
+                  <span>Связаться</span></a
+                >
+              </li>
+              <li>
+                <a href="index3.html"
+                  ><p class="navigation-mark"></p>
+                  <span>Раскрытие информации</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-3">
+            <button class="header-button" id="cabinet">Личный кабинет</button>
+          </div>
+        </div>
+
+        <!-- Tablet and Mobile Navigation -->
+        <div class="row row-md row-sm tablet-navigation">
+          <div class="col-20 col-md-20 col-sm-12">
+            <div class="navigation">
+              <div class="visible-tablet-navigation">
+                <div class="header-logo-wrapper">
+                  <img
+                    src="images\Logotype Annapurna.svg"
+                    alt="Logo"
+                    width="170"
+                    height="22"
+                  />
+                </div>
+                <div class="header-menu-icon trigger">
+                  <img
+                    src="images\Icons Mobile + Tablet Menu.svg"
+                    alt="Menu"
+                    width="24"
+                    height="24"
+                  />
+                </div>
+              </div>
+              <div class="menu-dropdown">
+                <ul>
+                  <li><a class="h4" href="index2.html">УК «Восхождение»</a></li>
+                  <li><a class="h4" href="index.html">Аннапурна</a></li>
+                  <li><a class="h4" href="index.html">Телескоп А</a></li>
+                  <li><a class="h4" href="contacts.html">Связаться</a></li>
+                  <li>
+                    <a class="h4" href="index3.html">Раскрытие информации</a>
+                  </li>
+                  <li>
+                    <a
+                      class="h4"
+                      href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                      >Личный кабинет</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="container">
+          <!--Banner-1 HeaderBanner-->
+          <div class="row header-banner">
+            <div class="col-9 col-sm-12 header-banner-col">
+              <div class="header-banner-right">
+                <div class="header-banner-text-container">
+                  <h1>Фонд «Аннапурна»</h1>
+                  <div class="body-long header-banner-text">
+                    ИПИФК «Аннапурна» — динамичное решение для роста инвестиций
+                    от УК «Восхождение». Фонд с акцентом на агрессивные
+                    стратегии и гибкое управление активами для квалифицированных
+                    инвесторов. Инвестиции охватывают широкий спектр финансовых
+                    инструментов, направленных на достижение высоких
+                    результатов.
+                  </div>
+                </div>
+                <button class="button" id="buy_pai">Купить паи</button>
+              </div>
+            </div>
+            <div class="col-1"></div>
+
+            <div class="col-10 col-sm-12">
+              <div class="row">
+                <div
+                  class="col-10 col-md-20 col-sm-12 info-container"
+                  id="info-1"
+                >
+                  <div class="info-question-wrapper">
+                    <p class="info-container-title body-short">
+                      Прирост стоимости пая
+                    </p>
+                    <p id="firstInfoTooltip">
+                      <img src="images\question-mark.svg" alt="Question" />
+                    </p>
+                  </div>
+                  <h3 class="info-container-content">155,47%</h3>
+                  <!--Админка!-->
+                </div>
+                <div
+                  class="col-10 col-md-20 col-sm-12 info-container"
+                  id="info-2"
+                >
+                  <div class="info-question-wrapper">
+                    <p class="info-container-title body-short">
+                      Доходность, в % годовых
+                    </p>
+                    <p id="secondInfoTooltip">
+                      <img src="images\question-mark.svg" alt="Question" />
+                    </p>
+                  </div>
+                  <h3 class="info-container-content">41,46%</h3>
+                  <!--Админка!-->
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-10 col-md-20 col-sm-12 info-container"
+                  id="info-3"
+                >
+                  <p class="info-container-title body-short">Стоимость пая</p>
+                  <h3 class="info-container-content">$ 255,47</h3>
+                  <!--Админка!-->
+                </div>
+                <div
+                  class="col-10 col-md-20 col-sm-12 info-container"
+                  id="info-4"
+                >
+                  <p class="info-container-title body-short">
+                    Стоимость чистых активов
+                  </p>
+                  <h3 class="info-container-content">> $ 6,4 млн</h3>
+                  <!--Админка!-->
+                </div>
+              </div>
+              <div class="row">
+                <div
+                  class="col-20 col-md-20 col-sm-12 info-container"
+                  id="info-5"
+                >
+                  <p class="info-container-date-title body-short">
+                    Дата обновления
+                  </p>
+                  <p class="info-container-date body-short">31.01.2025</p>
+                  <!--Админка!-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--Banner-2-->
+
+      <!--Dynamics-of-share-price-->
+
+      <!--Manager-Banner-->
+
+      <!--Comment-UK-->
+
+      <!--Table-Fond-->
+
+      <!--Table-additional-information-->
+
+      <!--Banner-4-->
+      <section class="banner-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-10 col-sm-12 banner-4-wrapper">
+              <h2>Доверьте свои активы<br />Восхождению</h2>
+              <p class="body-short">
+                Получите консультацию с нашим специалистом<br />
+                и ответы на интересущие вопросы.
+              </p>
+
+              <button class="button" id="touch">Связаться</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Q&A-->
+      <section class="questions">
+        <div class="container">
+          <div class="row">
+            <div class="col-20 col-md-20 col-sm-12 questions-title">
+              <h2>Q&A</h2>
+            </div>
+
+            <div class="col-20 col-md-20 col-sm-12">
+              <div class="accordion-container">
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger body-short">
+                      <div class="body-short">
+                        Что такое паевой инвестиционный фонд (ПИФ)?
+                      </div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <div class="ac-text body-long">
+                      ПИФ — это форма коллективного инвестирования, где деньги
+                      множества инвесторов (пайщиков) объединяются для
+                      приобретения различных активов, таких как акции,
+                      облигации, недвижимость и другие. Управляет этими активами
+                      профессиональная управляющая компания. ПИФ не является
+                      юридическим лицом, а представляет собой имущественный
+                      комплекс.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger body-short">
+                      <div class="body-short">Что такое пай ПИФ?</div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <p class="ac-text body-long">
+                      Пай — это ценная бумага, удостоверяющая право
+                      собственности на долю в имуществе ПИФа. Покупая пай, вы
+                      становитесь совладельцем части активов ПИФ.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger body-short">
+                      <div class="body-short">Какие бывают ПИФ?</div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <div class="ac-text body-long">
+                      ПИФ классифицируют по различным критериям.
+                      <br /><br />
+                      По типам:
+                      <br /><br />
+                      <ul class="disc">
+                        <li>
+                          Открытые ПИФы (ОПИФ): паи могут быть свободно выданы и
+                          погашены в любой рабочий день.
+                        </li>
+                        <li>
+                          Интервальные ПИФы (ИПИФ): паи могут быть выданы и
+                          погашены только в определенные периоды времени
+                          (интервалы). Интервалы определены правилами ДУ ПИФ.
+                        </li>
+                        <li>
+                          Закрытые ПИФы (ЗПИФ): паи могут быть выданы и погашены
+                          в указанные в Правилах доверительного управления
+                          случаях.
+                        </li>
+                      </ul>
+                      <br />
+                      ООО УК «Восхождение» осуществляет доверительное управление
+                      только ЗПИФ и ИПИФ.
+                      <br /><br />
+                      По категориям:
+                      <br /><br />
+                      ПИФ, правилами доверительного управления которых
+                      предусмотрено, что их инвестиционные паи предназначены
+                      только для
+                      <a href="index.html"> квалифицированных инвесторов</a>,
+                      относятся к одной из следующих категорий: <br /><br />
+                      <ul class="disc">
+                        <li>фонд финансовых инструментов</li>
+                        <li>фонд недвижимости</li>
+                        <li>комбинированный фонд</li>
+                      </ul>
+                      <br />
+                      ООО УК «Восхождение» осуществляет доверительное управление
+                      только комбинированными ПИФ для
+                      <a href="index.html">квалифицированных инвесторов</a>
+                      с максимально широкой инвестиционной декларацией.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger body-short">
+                      <div class="body-short">Как работает ПИФ?</div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <div class="ac-text body-long">
+                      Участники рынка:
+                      <br /><br />
+                      <ul class="disc">
+                        <li>
+                          Инвесторы (пайщики): физические и юридические лица,
+                          вкладывающие свои средства в коллективные
+                          инвестиционные инструменты с целью получения прибыли.
+                        </li>
+                        <li>
+                          Управляющие компании (УК): компании, осуществляющие
+                          профессиональное управление активами коллективных
+                          инвестиционных фондов. Они принимают инвестиционные
+                          решения, покупают и продают активы, ведут учет и
+                          отчетность фонда.
+                        </li>
+                        <li>
+                          Специализированные депозитарии: организации,
+                          осуществляющие учет прав на активы, принадлежащие
+                          фонду, а также контроль за соблюдением
+                          законодательства и инвестиционной декларации фонда.
+                        </li>
+                        <li>
+                          Регистраторы: организации, ведущие реестр владельцев
+                          паев, а также осуществляющие учет операций с паями.
+                        </li>
+                        <li>
+                          Брокеры: компании, предоставляющие доступ к торговым
+                          площадкам и осуществляющие сделки по покупке и продаже
+                          паев для своих клиентов, если паи обращаются на бирже.
+                        </li>
+                        <li>
+                          Аудиторы: независимые организации, осуществляющие
+                          аудит финансовой отчетности фонда и подтверждающие ее
+                          достоверность (если предусмотрено ПДУ).
+                        </li>
+                        <li>
+                          Оценщики: организации, предоставляющие услуги по
+                          оценке стоимости имущества фонда (если предусмотрено
+                          ПДУ).
+                        </li>
+                        <li>
+                          Саморегулируемые организации (СРО): Некоммерческие
+                          организации, объединяющие профессиональных участников
+                          рынка и контролирующие соблюдение ими установленных
+                          стандартов и правил.
+                        </li>
+                        <li>
+                          Государственный регулятор: Центральный банк РФ (Банк
+                          России), осуществляющий надзор и контроль за
+                          деятельностью участников рынка коллективных
+                          инвестиций, а также устанавливающий нормативные
+                          требования.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger body-short">
+                      <div class="body-short">Как купить паи ПИФ?</div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <div class="ac-text body-long">
+                      <ol class="decimal">
+                        <li>
+                          Напрямую обратившись в нашу Управляющую Компанию по
+                          телефону<br />
+                          <a href="tel:+74951318329">+7-495-131-83-29</a> или
+                          написав нам в <a href="index.html">Telegram</a>, а
+                          также через
+                          <a href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                            >Личный кабинет</a
+                          >.
+                        </li>
+                        <li>
+                          Обратившись к вашему брокеру для подачи заявки через
+                          НРД.
+                        </li>
+                        <li>
+                          Паи Фонда торгуются на фондовой секции Мосбиржи. Можно
+                          найти по ISIN коду ценной бумаги RU000A106SA3 или по
+                          наименованию ИПИФК «Телескоп А» в приложении брокера
+                          или торговом терминале.
+                        </li>
+                      </ol>
+                      <br />
+                      По всем вопросам пишите нам в
+                      <a href="index.html">Telegram</a>.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger body-short">
+                      <div class="body-short">
+                        Как погасить или продать паи ПИФ?
+                      </div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <div class="ac-text body-long">
+                      Подать заявку на погашение паев ИПИФК «Телескоп А» можно в
+                      управляющую компанию или обратившись к вашему брокеру для
+                      подачи заявки через НРД.
+                      <br /><br />
+                      Если паи учитываются в НРД и ваш брокер дает доступ к
+                      торговым операциям с ними, вы можете продать паи на бирже,
+                      найдя их по наименованию ИПИФК «Телескоп А» или ISIN коду
+                      ценной бумаги RU000A106SA3 в приложении брокера или
+                      торговом терминале.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger body-short">
+                      <div class="body-short">Как узнать стоимость пая?</div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <div class="ac-text body-long">
+                      Стоимость пая ИПИФК «Телескоп А» (СЧА — стоимость чистых
+                      активов на пай) рассчитывается каждый рабочий день и
+                      публикуется на сайте управляющей компании и в
+                      <a href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                        >Личном кабинете</a
+                      >.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ac">
+                  <h2 class="ac-header">
+                    <button type="button" class="ac-trigger body-short">
+                      <div class="body-short">Правовое регулирование ПИФ?</div>
+                    </button>
+                  </h2>
+                  <div class="ac-panel">
+                    <div class="ac-text body-long">
+                      <ul class="disc">
+                        <li>
+                          Федеральный закон от 29.11.2001 № 156-ФЗ "Об
+                          инвестиционных фондах": Основной закон, регулирующий
+                          деятельность управляющей компании.
+                        </li>
+                        <br />
+                        <li>
+                          Нормативные акты Банка России: регулируют порядок
+                          создания, функционирования и ликвидации ПИФ,
+                          требования к управляющим компаниям, специализированным
+                          депозитариям и другим участникам рынка.
+                        </li>
+                        <br />
+                        <li>
+                          Иные законы и подзаконные акты: регулируют различные
+                          аспекты деятельности рынка, включая налогообложение,
+                          защиту прав инвесторов и противодействие легализации
+                          доходов, полученных преступным путем.
+                        </li>
+                        <br />
+                        <li>
+                          Правила доверительного управления ПИФ: договор
+                          доверительного управления паевым инвестиционным
+                          фондом, определяются управляющей компанией в
+                          стандартных формах и могут быть приняты учредителем
+                          доверительного управления только путем присоединения к
+                          указанному договору в целом.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="row footer-navigation">
+            <div class="col-5 col-md-10 col-sm-12" id="footer-logo">
+              <img src="images\LogotypeVoshozhdenie.svg" alt="Logo" />
+            </div>
+            <div class="col-5 col-md-10 col-sm-12" id="footer-menu-1">
+              <ul>
+                <li>
+                  <a class="body-short" href="index.html">УК «Восхождение»</a>
+                </li>
+                <li><a class="body-short" href="index.html">Аннапурна</a></li>
+                <li><a class="body-short" href="index.html">Телескоп А</a></li>
+                <li><a class="body-short" href="index.html">Связаться</a></li>
+                <li>
+                  <a class="body-short" href="index.html"
+                    >Раскрытие информации</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="body-short"
+                    href="https://lk.uk-voshozhdenie.ru/users/sign_in"
+                    >Личный кабинет</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-5 col-md-10 col-sm-12" id="footer-menu-2">
+              <div class="body-short">Полное наименование</div>
+              <div class="body-small">
+                Общество с ограниченной ответственностью Управляющая Компания
+                «Восхождение»
+              </div>
+
+              <div class="body-short">Краткое наименование</div>
+              <div class="body-small">ООО УК «Восхождение»</div>
+
+              <div class="body-short">ОГРН</div>
+              <div class="body-small">5167746349843</div>
+
+              <div class="body-short">ИНН/КПП</div>
+              <div class="body-small">9705081245/770101001</div>
+            </div>
+            <div class="col-5 col-md-10 col-sm-12" id="footer-menu-3">
+              <div>
+                <div class="body-short">Генеральный директор</div>
+                <div class="body-small">Кузнецов Сергей Александрович</div>
+                <div class="body-short">
+                  Адрес местонахождения/почтовый адрес
+                </div>
+                <div class="body-small">
+                  101000, г. Москва, вн.тер.г. муниципальный округ Басманный,
+                  б-р Чистопрудный, д. 17, стр. 1, помещение 1/1
+                </div>
+              </div>
+
+              <div class="links">
+                <a class="body-short" href="tel:+74951318329">
+                  +7 (495) 131-83-29
+                </a>
+                <a class="body-short" href="mailto:info@uk-voshozhdenie.ru">
+                  info@uk-voshozhdenie.ru
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row footer-content">
+            <div class="col-20 body-long">
+              ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ УПРАВЛЯЮЩАЯ КОМПАНИЯ
+              «ВОСХОЖДЕНИЕ» (ЛИЦЕНЗИЯ НА ОСУЩЕСТВЛЕНИЕ ДЕЯТЕЛЬНОСТИ ПО
+              УПРАВЛЕНИЮ ИНВЕСТИЦИОННЫМИ ФОНДАМИ, ПАЕВЫМИ ИНВЕСТИЦИОННЫМИ
+              ФОНДАМИ И НЕГОСУДАРСТВЕННЫМИ ПЕНСИОННЫМИ ФОНДАМИ № 21 000 1 01017,
+              ВЫДАНА БАНКОМ РОССИИ 15.05.2018, ЛИЦЕНЗИЯ НА ОСУЩЕСТВЛЕНИЕ
+              ДЕЯТЕЛЬНОСТИ ПО УПРАВЛЕНИЮ ЦЕННЫМИ БУМАГАМИ № 045 14235 001000,
+              ВЫДАНА БАНКОМ РОССИИ 09.09.2024). УПРАВЛЯЮЩАЯ КОМПАНИЯ СОВМЕЩАЕТ
+              ДЕЯТЕЛЬНОСТЬ ПО ДОВЕРИТЕЛЬНОМУ УПРАВЛЕНИЮ ИНВЕСТИЦИОННЫМИ ФОНДАМИ,
+              ПАЕВЫМИ ИНВЕСТИЦИОННЫМИ ФОНДАМИ И НЕГОСУДАРСТВЕННЫМИ ПЕНСИОННЫМИ
+              ФОНДАМИ С ДЕЯТЕЛЬНОСТЬЮ ПО УПРАВЛЕНИЮ ЦЕННЫМИ БУМАГАМИ.
+              <br /><br />
+              Прием заявок на приобретение и погашение инвестиционных паев
+              осуществляется в офисе ООО УК «Восхождение» по адресу: 101000, г.
+              Москва, вн.тер.г. муниципальный округ Басманный, б-р Чистопрудный,
+              д. 17, стр. 1, помещ. 1/1 Получить подробную информацию о
+              деятельности управляющей компании, о паевом инвестиционном фонде,
+              о работе пункта приема заявок на приобретение и погашение
+              инвестиционных паев, ознакомиться с правилами доверительного
+              управления паевым инвестиционным фондом и иными документами,
+              предусмотренными Федеральным законом от 29.11.2001 №156-ФЗ «Об
+              инвестиционных фондах» и нормативными актами в сфере финансовых
+              рынков, можно по адресу: 101000, г. Москва, вн.тер.г.
+              муниципальный округ Басманный, б-р Чистопрудный, д. 17, стр. 1,
+              помещ. 1/1, или по телефону +7 (495) 131 83 29, в сети Интернет на
+              сайте Управляющей компании по адресу:
+              <a href="https://www.uk-voshozhdenie.ru" class="body-long"
+                >https://www.uk-voshozhdenie.ru</a
+              >. <br /><br />
+              СТОИМОСТЬ ИНВЕСТИЦИОННЫХ ПАЕВ МОЖЕТ УВЕЛИЧИВАТЬСЯ И УМЕНЬШАТЬСЯ.
+              РЕЗУЛЬТАТЫ ИНВЕСТИРОВАНИЯ В ПРОШЛОМ НЕ ОПРЕДЕЛЯЮТ ДОХОДЫ В
+              БУДУЩЕМ. ГОСУДАРСТВО НЕ ГАРАНТИРУЕТ ДОХОДНОСТЬ ИНВЕСТИЦИЙ В
+              ИНВЕСТИЦИОННЫЕ ФОНДЫ. ПРЕЖДЕ ЧЕМ ПРИОБРЕСТИ ИНВЕСТИЦИОННЫЙ ПАЙ,
+              СЛЕДУЕТ ВНИМАТЕЛЬНО ОЗНАКОМИТЬСЯ С ПРАВИЛАМИ ДОВЕРИТЕЛЬНОГО
+              УПРАВЛЕНИЯ ПАЕВЫМ ИНВЕСТИЦИОННЫМ ФОНДОМ.
+              <br /><br />
+              Интервальный паевой инвестиционный комбинированный фонд
+              «Телескоп А» (Правила фонда № 5576-СД от 22.08.2023, с изменениями
+              №1 от 14.02.2025)
+              <br /><br />
+              Информация на Сайте не может рассматриваться как:<br />
+              <br />
+              - Рекомендация к инвестированию.<br />
+              - Гарантия или обещание доходности в будущем.
+              <br /><br />
+              Важно:<br />
+              <br />
+              1. Финансовые инструменты фонда «Телескоп А» могут быть
+              предназначены для квалифицированных инвесторов.<br />
+              2. ООО УК «Восхождение» не предоставляет индивидуальных
+              инвестиционных рекомендаций и не несет ответственности
+              за последствия решений, принятых на основе информации с Сайта.
+              <br /><br />
+              Перед инвестированием:<br />
+              <br />
+              - Самостоятельно оцените риски, налоговые и юридические
+              последствия.<br />- Учтите, что прошлые результаты не гарантируют
+              будущей доходности.<br />- Стоимость паев подвержена рыночным
+              колебаниям (включая изменения процентных ставок). <br /><br />
+              Ограничения ответственности:<br />
+              <br />
+              - Все расчетные данные на Сайте приведены в качестве примера
+              и не являются обязательными.<br />- УК «Восхождение» не возмещает
+              убытки (прямые/косвенные), возникшие из-за использования
+              информации с Сайта. <br /><br />
+              Сайт не заменяет консультации по правовым, бухгалтерским или
+              налоговым вопросам.
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--Popup-confirmation of qualifications-->
+      <div class="overlay hidden" id="popupOverlay">
+        <div class="popup">
+          <div class="header-content-popup">
+            <h3>Подтверждение статуса квалифицированного инвестора</h3>
+            <button class="cross-icon-popup">
+              <img
+                src="images\cross-icon-popup.svg"
+                alt="cross-icon-popup"
+                width="24px"
+                height="24px"
+              />
+            </button>
+          </div>
+
+          <p class="body-long content-middle">
+            <span>Кто такие квалифицированные инвесторы?</span>
+            Отдельная категория инвесторов, обладающих необходимыми знаниями и
+            опытом работы на рынке ценных бумаг, а также финансовыми
+            возможностями, которые позволяют им адекватно оценивать риски и
+            осознанно инвестировать в сложные финансовые инструменты.
+          </p>
+          <div class="content-bottom-wrapper">
+            <p class="body-long content-bottom">
+              Детальные требования к квалифицированным инвесторам определены в
+              Регламенте признания юридических и физических лиц
+              квалифицированными инвесторами.
+            </p>
+            <button class="button button-popup">Подтверждаю</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      new Accordion(".accordion-container");
+      buy_pai.addEventListener("click", () => {
+        window.location.href = "https://lk.uk-voshozhdenie.ru/users/sign_in";
+      });
+      cabinet.addEventListener("click", () => {
+        window.location.href = "https://lk.uk-voshozhdenie.ru/users/sign_in";
+      });
+      touch.addEventListener("click", () => {
+        window.location.href = "tel:+74951318329";
+      });
+    </script>
+  </body>
+</html>
