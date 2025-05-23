@@ -28,6 +28,8 @@
 
 @import "telescop/header";
 @import "telescop/footer-banner";
+@import "telescop/additionalTableTelescop";
+@import "telescop/fondTableTelescop";
 
 @import "page-not-found/headerBanner";
 
@@ -68,6 +70,7 @@ button:hover {
 ul.disc {
   list-style: disc;
   padding-left: 14px;
+
   transform: translateX(10px);
 }
 

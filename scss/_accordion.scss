@@ -54,6 +54,15 @@
     color: $light-grey !important;
     opacity: 70%;
     max-width: 675px;
+    @media (max-width: $container-width-tablet) {
+      max-width: 390px;
+    }
+    @media (max-width: 500px) {
+      max-width: 320px;
+    }
+    @media (max-width: 420px) {
+      max-width: 280px;
+    }
   }
 }
 
