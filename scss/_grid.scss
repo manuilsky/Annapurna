@@ -28,37 +28,38 @@ body > .grid {
   margin: 0 auto;
   position: relative;
 
-  $stripe-area-width: calc(100% - #{$margin-desktop * 2});
+  background: linear-gradient(
+      to right,
+      transparent 40px,
+      $blue-main-30 40px,
+      $blue-main-30 41px,
 
-  $step: calc(#{$stripe-area-width} / (#{$columns - 1}));
-
-  background-image: linear-gradient(
-    to right,
-    transparent 0,
-    transparent calc(#{$margin-desktop}),
-    $blue-main-30 calc(#{$margin-desktop}),
-    $blue-main-30 calc(calc(#{$margin-desktop} + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + $step)),
-    $blue-main-30 calc(calc(#{$margin-desktop} + $step)),
-    $blue-main-30 calc(calc(#{$margin-desktop} + $step + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + $step + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + $step * 2)),
-    $blue-main-30 calc(calc(#{$margin-desktop} + $step * 2)),
-    $blue-main-30 calc(calc(#{$margin-desktop} + $step * 2 + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + $step * 2 + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + $step * 3)),
-    $blue-main-30 calc(calc(#{$margin-desktop} + $step * 3)),
-    $blue-main-30 calc(calc(#{$margin-desktop} + $step * 3 + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + $step * 3 + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + $step * 4)),
-    $blue-main-30 calc(calc(#{$margin-desktop} + $step * 4)),
-    $blue-main-30 calc(calc(#{$margin-desktop} + $step * 4 + #{$stripe-width})),
-    transparent calc(calc(#{$margin-desktop} + $step * 4 + #{$stripe-width})),
-    transparent 100%
-  );
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+      transparent calc(41px + 0.8px),
+      /* Very tiny positive offset */ transparent
+        calc((40px + (100% - 80px + $gutter) / 4)),
+      $blue-main-30 calc((40px + (100% - 80px + $gutter) / 4)),
+      $blue-main-30 calc((40px + (100% - 80px + $gutter) / 4) + 1px),
+      /* New: Transparent must start after this line's end. */ transparent
+        calc((40px + (100% - 80px + $gutter) / 4) + 1px + 0.8px),
+      transparent calc((40px + ((100% - 80px + $gutter) / 4) * 2)),
+      $blue-main-30 calc((40px + ((100% - 80px + $gutter) / 4) * 2)),
+      $blue-main-30 calc((40px + ((100% - 80px + $gutter) / 4) * 2) + 1px),
+      /* New: Transparent must start after this line's end. */ transparent
+        calc((40px + ((100% - 80px + $gutter) / 4) * 2) + 1px + 0.8px),
+      transparent calc((40px + ((100% - 80px + $gutter) / 4) * 3)),
+      $blue-main-30 calc((40px + ((100% - 80px + $gutter) / 4) * 3)),
+      $blue-main-30 calc((40px + ((100% - 80px + $gutter) / 4) * 3) + 1px),
+      /* New: Transparent must start after this line's end. */ transparent
+        calc((40px + ((100% - 80px + $gutter) / 4) * 3) + 1px + 0.8px)
+    ),
+    linear-gradient(
+      to left,
+      transparent 40px,
+      $blue-main-30 40px,
+      $blue-main-30 41px,
+      /* New: Transparent must start after this line's end. */ transparent
+        calc(41px + 0.8px)
+    );
 
   @media (max-width: $container-width-tablet) {
     background: linear-gradient(
