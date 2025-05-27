@@ -1,0 +1,94 @@
+.techwork {
+  .decks-header {
+    @media (max-width: $container-width-mobile) {
+      top: 16px;
+    }
+  }
+
+  header {
+    background: no-repeat right bottom/contain url("../../images/404-bg.png"),
+      linear-gradient(
+        119.25deg,
+        rgba(20, 19, 36, 0) 32.866%,
+        rgba(20, 19, 36, 0.75) 64.453%,
+        rgba(20, 19, 36, 0.9) 73.606%,
+        rgb(20, 19, 36) 80.197%
+      );
+    // height: 674px;
+    margin-top: -60px;
+    padding-top: 186px;
+
+    @media (max-width: $container-width-desktop) {
+      background: no-repeat right bottom/cover url("../../images/404-bg.png"),
+        linear-gradient(
+          119.25deg,
+          rgba(20, 19, 36, 0) 32.866%,
+          rgba(20, 19, 36, 0.75) 64.453%,
+          rgba(20, 19, 36, 0.9) 73.606%,
+          rgb(20, 19, 36) 80.197%
+        );
+    }
+
+    @media (max-width: $container-width-tablet) {
+      background: no-repeat right bottom/cover
+          url("../../images/404-bg-tablet.png"),
+        linear-gradient(
+          119.25deg,
+          rgba(20, 19, 36, 0) 32.866%,
+          rgba(20, 19, 36, 0.75) 64.453%,
+          rgba(20, 19, 36, 0.9) 73.606%,
+          rgb(20, 19, 36) 80.197%
+        );
+
+      margin-top: 0;
+      padding-top: 160px;
+    }
+
+    @media (max-width: $container-width-mobile) {
+      background: no-repeat right top/cover url("../../images/404-bg-mob.png"),
+        linear-gradient(
+          119.25deg,
+          rgba(20, 19, 36, 0) 32.866%,
+          rgba(20, 19, 36, 0.75) 64.453%,
+          rgba(20, 19, 36, 0.9) 73.606%,
+          rgb(20, 19, 36) 80.197%
+        );
+
+      margin-top: 0;
+      padding-top: 136px;
+    }
+
+    .header-banner-text-container {
+      .tag-button-wrapper {
+        margin-bottom: 56px;
+      }
+      h1 {
+        max-width: 1086px;
+        background: linear-gradient(
+          154.57deg,
+          rgb(49, 108, 237),
+          rgb(239, 239, 239)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 120% !important;
+        margin-bottom: 64px;
+      }
+    }
+
+    .button {
+      max-width: 300px;
+      margin-bottom: 32px;
+      @media (max-width: $container-width-tablet) {
+        max-width: 250px;
+      }
+    }
+  }
+  .tag-button-wrapper {
+    max-width: 274px;
+  }
+  .tech-content {
+    margin-bottom: 46px;
+  }
+}
