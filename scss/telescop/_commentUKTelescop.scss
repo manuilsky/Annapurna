@@ -7,13 +7,13 @@
     @media (max-width: $container-width-tablet) {
       padding: 64px 0 80px 0;
       background: no-repeat left bottom / cover
-        url(../../images/commentBackground-tablet.svg);
+        url(../../images/commentTelescopTabl.svg);
     }
 
     @media (max-width: $container-width-mobile) {
       padding: 64px 0 80px 0;
       background: no-repeat right bottom / cover
-        url(../../images/commentBackground-mobile.svg);
+        url(../../images/commentTelescopMobile.svg);
     }
 
     .comment-button-wrapper {

@@ -9,7 +9,7 @@
       padding-top: 48px;
       padding-bottom: 80px;
       background: no-repeat right bottom / cover
-        url(../../images/gradientManagerDesc.png);
+        url(../../images/gradientManagerTabl.svg);
     }
     @media (max-width: $container-width-mobile) {
       padding-top: 64px;
@@ -113,6 +113,7 @@
       flex-direction: column;
     }
     .manager-photo-wrapper {
+      position: relative;
       margin-bottom: 80px;
       @media (max-width: $container-width-mobile) {
         margin-bottom: 64px;
@@ -155,8 +156,8 @@
       }
     }
     .blue-pixel {
-      top: 11%;
-      left: 49.8%;
+      top: 50%;
+      left: 49.9%;
       @media (max-width: $container-width-tablet) {
         display: none;
       }

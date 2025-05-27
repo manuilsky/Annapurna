@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
+  let currentIsMobile = window.innerWidth < 391;
+  let tooltipInstances = [];
+
+  function destroyTooltips() {
+    tooltipInstances.forEach((group) => {
+      group.forEach((instance) => instance.destroy());
+    });
+    tooltipInstances = [];
+  }
+
   function createTooltips() {
-    tippy("#firstInfoTooltip", {
+    const isMobile = window.innerWidth < 391;
+    const thirdTooltipOffset = isMobile ? [-12, -8] : [12, -18];
+
+    const first = tippy("#firstInfoTooltip", {
       content:
         '<div class="custom-tooltip explanation-text-m">Прирост стоимости пая за период с даты формирования фонда, деленный на расчетную стоимость пая на начало периода, умноженный на 100.</div>',
       allowHTML: true,
@@ -9,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
       touch: true,
       offset: [-12, -8],
     });
-    tippy("#secondInfoTooltip", {
+
+    const second = tippy("#secondInfoTooltip", {
       content:
         '<div class="custom-tooltip explanation-text-m">Доходность, в % годовых = (Прирост стоимости пая % + 1) <img src="images/formula.svg"/> -1</div>',
       allowHTML: true,
@@ -18,8 +32,28 @@ document.addEventListener("DOMContentLoaded", function () {
       touch: true,
       offset: [-12, -8],
     });
+
+    const third = tippy("#thirdInfoTooltip", {
+      content:
+        '<div class="custom-tooltip explanation-text-m">С марта 2025 года валюта, в которой определяется стоимость чистых активов ИПИФК «Телескоп А», была изменена с доллара США на Российский рубль. Представленные данные стоимости пая до марта 2025 года (и соответствующие им доходности) пересчитаны, исходя из курса ЦБ РФ на дату расчета СЧА.</div>',
+      allowHTML: true,
+      interactive: false,
+      placement: "bottom-start",
+      touch: true,
+      offset: thirdTooltipOffset,
+    });
+
+    tooltipInstances.push(first, second, third);
   }
 
-  // Инициализация тултипов
   createTooltips();
+
+  window.addEventListener("resize", () => {
+    const isMobile = window.innerWidth < 391;
+    if (isMobile !== currentIsMobile) {
+      currentIsMobile = isMobile;
+      destroyTooltips();
+      createTooltips();
+    }
+  });
 });
