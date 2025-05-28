@@ -47,4 +47,20 @@
       }
     }
   }
+  @media (min-width: 769px) {
+    .trippleRowTablet {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: $container-width-mobile) and (max-width: $container-width-tablet) {
+    .contacts-right,
+    .contacts-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
 }
