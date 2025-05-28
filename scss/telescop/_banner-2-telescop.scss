@@ -1,0 +1,46 @@
+.telescop {
+  .banner-2 {
+    background: no-repeat left bottom/contain
+      url("../../images/bg-2-telescop.svg");
+    //   height: 400px;
+
+    @media (max-width: 1536px) {
+      background-position: left bottom;
+    }
+
+    @media (max-width: $container-width-tablet) {
+      background: no-repeat left bottom/cover
+        url("../../images/bg-2-telescop-tablet.svg");
+      // height: 349px;
+    }
+
+    @media (max-width: $container-width-mobile) {
+      background: no-repeat left bottom/cover
+        url("../../images/bg-2-telescop-mobile.svg");
+      // height: 583px;
+    }
+
+    .row {
+      padding: 80px 0px 120px 0px;
+      position: relative;
+
+      @media (max-width: $container-width-tablet) {
+        padding: 80px 0px 80px 0px;
+      }
+
+      @media (max-width: $container-width-mobile) {
+        padding: 80px 0px 160px 0px;
+      }
+    }
+
+    .col-10:first-child {
+      max-width: 435px;
+    }
+  }
+  .banner-2-title {
+    margin-bottom: 24px;
+  }
+  .banner-2-content {
+    max-width: 676px;
+  }
+}
