@@ -27,6 +27,9 @@
     .header-banner-right {
       #buy_pai {
         opacity: 0;
+        @media (max-width: $container-width-mobile) {
+          display: none;
+        }
       }
     }
 
