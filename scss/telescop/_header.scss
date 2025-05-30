@@ -15,15 +15,16 @@
     }
 
     @media (max-width: $container-width-tablet) {
-      background: no-repeat right top/cover
-        url("../../images/header-tablet.png");
+      background: no-repeat left bottom/cover
+        url("../../images/headerBGTelescopTablet.png");
+      height: 759px;
     }
 
     @media (max-width: $container-width-mobile) {
       background: no-repeat right top/cover
-        url("../../images/header-mobile.png");
+        url("../../images/headerBGTelescopMobile.png");
 
-      height: 1241px;
+      height: 1091px;
     }
 
     .header-banner {
@@ -33,11 +34,11 @@
       align-items: end;
 
       @media (max-width: $container-width-tablet) {
-        margin-top: calc(112px + 56px + 24px + 76px);
+        margin-top: 144px;
       }
 
       @media (max-width: $container-width-mobile) {
-        margin-top: calc(64px + 56px + 24px + 76px);
+        margin-top: 144px;
       }
 
       .header-banner-col {
@@ -63,10 +64,14 @@
 
         margin-bottom: 54px;
         padding: 10px;
+        @media (max-width: $container-width-tablet) {
+          margin-bottom: 30px;
+        }
 
         @media (max-width: $container-width-mobile) {
           margin-bottom: 40px;
           padding: 0px;
+          letter-spacing: -1px;
         }
       }
     }
@@ -130,10 +135,6 @@
       }
     }
 
-    .custom-tooltip {
-      white-space: nowrap;
-      width: fit-content;
-    }
     button#buy_pai {
       &.footer-button-blue {
         margin-top: 80px;
@@ -154,32 +155,47 @@
       }
     }
   }
-
-  .tippy-box {
-    background-color: transparent;
-    box-shadow: none;
-    border: none;
-    max-width: unset !important;
-    @media (max-width: 648px) {
-      max-width: 350px !important;
+  #tippy-1,
+  #tippy-2,
+  #tippy-4,
+  #tippy-5 {
+    .custom-tooltip {
+      // white-space: nowrap;
+      width: fit-content;
     }
-  }
-  .tippy-arrow {
-    display: none;
-  }
+    .tippy-box {
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      max-width: unset !important;
 
-  .tippy-content {
-    background-color: $light-grey;
-    border: 1px solid $blue-main;
-    border-radius: 8px 0px 8px 8px;
-    padding: 8px;
-    max-width: 546px;
-    color: $blue-main;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    z-index: 1000;
-    @media (max-width: $container-width-mobile) {
-      max-width: 221px;
+      @media (max-width: 648px) {
+        max-width: 350px !important;
+      }
+    }
+    .tippy-arrow {
+      display: none;
+    }
+
+    .tippy-content {
+      background-color: $light-grey;
+      border: 1px solid $blue-main;
+      border-radius: 8px 0px 8px 8px;
+      padding: 8px;
+      max-width: 546px;
+      color: $blue-main;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      z-index: 1000;
+      @media (max-width: 1200px) {
+        max-width: 400px;
+      }
+      @media (min-width: 769px) {
+        border-radius: 0px 8px 8px 8px;
+      }
+      @media (max-width: $container-width-mobile) {
+        max-width: 221px;
+      }
     }
   }
 }

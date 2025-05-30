@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function createTooltips() {
     const isMobile = window.innerWidth < 391;
+    const isTelescop = document.body.classList.contains("telescop");
+    const isWideScreen = window.innerWidth > 1200;
+
+    const useCustomOffset = isTelescop && isWideScreen;
+    const firstSecondOffset = useCustomOffset ? [8, -8] : [-12, -8];
+
     const thirdTooltipOffset = isMobile ? [-12, -8] : [12, -18];
 
     const first = tippy("#firstInfoTooltip", {
@@ -19,8 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
       allowHTML: true,
       interactive: false,
       placement: "bottom-end",
+
       touch: true,
-      offset: [-12, -8],
+      offset: firstSecondOffset,
     });
 
     const second = tippy("#secondInfoTooltip", {
@@ -29,8 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
       allowHTML: true,
       interactive: false,
       placement: "bottom-start",
+
       touch: true,
-      offset: [-12, -8],
+      offset: firstSecondOffset,
     });
 
     const third = tippy("#thirdInfoTooltip", {
