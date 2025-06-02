@@ -92,9 +92,16 @@
       /* Secondary/bg 60% */
       background: rgba(15, 21, 42, 0.6);
       padding: 32px;
+      @media (max-width: 1200px) {
+        padding: 16px;
+      }
+      @media (min-width: 769px) and (max-width: 860px) {
+        padding: 8px;
+      }
 
       @media (max-width: $container-width-tablet) {
         height: 105px;
+        padding: 24px 16px 24px 16px;
       }
 
       .info-container-title {

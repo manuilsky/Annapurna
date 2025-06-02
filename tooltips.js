@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function createTooltips() {
     const isMobile = window.innerWidth < 391;
     const isTelescop = document.body.classList.contains("telescop");
-    const isWideScreen = window.innerWidth > 1200;
+    const isWideScreen = window.innerWidth > 769;
 
     const useCustomOffset = isTelescop && isWideScreen;
     const firstSecondOffset = useCustomOffset ? [8, -8] : [-12, -8];
