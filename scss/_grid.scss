@@ -8,6 +8,7 @@ $container-width-desktop-lg: 1920px;
 $container-width-desktop: 1440px;
 $container-width-tablet: 768px;
 $container-width-mobile: 391px;
+$container-width-mobile-telescop: 431px;
 $margin-desktop: 40px;
 $margin-tablet: 24px;
 $margin-mobile: 24px;
@@ -21,6 +22,33 @@ body {
   position: relative;
   margin: 0;
   height: 100vh;
+}
+body.telescop {
+  .container {
+    @media (max-width: $container-width-mobile-telescop) {
+      padding-left: $margin-mobile;
+      padding-right: $margin-mobile;
+    }
+  }
+
+  .row {
+    @media (max-width: $container-width-mobile-telescop) {
+      grid-template-columns: repeat($grid-columns-mobile, 1fr);
+    }
+  }
+
+  @media (max-width: $container-width-mobile-telescop) {
+    .row-sm {
+      display: grid;
+    }
+
+    @for $i from 1 through 12 {
+      .col-sm-#{$i} {
+        display: block;
+        grid-column: span $i;
+      }
+    }
+  }
 }
 
 body > .grid {

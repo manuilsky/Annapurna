@@ -72,7 +72,7 @@
           @media (max-width: $container-width-tablet) {
             flex: 50%;
           }
-          @media (max-width: $container-width-mobile) {
+          @media (max-width: $container-width-mobile-telescop) {
             word-break: break-word;
             overflow-wrap: break-word;
           }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let currentIsMobile = window.innerWidth < 391;
+  let currentIsMobile = window.innerWidth < 431;
   let tooltipInstances = [];
 
   function destroyTooltips() {
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function createTooltips() {
-    const isMobile = window.innerWidth < 391;
+    const isMobile = window.innerWidth < 431;
     const isTelescop = document.body.classList.contains("telescop");
     const isWideScreen = window.innerWidth > 769;
 
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   createTooltips();
 
   window.addEventListener("resize", () => {
-    const isMobile = window.innerWidth < 391;
+    const isMobile = window.innerWidth < 431;
     if (isMobile !== currentIsMobile) {
       currentIsMobile = isMobile;
       destroyTooltips();

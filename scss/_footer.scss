@@ -93,29 +93,31 @@ footer {
   }
 
   @media (max-width: $container-width-tablet) and (min-width: $container-width-mobile) {
-    .footer-navigation {
-      padding: 64px 0 24px 0;
-    }
-
-    #footer-logo {
-      img {
-        max-width: 107px;
-        width: 100%;
+    body:not(.telescop) {
+      .footer-navigation {
+        padding: 64px 0 24px 0;
       }
-    }
 
-    #footer-menu-1 {
-      order: 3;
-      transform: translateY(-116%);
-    }
+      #footer-logo {
+        img {
+          max-width: 107px;
+          width: 100%;
+        }
+      }
 
-    #footer-menu-2 {
-      order: 2;
-    }
+      #footer-menu-1 {
+        order: 3;
+        transform: translateY(-116%);
+      }
 
-    #footer-menu-3 {
-      .links {
-        margin-top: 24px;
+      #footer-menu-2 {
+        order: 2;
+      }
+
+      #footer-menu-3 {
+        .links {
+          margin-top: 24px;
+        }
       }
     }
   }
@@ -149,6 +151,78 @@ footer {
     .footer-content {
       padding-top: 32px;
       padding-bottom: 64px;
+    }
+  }
+}
+
+body.telescop {
+  footer {
+    #footer-menu-3 {
+      .links {
+        a {
+          @media (max-width: $container-width-mobile-telescop) {
+            font-size: $font-size-body-small-mobile-telescop !important;
+          }
+        }
+      }
+    }
+    @media (max-width: $container-width-tablet) and (min-width: $container-width-mobile-telescop) {
+      .footer-navigation {
+        padding: 64px 0 24px 0;
+      }
+
+      #footer-logo {
+        img {
+          max-width: 107px;
+          width: 100%;
+        }
+      }
+
+      #footer-menu-1 {
+        order: 3;
+        transform: translateY(-116%);
+      }
+
+      #footer-menu-2 {
+        order: 2;
+      }
+
+      #footer-menu-3 {
+        .links {
+          margin-top: 24px;
+        }
+      }
+    }
+    @media (max-width: $container-width-mobile-telescop) {
+      .footer-navigation {
+        padding: 64px 0 56px 0;
+      }
+
+      #footer-logo {
+        img {
+          max-width: 139px;
+          width: 100%;
+        }
+      }
+
+      #footer-logo {
+        margin-bottom: 35px;
+      }
+
+      #footer-menu-1 {
+        margin-bottom: 40px;
+      }
+
+      #footer-menu-3 {
+        .links {
+          margin-top: 24px;
+        }
+      }
+
+      .footer-content {
+        padding-top: 32px;
+        padding-bottom: 64px;
+      }
     }
   }
 }

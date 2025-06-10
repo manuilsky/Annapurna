@@ -14,7 +14,7 @@
       // height: 349px;
     }
 
-    @media (max-width: $container-width-mobile) {
+    @media (max-width: $container-width-mobile-telescop) {
       background: no-repeat left bottom/cover
         url("../../images/bg-2-telescop-mobile.svg");
       // height: 583px;
@@ -28,7 +28,7 @@
         padding: 80px 0px 80px 0px;
       }
 
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         padding: 80px 0px 160px 0px;
       }
     }

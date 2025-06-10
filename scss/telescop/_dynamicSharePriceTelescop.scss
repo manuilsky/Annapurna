@@ -32,7 +32,7 @@
       -webkit-backdrop-filter: blur(30px);
       background: $bg-20;
 
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin: 0px -10px;
       }
 
@@ -78,7 +78,7 @@
           text-align: left;
           align-content: center;
 
-          @media (max-width: $container-width-mobile) {
+          @media (max-width: $container-width-mobile-telescop) {
             height: 48px;
           }
         }
@@ -89,7 +89,7 @@
           text-align: left;
           padding-left: 16px;
 
-          @media (max-width: $container-width-mobile) {
+          @media (max-width: $container-width-mobile-telescop) {
             height: 72px;
           }
         }
@@ -106,7 +106,7 @@
             max-width: 138px;
           }
 
-          @media (max-width: $container-width-mobile) {
+          @media (max-width: $container-width-mobile-telescop) {
             max-width: 80px;
           }
 
@@ -155,7 +155,7 @@
           td:nth-child(2) {
             background-color: $bg-30;
 
-            @media (max-width: $container-width-mobile) {
+            @media (max-width: $container-width-mobile-telescop) {
               max-width: 109px;
             }
           }
@@ -175,7 +175,7 @@
           }
         }
 
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           .scrollable-container table {
             min-width: calc(100% / 1);
           }
@@ -207,7 +207,7 @@
             justify-content: flex-start;
           }
 
-          @media (max-width: $container-width-mobile) {
+          @media (max-width: $container-width-mobile-telescop) {
             justify-content: space-between;
             width: 100%;
             top: 16px;
@@ -231,7 +231,7 @@
                 url("../../images/arrow-left.svg") $bg-20;
             }
 
-            @media (max-width: $container-width-mobile) {
+            @media (max-width: $container-width-mobile-telescop) {
               margin-left: 0px;
             }
           }
@@ -244,7 +244,7 @@
                 url("../../images/arrow-right.svg") $bg-20;
             }
 
-            @media (max-width: $container-width-mobile) {
+            @media (max-width: $container-width-mobile-telescop) {
               margin-right: 16px;
             }
           }
@@ -267,7 +267,7 @@
         @media (max-width: $container-width-tablet) {
           transform: translateY(-12px);
         }
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           transform: translateY(0px);
           width: 16px;
           height: 20px;
@@ -309,7 +309,7 @@
       @media (max-width: 420px) {
         max-width: 170px;
       }
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         border-radius: 8px 0px 8px 8px;
         max-width: 221px;
       }

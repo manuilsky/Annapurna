@@ -11,7 +11,7 @@
       background: no-repeat right bottom / cover
         url(../../images/gradientManagerTabl.svg);
     }
-    @media (max-width: $container-width-mobile) {
+    @media (max-width: $container-width-mobile-telescop) {
       padding-top: 64px;
       padding-bottom: 80px;
       background: no-repeat right bottom / cover
@@ -39,7 +39,7 @@
         max-width: 200px;
         margin-bottom: 56px;
       }
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin-bottom: 32px;
         .manager-button-text {
           font: 12px $font-family-regular !important;
@@ -102,7 +102,7 @@
       @media (max-width: $container-width-tablet) {
         max-width: 85%;
       }
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin-bottom: 64px;
         max-width: 100%;
       }
@@ -115,7 +115,7 @@
     .manager-photo-wrapper {
       position: relative;
       margin-bottom: 80px;
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin-bottom: 64px;
       }
     }
@@ -123,7 +123,7 @@
       max-width: 32px;
       max-height: 32px;
       margin-bottom: 32px;
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         max-width: 24px;
         max-height: 24px;
         margin-bottom: 24px;
@@ -135,12 +135,12 @@
     .manager-content-wrapper.wrapper-1,
     .manager-content-wrapper.wrapper-2 {
       margin-bottom: 0;
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin-bottom: 0;
       }
     }
     .manager-content-wrapper.wrapper-3 {
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin-bottom: 0;
       }
     }

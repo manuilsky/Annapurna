@@ -20,7 +20,7 @@
       height: 759px;
     }
 
-    @media (max-width: $container-width-mobile) {
+    @media (max-width: $container-width-mobile-telescop) {
       background: no-repeat right top/cover
         url("../../images/headerBGTelescopMobile.png");
 
@@ -37,7 +37,7 @@
         margin-top: 144px;
       }
 
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin-top: 144px;
       }
 
@@ -68,7 +68,7 @@
           margin-bottom: 30px;
         }
 
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           margin-bottom: 40px;
           padding: 0px;
           letter-spacing: -1px;
@@ -77,7 +77,7 @@
     }
 
     .info {
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin-bottom: 136px;
       }
     }
@@ -145,10 +145,10 @@
     button#buy_pai {
       &.footer-button-blue {
         margin-top: 80px;
-        @media (min-width: $container-width-mobile) and (max-width: $container-width-tablet) {
+        @media (min-width: $container-width-mobile-telescop) and (max-width: $container-width-tablet) {
           display: none;
         }
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           margin-top: 40px;
         }
       }
@@ -156,7 +156,7 @@
         @media (min-width: 769px) {
           display: none;
         }
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           display: none;
         }
       }
@@ -200,7 +200,7 @@
       @media (min-width: 769px) {
         border-radius: 0px 8px 8px 8px;
       }
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         max-width: 221px;
       }
     }

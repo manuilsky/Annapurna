@@ -6,7 +6,7 @@
       padding: 80px 0 40px 0;
     }
 
-    @media (max-width: $container-width-mobile) {
+    @media (max-width: $container-width-mobile-telescop) {
       padding: 80px 0 64px 0;
     }
 
@@ -39,7 +39,7 @@
         }
       }
 
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         .fond-button-text {
           font-size: 12px !important;
         }
@@ -75,10 +75,10 @@
         display: flex;
         align-items: center;
         border-bottom: 1px solid $light-blue-50;
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           flex: 1;
         }
-        @media (min-width: $container-width-mobile) {
+        @media (min-width: $container-width-mobile-telescop) {
           &.main {
             flex: 1;
           }
@@ -93,8 +93,8 @@
         @media (max-width: $container-width-tablet) {
           font-size: min(1.5625vw, 12px);
         }
-        @media (max-width: $container-width-mobile) {
-          font-size: min(3.07692307692vw, 12px);
+        @media (max-width: $container-width-mobile-telescop) {
+          font-size: $font-size-body-small-mobile-telescop;
         }
       }
     }
@@ -106,12 +106,12 @@
         background: $bg-30;
         border-bottom: 1px solid $light-blue-50;
 
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           flex: 1;
           padding: 16px 8px 16px 8px;
         }
       }
-      @media (min-width: $container-width-mobile) {
+      @media (min-width: $container-width-mobile-telescop) {
         .row-title {
           flex: 1;
         }
@@ -130,12 +130,12 @@
         align-items: center;
         border-bottom: 1px solid $light-blue-50;
 
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           flex: 1;
           padding: 16px 8px 16px 8px;
         }
       }
-      @media (min-width: $container-width-mobile) {
+      @media (min-width: $container-width-mobile-telescop) {
         .row-title {
           flex: 1;
         }
@@ -155,7 +155,7 @@
         @media (max-width: $container-width-tablet) {
           font-size: 12px;
         }
-        @media (max-width: $container-width-mobile) {
+        @media (max-width: $container-width-mobile-telescop) {
           padding: 16px 8px 16px 8px;
         }
         &.date {

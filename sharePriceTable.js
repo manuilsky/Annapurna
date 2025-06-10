@@ -73,7 +73,9 @@ class SharePriceTable {
   }
 
   scrollTable(step) {
-    const isMobile = window.innerWidth <= 390;
+    const bodyHasTelescop = document.body.classList.contains("telescop");
+    const mobileBreakpoint = bodyHasTelescop ? 430 : 390;
+    const isMobile = window.innerWidth <= mobileBreakpoint;
     const isTablet = window.innerWidth <= 768;
     const maxScrollLeft =
       this.container.scrollWidth -

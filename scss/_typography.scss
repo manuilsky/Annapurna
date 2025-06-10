@@ -84,6 +84,16 @@ $font-size-body-short-mobile: min(4.10256410256vw, 16px);
 $font-size-link-mobile: min(3.58974358974vw, 14px);
 $font-size-body-small-mobile: min(3.07692307692vw, 12px);
 
+//fonts for Telescop
+$font-size-h1-mobile-telescop: min(8.37vw, 36px); // 36 / 430 * 100
+$font-size-h2-mobile-telescop: min(7.44vw, 32px); // 32 / 430 * 100
+$font-size-h3-mobile-telescop: min(4.65vw, 20px); // 20 / 430 * 100
+$font-size-h4-mobile-telescop: min(4.19vw, 18px); // 18 / 430 * 100
+$font-size-body-long-mobile-telescop: min(3.72vw, 16px); // 16 / 430 * 100
+$font-size-body-short-mobile-telescop: min(3.72vw, 16px); // 16 / 430 * 100
+$font-size-link-mobile-telescop: min(3.26vw, 14px); // 14 / 430 * 100
+$font-size-body-small-mobile-telescop: min(2.79vw, 12px); // 12 / 430 * 100
+
 // Межстрочный интервал (line-height)
 $line-height-h1-desktop: 95%;
 $line-height-h2-desktop: 100%;
@@ -146,6 +156,14 @@ h1 {
   }
 }
 
+body.telescop h1 {
+  @media (max-width: $container-width-mobile-telescop) {
+    font-size: $font-size-h1-mobile-telescop;
+    line-height: $line-height-h1-tablet;
+    letter-spacing: calc($font-size-h1-mobile-telescop * -0.02);
+  }
+}
+
 h2 {
   font-family: $font-family-regular;
   font-size: $font-size-h2-desktop;
@@ -163,6 +181,13 @@ h2 {
     font-size: $font-size-h2-mobile;
     line-height: $line-height-h2-tablet;
     letter-spacing: calc($font-size-h2-mobile * -0.02);
+  }
+}
+body.telescop h2 {
+  @media (max-width: $container-width-mobile-telescop) {
+    font-size: $font-size-h2-mobile-telescop;
+    line-height: $line-height-h2-tablet;
+    letter-spacing: calc($font-size-h2-mobile-telescop * -0.02);
   }
 }
 
@@ -183,6 +208,13 @@ h3 {
     font-size: $font-size-h3-mobile;
     line-height: $line-height-h3-tablet;
     letter-spacing: calc($font-size-h3-mobile * -0.02);
+  }
+}
+body.telescop h3 {
+  @media (max-width: $container-width-mobile-telescop) {
+    font-size: $font-size-h3-mobile-telescop;
+    line-height: $line-height-h3-tablet;
+    letter-spacing: calc($font-size-h3-mobile-telescop * -0.02);
   }
 }
 
@@ -206,6 +238,14 @@ h4,
     letter-spacing: calc($font-size-h4-mobile * -0.02);
   }
 }
+body.telescop h4,
+body.telescop .h4 {
+  @media (max-width: $container-width-mobile-telescop) {
+    font-size: $font-size-h4-mobile-telescop;
+    line-height: $line-height-h4-tablet;
+    letter-spacing: calc($font-size-h4-mobile-telescop * -0.02);
+  }
+}
 
 .body-long {
   font: $font-size-body-long-desktop / $line-height-body-long-desktop
@@ -222,6 +262,15 @@ h4,
     font: $font-size-body-long-mobile / $line-height-body-long-tablet
       $font-family-regular !important;
     letter-spacing: calc($font-size-body-long-mobile * -0.02) !important;
+  }
+}
+body.telescop .body-long {
+  @media (max-width: $container-width-mobile-telescop) {
+    font: $font-size-body-long-mobile-telescop / $line-height-body-long-tablet
+      $font-family-regular !important;
+    letter-spacing: calc(
+      $font-size-body-long-mobile-telescop * -0.02
+    ) !important;
   }
 }
 
@@ -242,6 +291,15 @@ h4,
     letter-spacing: calc($font-size-body-short-mobile * -0.02) !important;
   }
 }
+body.telescop .body-short {
+  @media (max-width: $container-width-mobile-telescop) {
+    font: $font-size-body-short-mobile-telescop / $line-height-body-short-tablet
+      $font-family-regular;
+    letter-spacing: calc(
+      $font-size-body-short-mobile-telescop * -0.02
+    ) !important;
+  }
+}
 
 th {
   font: $font-size-body-short-desktop / $line-height-body-short-desktop
@@ -257,6 +315,15 @@ th {
     font: $font-size-body-short-mobile / $line-height-body-short-tablet
       $font-family-regular !important;
     letter-spacing: calc($font-size-body-short-mobile * -0.02) !important;
+  }
+}
+body.telescop th {
+  @media (max-width: $container-width-mobile-telescop) {
+    font: $font-size-body-short-mobile-telescop / $line-height-body-short-tablet
+      $font-family-regular !important;
+    letter-spacing: calc(
+      $font-size-body-short-mobile-telescop * -0.02
+    ) !important;
   }
 }
 
@@ -278,6 +345,13 @@ button {
     line-height: $line-height-link-tablet;
   }
 }
+body.telescop a,
+body.telescop button {
+  @media (max-width: $container-width-mobile-telescop) {
+    font-size: $font-size-link-mobile-telescop;
+    line-height: $line-height-link-tablet;
+  }
+}
 
 .body-small,
 tr {
@@ -296,6 +370,14 @@ tr {
     font-size: $font-size-body-small-mobile;
     line-height: $line-height-body-small-tablet;
     letter-spacing: calc($font-size-body-small-mobile * -0.02);
+  }
+}
+body.telescop .body-small,
+body.telescop tr {
+  @media (max-width: $container-width-mobile-telescop) {
+    font-size: $font-size-body-small-mobile-telescop;
+    line-height: $line-height-body-small-tablet;
+    letter-spacing: calc($font-size-body-small-mobile-telescop * -0.02);
   }
 }
 

@@ -7,8 +7,8 @@
         url(../../images/banner-4-tablet.svg);
     }
 
-    @media (max-width: $container-width-mobile) {
-      background: no-repeat right top / cover
+    @media (max-width: $container-width-mobile-telescop) {
+      background: no-repeat right bottom / cover
         url(../../images/banner-4-mobile.svg);
     }
 
@@ -17,7 +17,7 @@
       @media (max-width: $container-width-tablet) {
         padding: 64px 0;
       }
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         padding: 64px 0 282px;
       }
     }
@@ -36,7 +36,7 @@
           display: none;
         }
       }
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         margin-bottom: 80px;
       }
     }
@@ -45,7 +45,7 @@
         max-width: 200px;
         max-height: 48px;
       }
-      @media (max-width: $container-width-mobile) {
+      @media (max-width: $container-width-mobile-telescop) {
         max-width: 225px;
       }
     }
