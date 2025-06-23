@@ -99,7 +99,11 @@
       .comment-text {
         height: 100%;
         display: flex;
+        flex-direction: column;
         flex: 1;
+      }
+      .comment-text p:not(:first-child) {
+        margin-top: 16px;
       }
     }
   }
