@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const second = tippy("#secondInfoTooltip", {
       content:
-        '<div class="custom-tooltip explanation-text-m">Доходность, в % годовых = (Прирост стоимости пая % + 1) <img src="images/formula.svg"/> -1</div>',
+        '<div class="custom-tooltip explanation-text-m">Доходность, % = (Расчетная стоимость пая на Дату обновления - Расчетная стоимость пая на Декабрь предыдущего года) / Расчетная стоимость пая на Декабрь предыдущего года * 100%</div>',
       allowHTML: true,
       interactive: false,
       placement: "bottom-start",

@@ -144,6 +144,7 @@
 
     button#buy_pai {
       &.footer-button-blue {
+        opacity: 0;
         margin-top: 80px;
         @media (min-width: $container-width-mobile-telescop) and (max-width: $container-width-tablet) {
           display: none;
