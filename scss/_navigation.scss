@@ -156,7 +156,7 @@
     transition: margin-top 0.2s linear;
     max-height: 56px;
     &.active {
-      max-height: 334px;
+      max-height: max-content;
     }
   }
 
