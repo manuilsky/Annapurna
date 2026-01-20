@@ -51,7 +51,18 @@ document.addEventListener("DOMContentLoaded", function () {
       offset: thirdTooltipOffset,
     });
 
-    tooltipInstances.push(first, second, third);
+    const fourth = tippy("#fourthInfoTooltip", {
+      content:
+        '<div class="custom-tooltip explanation-text-m">Доходность, в % годовых = (Прирост стоимости пая % + 1) <img src="images/formula.svg"/> -1</div>',
+      allowHTML: true,
+      interactive: false,
+      placement: "bottom-start",
+
+      touch: true,
+      offset: firstSecondOffset,
+    });
+
+    tooltipInstances.push(first, second, third, fourth);
   }
 
   createTooltips();
